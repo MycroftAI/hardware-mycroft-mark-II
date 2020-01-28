@@ -1,5 +1,5 @@
 # hardware-mycroft-mark-II-rpi
-*Mycroft's Mark II Rpi mechanical, electrical and industrial designs* 
+*Mycroft's Mark II Rpi prototype designs* 
 
 ⛵️ Note that this repository is a work-in-progress and will get better over time.
 
