@@ -3,7 +3,7 @@
 
 ⛵️ Note that this repository is a work-in-progress and will get better over time.
 
-##Our open hardware principles
+## Our open hardware principles
 * **Copy our designs** – build your own Mycroft Mark 2 - Raspberry Pi Edition or its individual parts
 * **Modify our designs** – remixing is encouraged**
 * **Sell products based on our designs** – commercial use is permitted
