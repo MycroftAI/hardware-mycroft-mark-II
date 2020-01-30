@@ -1,4 +1,4 @@
-# hardware-mycroft-mark-II-rpi
+# Mark II Raspberry Pi Prototype 3 Bill of Materials
 
 | Part # | Part | Description | Link |
 | ------ | ---- | ----------- | ---- |
