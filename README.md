@@ -28,7 +28,7 @@ To begin you need to purchase the parts listed in the [Bill of Materials (BOM)](
 * **A pair of Tymphany Peerless TC5FC07-04 speaker drivers**
 * **A set of 3D printed Mark II Raspbery Pi 3 prototype parts**
 
-![System diagram](Mark%20II%20Rpi3%20r2%20System%20diagram.png)
+![System diagram](https://raw.githubusercontent.com/MycroftAI/hardware-mycroft-mark-II-rpi/master/Mark%20II%20Rpi3%20r2%20System%20diagram_sm.png?token=AF3P7DWIXOV57HQI6RJZSZ26HSLWO)
 
 ### Creating the Custom Cable Assemblies
 To connect the Raspberry Pi, Respeaker Mic Array V2.0, and Adafruit Amplifer two custom cable assemblies are required. The first cable assembly allows the Respeaker Mic Array to communicate to the Raspberry Pi via USB and to the Amplifer via analog stereo audio. To create the Microphone cable assembly follow this video guide:  
