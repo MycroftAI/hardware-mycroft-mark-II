@@ -20,7 +20,7 @@ To connect the Raspberry Pi, Respeaker Mic Array V2.0, and Adafruit Amplifer two
 The parts for the housing are shared as both STL and STP files under /CAD. Our internal prototypes are printed on a Formlabs SLA 3D printer but these can be adapted for printing on an FFF machine as well. You will need to orient the parts and slice them based on the requirements of your printer. Some parts require the additoin of threaded inserts for assembly. Two sizes of threaded inserts are used in the prototype m2.5 and m2. These can be installed in the parts with a soldering iron if using FFF printing, or with Cyanoacrylate glue (super glue) if you're using an SLA printer. SLA printed parts do not melt like FFF parts so installation with a soldering iron won't work.
 
 ## Assembling the Amplifier
-Follow the guide on Adafruit's website to assemble the amplifier. Soldering skills are needed.
+Follow [this guide](https://learn.adafruit.com/adafruit-20w-stereo-audio-amplifier-class-d-max9744) on Adafruit's website to assemble the amplifier. Soldering skills are needed.
 
 
 
