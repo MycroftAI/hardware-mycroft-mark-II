@@ -17,3 +17,6 @@
 | 13 | i2c 40p Cable | 40 pin IDC 1.27mm pitch riboon cable | [Amazon](https://www.amazon.com/dp/B07V4MH8HH/ref=sspa_dk_detail_1?spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExUTE1SThHSkwyNUJDJmVuY3J5cHRlZElkPUEwMDg5ODkyMkRJUTNJTEpGNUhOWSZlbmNyeXB0ZWRBZElkPUEwNzUxNTA4Mk8yMTQ4TThEOVFQSyZ3aWRnZXROYW1lPXNwX2RldGFpbDImYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&th=1)
 | 14 | Mic Screws | m2 x 4mm Philips Machine Screw | [m2 x 4mm screws](https://www.mcmaster.com/92000a011)
 | 15 | M2.5x6 screws | m2.5 x 6mm Philips Machine Screw 92000A104 | [m2.5 x 6m screws](https://www.mcmaster.com/92000a104)
+| 16 | M2.5x10 screws | m2.5 x 10mm Philips Machine Screw 92000A106 | [m2.5 x 10m screws](https://www.mcmaster.com/92000A106)
+| 17 | Red wire | Red 22 gauge solid core wire | [Adafruit](https://www.adafruit.com/product/288)
+| 18 | Black wire | Black 22 gauge solid core wire | [Adafruit](hhttps://www.adafruit.com/product/290)
