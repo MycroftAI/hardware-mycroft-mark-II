@@ -2,7 +2,7 @@
 *Mycroft's Mark II Raspberry Pi 3 based prototype designs*  
 *⛵️ Note that this repository is a work-in-progress. It will be updated and improved on over time.*
 
-![Exploded view of prototype](Mark%20II%20Rpi3%20r2%20Assembly%20diagram.png)
+![Exploded view of prototype](https://raw.githubusercontent.com/MycroftAI/hardware-mycroft-mark-II-rpi/master/Mark%20II%20Rpi3%20r2%20Assembly%20diagram_sm.png?token=AF3P7DRJZP6BDCAP2DEV3C26HSL2W)
 
 ## Our open hardware principles
 * **Copy our designs** – build your own Mycroft Mark 2 - Raspberry Pi Edition or its individual parts
