@@ -12,6 +12,9 @@ To begin you need to purchase the parts listed in the BOM.md. The Mark II Raspbe
 * **A set of 3D printed Mark II Raspbery Pi 3 prototype parts**
 
 ## Creating the Custom Cable Assemblies
+To connect the Raspberry Pi, Respeaker Mic Array V2.0, and Adafruit Amplifer two custom cable assemblies are required. The first cable assembly allows the Respeaker Mic Array to communicate to the Raspberry Pi via USB and to the Amplifer via analog stereo audio. The second cable assembly connects the i2c interface from the GPIO on the Raspberry Pi to the Adafruit amplifier. This allows the Raspbery Pi to digitally control the gain on the amplifier. The connectors and ribbon cables required to build these cable assemblies are listed in the BOM. To create the GPIO to i2c cable assemlby follow this guide [GPIO to i2c](https://youtu.be/yoYU8CrY8kU). To create the Microphone cable assembly follow this guide [Microphone Assembly](https://youtu.be/UepmmYCgYgI).
+
+
 
 
 
