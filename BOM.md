@@ -20,4 +20,4 @@
 | 16 | M2.5x6 screws | m2.5 x 6mm Philips Machine Screw 92000A104 | [m2.5 x 6m screws](https://www.mcmaster.com/92000a104)
 | 17 | M2.5x10 screws | m2.5 x 10mm Philips Machine Screw 92000A106 | [m2.5 x 10m screws](https://www.mcmaster.com/92000A106)
 | 18 | Red wire | Red 22 gauge solid core wire | [Adafruit](https://www.adafruit.com/product/288)
-| 19 | Black wire | Black 22 gauge solid core wire | [Adafruit](hhttps://www.adafruit.com/product/290)
+| 19 | Black wire | Black 22 gauge solid core wire | [Adafruit](https://www.adafruit.com/product/290)
