@@ -1,4 +1,4 @@
-# hardware-mycroft-mark-II-rpi
+# hardware-mycroft-mark-II-Rpi3
 
 ## Getting Started
 To begin you need to purchase the parts listed in the BOM.md. The Mark II Raspberry Pi 3 prototype consists of 5 major components and many smaller components. The 5 major components are:
