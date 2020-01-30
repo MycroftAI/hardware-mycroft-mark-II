@@ -19,9 +19,14 @@ To connect the Raspberry Pi, Respeaker Mic Array V2.0, and Adafruit Amplifer two
 ## 3D Printing the Housing
 The parts for the housing are shared as both STL and STP files under [CAD](https://github.com/MycroftAI/hardware-mycroft-mark-II-rpi/tree/master/CAD). Our prototypes are printed on a Formlabs SLA 3D printer but these can be adapted for printing on an FFF machine as well. You will need to orient the parts and slice them based on the requirements of your printer. Some parts require the additoin of threaded inserts for assembly. Two sizes of threaded inserts are used in the prototype m2.5 and m2. These can be installed in the parts with a soldering iron if using FFF printing, or with Cyanoacrylate glue (super glue) if you're using an SLA printer. SLA printed parts do not melt like FFF parts so installation with a soldering iron won't work. These images show the size and location of the threaded inserts [threaded insert locations](https://github.com/MycroftAI/hardware-mycroft-mark-II-rpi/tree/master/CAD/threaded%20insert%20locations)
 
-## Assembling the Amplifier and soldering wires on the Speaker
-Follow [this guide](https://learn.adafruit.com/adafruit-20w-stereo-audio-amplifier-class-d-max9744) on Adafruit's website to assemble the amplifier. Soldering skills are needed. You will also need to solder leads onto the Tymphany Peerless speaker drivers. There is a small dot marking the positive side of the speaker. It is important that you wire the speakers correctly or they will be out of phase. Use the red 22 gauge wire for positive and the black for negative.
+## Assembling the Amplifier and Preparing the Speakers
+Follow [this guide](https://learn.adafruit.com/adafruit-20w-stereo-audio-amplifier-class-d-max9744) on Adafruit's website to assemble the amplifier. Soldering skills are needed. You will also need to solder leads onto the Tymphany speaker drivers. There is a small dot marking the positive side of the speaker. It is important that you wire the speakers correctly or they will be out of phase. Use the red 22 gauge wire for positive and the black for negative.
 
+## Assembling the Audio Chamber
+The audio chamber is printed in two parts and glued together with hot glue. The Tymphany drivers are installed on either side of the Audi chamber and the wires are fished through holes in the back to allow for easy connection to the speaker terminals on the amplifier.
+
+## Final Assembly
+A video is coming soon. Connect the Raspberry Pi3 to the Waveshare display with the Waveshare included stand-offs. Install the Waveshare display through the front of the Front piece. Secure the display with 4 m2.5x6mm screws through the 4 L-shaped brackets. Attach the two Body pieces to the threaded inserts on the Front Piece. 
 
 
 
