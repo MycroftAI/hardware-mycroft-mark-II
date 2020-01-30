@@ -7,7 +7,7 @@
 | 3 | Waveshare LCD | WS 4.3" Capacitive touch 800x480 LCD |  [Waveshare](https://www.waveshare.com/4.3inch-hdmi-lcd-b.htm)
 | 4 | Amplifier | Adafruit 20W Class D Audio Amplifier | [Adafruit](https://www.adafruit.com/product/1752)
 | 5 | Power Converter | Drok 12v to 5.2v 5A Buck Converter | [Drok](https://www.droking.com/Power-Supply-Module-DC-9V-36V-to-5.2V-5A-Double-Output-Buck-Converter-USB-Charger-Voltage-Regulator-Adapter-Driver-Module?search=200217&description=true)
-| 6 |
+| 6 | Peerless TC5FC07-04 1-1/2" Full-Range Driver 4 Ohm [parts express](https://www.parts-express.com/peerless-tc5fc07-04-1-1-2-paper-cone-full-range-driver-4-ohm--264-1626)
 | 7 | MicroSD Extension | 15cm MicroSD card extender | [ebay](https://www.ebay.com/c/1331472913)
 | 8 | Power Supply | Tri-Mag 12v 3A 36W power supply | [digikey](https://www.digikey.com/product-detail/en/tri-mag-llc/L6R36-120/364-1282-ND/7682645)
 | 9 | Mic Headers | Two 2x8 Headers Amphenol 57202-G52-08LF | [Digikey](https://www.digikey.com/product-detail/en/amphenol-icc-fci/57202-G52-08LF/609-2620-ND/1090045)
