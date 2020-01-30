@@ -1,7 +1,7 @@
 # Building a Mark II Raspberry Pi3 prototype
 
 ## Getting Started
-To begin you need to purchase the parts listed in the BOM.md. The Mark II Raspberry Pi 3 prototype consists of 7 major components and many smaller components needed to connect them together. The 7 major components are:
+To begin you need to purchase the parts listed in the [BOM](https://github.com/MycroftAI/hardware-mycroft-mark-II-rpi/blob/master/BOM.md). The Mark II Raspberry Pi 3 prototype consists of 7 major components and many smaller components needed to connect them together. The 7 major components are:
 
 * **Raspberry Pi 3 (not 3b+ or 4 yet)**
 * **Seeed Studios Respeaker Mic Array v2.0**
