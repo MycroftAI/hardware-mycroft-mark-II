@@ -21,3 +21,4 @@
 | 17 | M2.5x10 screws | m2.5 x 10mm Philips Machine Screw 92000A106 | [m2.5 x 10m screws](https://www.mcmaster.com/92000A106)
 | 18 | Red wire | Red 22 gauge solid core wire | [Adafruit](https://www.adafruit.com/product/288)
 | 19 | Black wire | Black 22 gauge solid core wire | [Adafruit](https://www.adafruit.com/product/290)
+| 20 | LA USB-A to LA MicroUSB | Cerrxian Left Angle USB-A to Left Angle MicroUSB | [Amazon](https://www.amazon.com/gp/product/B01N5OOYE1/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1)
