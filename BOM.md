@@ -24,3 +24,5 @@
 | 20 | Black wire | Black 22 gauge solid core wire | [Adafruit](https://www.adafruit.com/product/290)
 | 21 | LA USB-A to LA MicroUSB | Cerrxian Left Angle USB-A to Left Angle MicroUSB | [Amazon](https://www.amazon.com/gp/product/B01N5OOYE1/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1)
 | 22 | Mark II Rpi3 R2 Housing | The Mark II Rpi3 R2 3d printed housing | [CAD](https://github.com/MycroftAI/hardware-mycroft-mark-II-rpi/tree/master/CAD)
+| 23 | M2.5 Threaded inserts | Uxcell M2.5 Threaded inserts 3.5 mm OD x 4 mm | [Amazon](https://www.amazon.com/gp/product/B01N8QX6RX/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+| 24 | M2 Threaded inserts | Uxcell M2 Threaded inserts 3.2 mm OD x 3 mm | [Amazon](https://www.amazon.com/gp/product/B07LBQFNQD/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
