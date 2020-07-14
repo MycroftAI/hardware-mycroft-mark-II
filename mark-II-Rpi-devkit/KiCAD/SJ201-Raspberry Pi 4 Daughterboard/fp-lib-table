@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name mycroft)(type KiCad)(uri "C:/Dropbox/Crashspace/Mycroft/KiCAD/Mycroft - Mark 2")(options "")(descr ""))
+  (lib (name max9744)(type KiCad)(uri ${KIPRJMOD}/KiCAD/2020-06-18_04-42-04/footprints.pretty)(options "")(descr ""))
+  (lib (name NetTie)(type KiCad)(uri ${KISYSMOD}/NetTie.pretty)(options "")(descr ""))
+)

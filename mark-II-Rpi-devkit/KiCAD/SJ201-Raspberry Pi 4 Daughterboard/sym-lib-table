@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name mic)(type Legacy)(uri "C:/Dropbox/Crashspace/Mycroft/KiCAD/Mycroft - Mark 2/MP34DT05-A.lib")(options "")(descr ""))
+  (lib (name Mycroft---Mark-2-rescue)(type Legacy)(uri "${KIPRJMOD}/Mycroft - Mark 2-rescue.lib")(options "")(descr ""))
+)

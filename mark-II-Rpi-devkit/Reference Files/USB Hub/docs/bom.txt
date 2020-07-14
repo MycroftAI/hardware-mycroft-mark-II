@@ -1,0 +1,15 @@
+Partlist
+
+Qty Value           Device          Package          Parts                                             
+5   LED             LED0603         LED-0603         ACT, PORT1, PORT2, PORT3, PORT4                             
+3   0.1uF           CAP0603         CAP-0603         C1, C3, C6                                          
+1   100K            RES0603         RES-0603         R1                              
+3   10uF            CAP0603         CAP-0603         C2, C4, C5                                          
+1   12MHz           CRYSTALHC49UP   HC49UP           XL1                                    
+1   2.7K            RES0603         RES-0603         REXT                            
+3   330r            RES0603         RES-0603         R3, R4, R5                      
+1   47K             RES0603         RES-0603         R2                              
+1   FE1.1S          FE1.1S          FE1.1S_SSOP-28   IC1                                                 
+1   POWER_JACKCOMBO POWER_JACKCOMBO POWER_JACK_COMBO J1                                  
+4   USBA-PTH        USBA-PTH        USB-A-F-PTH      USB2, USB3, USB4, USB5                              
+1   USBMICROB-PTH   USBMICROB-PTH   USB-MICROB-TH    USB1
