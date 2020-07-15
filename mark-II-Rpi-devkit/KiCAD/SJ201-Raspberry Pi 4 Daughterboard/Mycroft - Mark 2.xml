@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:\Dropbox\Crashspace\Mycroft\KiCAD\Mycroft - Mark 2\Mycroft - Mark 2.sch</source>
-    <date>7/15/2020 8:26:20 AM</date>
+    <date>7/15/2020 9:50:21 AM</date>
     <tool>Eeschema (5.1.6)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -199,6 +199,7 @@
       <fields>
         <field name="LCSC">C134819</field>
         <field name="MPN">VZH221M1HTR-1010</field>
+        <field name="SKU"> </field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/Power/" tstamps="/5EAAC9A5/"/>
@@ -211,6 +212,7 @@
       <fields>
         <field name="LCSC">C74593</field>
         <field name="MPN">RVT1E331M0810</field>
+        <field name="SKU">508000001</field>
       </fields>
       <libsource lib="OPL_Capacitor" part="DIP-ALUMINUM-47UF-16V_D5-H7MM_" description=""/>
       <sheetpath names="/Power/" tstamps="/5EAAC9A5/"/>
@@ -222,6 +224,7 @@
       <fields>
         <field name="LCSC">C113048</field>
         <field name="MPN">GRM155R71A333KA01D</field>
+        <field name="SKU">508000001</field>
       </fields>
       <libsource lib="OPL_Capacitor" part="CERAMIC-2.2UF-25V-10%-X7R_0805_" description=""/>
       <sheetpath names="/Power/" tstamps="/5EAAC9A5/"/>
@@ -265,7 +268,7 @@
       <value>22UF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="MPN">CL10A226MQ8NRNC</field>
+        <field name="MPN">CL10A226MQ8NRNE</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/Power/" tstamps="/5EAAC9A5/"/>
@@ -277,7 +280,9 @@
       <datasheet>https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf</datasheet>
       <fields>
         <field name="LCSC">C192315</field>
-        <field name="MPN">TJ-S1608SW6TGLC2R-A5</field>
+        <field name="Link">https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html</field>
+        <field name="MPN">19-217-R6C-AL1M2VY-3T</field>
+        <field name="SKU">304090042</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Power/" tstamps="/5EAAC9A5/"/>
@@ -794,6 +799,7 @@
       <datasheet>http://file.elecfans.com/web1/M00/7D/4D/o4YBAFwKKSOANZPCAA-X9Qix-h8480.pdf</datasheet>
       <fields>
         <field name="MPN">0402B471K500NT</field>
+        <field name="SKU">508000001</field>
       </fields>
       <libsource lib="OPL_Capacitor" part="CERAMIC-100NF-50V-10%-X7R_0805_" description=""/>
       <sheetpath names="/AudioAmp/" tstamps="/5EA9C67D/"/>
@@ -805,6 +811,7 @@
       <datasheet>http://file.elecfans.com/web1/M00/7D/4D/o4YBAFwKKSOANZPCAA-X9Qix-h8480.pdf</datasheet>
       <fields>
         <field name="MPN">0402B471K500NT</field>
+        <field name="SKU">508000001</field>
       </fields>
       <libsource lib="OPL_Capacitor" part="CERAMIC-100NF-50V-10%-X7R_0805_" description=""/>
       <sheetpath names="/AudioAmp/" tstamps="/5EA9C67D/"/>
@@ -816,6 +823,7 @@
       <datasheet>http://file.elecfans.com/web1/M00/7D/4D/o4YBAFwKKSOANZPCAA-X9Qix-h8480.pdf</datasheet>
       <fields>
         <field name="MPN">0402B471K500NT</field>
+        <field name="SKU">508000001</field>
       </fields>
       <libsource lib="OPL_Capacitor" part="CERAMIC-100NF-50V-10%-X7R_0805_" description=""/>
       <sheetpath names="/AudioAmp/" tstamps="/5EA9C67D/"/>
@@ -827,6 +835,7 @@
       <datasheet>http://file.elecfans.com/web1/M00/7D/4D/o4YBAFwKKSOANZPCAA-X9Qix-h8480.pdf</datasheet>
       <fields>
         <field name="MPN">0402B471K500NT</field>
+        <field name="SKU">508000001</field>
       </fields>
       <libsource lib="OPL_Capacitor" part="CERAMIC-100NF-50V-10%-X7R_0805_" description=""/>
       <sheetpath names="/AudioAmp/" tstamps="/5EA9C67D/"/>
@@ -838,6 +847,7 @@
       <datasheet>http://file.elecfans.com/web1/M00/7D/4D/o4YBAFwKKSOANZPCAA-X9Qix-h8480.pdf</datasheet>
       <fields>
         <field name="MPN">0402B471K500NT</field>
+        <field name="SKU">508000001</field>
       </fields>
       <libsource lib="OPL_Capacitor" part="CERAMIC-100NF-50V-10%-X7R_0805_" description=""/>
       <sheetpath names="/AudioAmp/" tstamps="/5EA9C67D/"/>
@@ -849,6 +859,7 @@
       <datasheet>http://file.elecfans.com/web1/M00/7D/4D/o4YBAFwKKSOANZPCAA-X9Qix-h8480.pdf</datasheet>
       <fields>
         <field name="MPN">0402B471K500NT</field>
+        <field name="SKU">508000001</field>
       </fields>
       <libsource lib="OPL_Capacitor" part="CERAMIC-100NF-50V-10%-X7R_0805_" description=""/>
       <sheetpath names="/AudioAmp/" tstamps="/5EA9C67D/"/>
@@ -1185,6 +1196,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1207,6 +1219,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1229,6 +1242,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1240,6 +1254,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1251,6 +1266,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1262,6 +1278,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1273,6 +1290,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1284,6 +1302,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1295,6 +1314,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1306,6 +1326,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1317,6 +1338,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1328,6 +1350,7 @@
       <footprint>user:LED_WS2813_3.5x3.5mm_P1.1mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf</datasheet>
       <fields>
+        <field name="Link">https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html</field>
         <field name="MPN">WS2813-MINI(WS2813-3535)</field>
       </fields>
       <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
@@ -1360,7 +1383,9 @@
       <datasheet>https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf</datasheet>
       <fields>
         <field name="LCSC">C192315</field>
-        <field name="MPN">TJ-S1608SW6TGLC2R-A5</field>
+        <field name="Link">https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html</field>
+        <field name="MPN">19-217-R6C-AL1M2VY-3T</field>
+        <field name="SKU">304090042</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/RaspberryPi/" tstamps="/5EA9C461/"/>
@@ -1383,7 +1408,9 @@
       <datasheet>https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf</datasheet>
       <fields>
         <field name="LCSC">C192315</field>
-        <field name="MPN">TJ-S1608SW6TGLC2R-A5</field>
+        <field name="Link">https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html</field>
+        <field name="MPN">19-217-R6C-AL1M2VY-3T</field>
+        <field name="SKU">304090042</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/RaspberryPi/" tstamps="/5EA9C461/"/>
@@ -1406,7 +1433,9 @@
       <datasheet>https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf</datasheet>
       <fields>
         <field name="LCSC">C192315</field>
-        <field name="MPN">TJ-S1608SW6TGLC2R-A5</field>
+        <field name="Link">https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html</field>
+        <field name="MPN">19-217-R6C-AL1M2VY-3T</field>
+        <field name="SKU">304090042</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/RaspberryPi/" tstamps="/5EA9C461/"/>
@@ -1429,7 +1458,9 @@
       <datasheet>https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf</datasheet>
       <fields>
         <field name="LCSC">C192315</field>
-        <field name="MPN">TJ-S1608SW6TGLC2R-A5</field>
+        <field name="Link">https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html</field>
+        <field name="MPN">19-217-R6C-AL1M2VY-3T</field>
+        <field name="SKU">304090042</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/RaspberryPi/" tstamps="/5EA9C461/"/>
@@ -1441,7 +1472,9 @@
       <datasheet>https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf</datasheet>
       <fields>
         <field name="LCSC">C192315</field>
-        <field name="MPN">TJ-S1608SW6TGLC2R-A5</field>
+        <field name="Link">https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html</field>
+        <field name="MPN">19-217-R6C-AL1M2VY-3T</field>
+        <field name="SKU">304090042</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/RaspberryPi/" tstamps="/5EA9C461/"/>
@@ -2303,7 +2336,9 @@
       <datasheet>https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf</datasheet>
       <fields>
         <field name="LCSC">C192315</field>
-        <field name="MPN">TJ-S1608SW6TGLC2R-A5</field>
+        <field name="Link">https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html</field>
+        <field name="MPN">19-217-R6C-AL1M2VY-3T</field>
+        <field name="SKU">304090042</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/xmos/" tstamps="/5EA9C76D/"/>

@@ -124,6 +124,7 @@ F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Horizontal" H 2150 2675 5
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2150 2675 50  0001 C CNN
 F 4 "FH412-2*20P 0.8U" H 2150 2675 50  0001 C CNN "MPN"
 F 5 "2X20 PIN 2.54MM DOUBLE ROW RIGHT ANGLE FEMALE PIN HEADER" H 2150 2675 50  0001 C CNN "Description"
+F 6 "https://www.taydaelectronics.com/connectors-sockets/2x20-pin-2-54mm-dounle-row-right-angle-female-pin-header.html" H 2150 2675 50  0001 C CNN "Link"
 	1    2150 2675
 	1    0    0    -1  
 $EndComp
@@ -609,6 +610,7 @@ F 1 "WS2813" H 1625 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 1625 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 1675 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 1575 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 1575 5575 50  0001 C CNN "Link"
 	1    1575 5575
 	1    0    0    -1  
 $EndComp
@@ -653,6 +655,7 @@ F 1 "WS2813" H 2325 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 2325 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 2375 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 2275 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 2275 5575 50  0001 C CNN "Link"
 	1    2275 5575
 	1    0    0    -1  
 $EndComp
@@ -709,6 +712,7 @@ F 1 "WS2813" H 3075 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 3075 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 3125 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 3025 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 3025 5575 50  0001 C CNN "Link"
 	1    3025 5575
 	1    0    0    -1  
 $EndComp
@@ -748,6 +752,7 @@ F 1 "WS2813" H 3800 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 3800 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 3850 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 3750 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 3750 5575 50  0001 C CNN "Link"
 	1    3750 5575
 	1    0    0    -1  
 $EndComp
@@ -775,6 +780,7 @@ F 1 "WS2813" H 4550 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 4550 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 4600 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 4500 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 4500 5575 50  0001 C CNN "Link"
 	1    4500 5575
 	1    0    0    -1  
 $EndComp
@@ -809,6 +815,7 @@ F 1 "WS2813" H 5250 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 5250 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 5300 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 5200 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 5200 5575 50  0001 C CNN "Link"
 	1    5200 5575
 	1    0    0    -1  
 $EndComp
@@ -836,6 +843,8 @@ F 1 "WS2813" H 6000 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 6000 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 6050 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 5950 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 5950 5575 50  0001 C CNN "Link"
+F 6 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 5950 5575 50  0001 C CNN "Link"
 	1    5950 5575
 	1    0    0    -1  
 $EndComp
@@ -870,6 +879,7 @@ F 1 "WS2813" H 6725 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 6725 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 6775 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 6675 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 6675 5575 50  0001 C CNN "Link"
 	1    6675 5575
 	1    0    0    -1  
 $EndComp
@@ -897,6 +907,7 @@ F 1 "WS2813" H 7425 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 7425 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 7475 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 7375 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 7375 5575 50  0001 C CNN "Link"
 	1    7375 5575
 	1    0    0    -1  
 $EndComp
@@ -977,6 +988,8 @@ F 1 "WS2813" H 8100 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 8100 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 8150 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 8050 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 8050 5575 50  0001 C CNN "Link"
+F 6 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 8050 5575 50  0001 C CNN "Link"
 	1    8050 5575
 	1    0    0    -1  
 $EndComp
@@ -1035,6 +1048,7 @@ F 1 "WS2813" H 9500 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 9500 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 9550 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 9450 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 9450 5575 50  0001 C CNN "Link"
 	1    9450 5575
 	1    0    0    -1  
 $EndComp
@@ -1060,6 +1074,7 @@ F 1 "WS2813" H 8800 5825 50  0000 L CNN
 F 2 "user:LED_WS2813_3.5x3.5mm_P1.1mm" H 8800 5275 50  0001 L TNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf" H 8850 5200 50  0001 L TNN
 F 4 "WS2813-MINI(WS2813-3535)" H 8750 5575 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Others_WS2813-Mini-WS2813-3535_C189639.html" H 8750 5575 50  0001 C CNN "Link"
 	1    8750 5575
 	1    0    0    -1  
 $EndComp
@@ -1346,6 +1361,7 @@ F 2 "LED_SMD:LED_0603_1608Metric" H 8850 3675 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf" H 8850 3675 50  0001 C CNN
 F 4 "TJ-S1608SW6TGLC2R-A5" H 8850 3675 50  0001 C CNN "MPN"
 F 5 "C192315" H 8850 3675 50  0001 C CNN "LCSC"
+F 6 "https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html" H 8850 3675 50  0001 C CNN "Link"
 	1    8850 3675
 	1    0    0    -1  
 $EndComp
@@ -1390,6 +1406,7 @@ F 2 "LED_SMD:LED_0603_1608Metric" H 8850 3825 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf" H 8850 3825 50  0001 C CNN
 F 4 "TJ-S1608SW6TGLC2R-A5" H 8850 3825 50  0001 C CNN "MPN"
 F 5 "C192315" H 8850 3825 50  0001 C CNN "LCSC"
+F 6 "https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html" H 8850 3825 50  0001 C CNN "Link"
 	1    8850 3825
 	-1   0    0    1   
 $EndComp
@@ -1434,6 +1451,7 @@ F 2 "LED_SMD:LED_0603_1608Metric" H 9225 4450 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf" H 9225 4450 50  0001 C CNN
 F 4 "TJ-S1608SW6TGLC2R-A5" H 9225 4450 50  0001 C CNN "MPN"
 F 5 "C192315" H 9225 4450 50  0001 C CNN "LCSC"
+F 6 "https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html" H 9225 4450 50  0001 C CNN "Link"
 	1    9225 4450
 	0    -1   -1   0   
 $EndComp
@@ -1465,6 +1483,7 @@ F 2 "LED_SMD:LED_0603_1608Metric" H 8850 4125 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf" H 8850 4125 50  0001 C CNN
 F 4 "TJ-S1608SW6TGLC2R-A5" H 8850 4125 50  0001 C CNN "MPN"
 F 5 "C192315" H 8850 4125 50  0001 C CNN "LCSC"
+F 6 "https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html" H 8850 4125 50  0001 C CNN "Link"
 	1    8850 4125
 	1    0    0    -1  
 $EndComp
@@ -1480,6 +1499,7 @@ F 2 "LED_SMD:LED_0603_1608Metric" H 8850 4275 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf" H 8850 4275 50  0001 C CNN
 F 4 "TJ-S1608SW6TGLC2R-A5" H 8850 4275 50  0001 C CNN "MPN"
 F 5 "C192315" H 8850 4275 50  0001 C CNN "LCSC"
+F 6 "https://lcsc.com/product-detail/Others_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.html" H 8850 4275 50  0001 C CNN "Link"
 	1    8850 4275
 	-1   0    0    1   
 $EndComp
