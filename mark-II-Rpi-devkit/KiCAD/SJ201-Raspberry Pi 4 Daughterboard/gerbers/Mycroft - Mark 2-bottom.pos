@@ -1,4 +1,4 @@
-### Module positions - created on 07/13/20 18:59:20 ###
+### Module positions - created on 07/14/20 17:50:43 ###
 ### Printed by Pcbnew version kicad (5.1.6)-1
 ## Unit = mm, Angle = deg.
 ## Side : bottom
@@ -26,9 +26,9 @@ R43       100R      R_0402_1005Metric             -24.1046   -14.7405  180.0000 
 R44       100R      R_0402_1005Metric             -24.1046   -13.3350    0.0000  bottom
 R45       100R      R_0402_1005Metric             -24.3078   -84.5566    0.0000  bottom
 R46       100R      R_0402_1005Metric             -24.3078   -83.1342    0.0000  bottom
-S1        Action    SW_SPST_TL3342                 -9.7028   -23.8760    0.0000  bottom
-S2        VolUp     SW_SPST_TL3342                 -9.1440   -43.6880    0.0000  bottom
-S3        VolDown   SW_SPST_TL3342                 -9.0424   -63.7540    0.0000  bottom
+S1        Action    SW_SPST_TL3342                 -4.8616   -23.6220   90.0000  bottom
+S2        VolUp     SW_SPST_TL3342                 -4.8666   -43.7134   90.0000  bottom
+S3        VolDown   SW_SPST_TL3342                 -4.8158   -63.6880   90.0000  bottom
 SW1       MuteMic   SW_SPDT_PCM12                 -11.2268   -83.8200   90.0000  bottom
 U10       MP34DT05  HCLGA-MP34DT05                -25.1968   -18.7960  270.0000  bottom
 U11       MP34DT05  HCLGA-MP34DT05                -25.1968   -88.6460  270.0000  bottom
