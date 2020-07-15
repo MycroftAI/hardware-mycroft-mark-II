@@ -42,4 +42,9 @@ This interface makes a landscape form factor the most viable for this prototype.
 * **Always keep the open license** – contribute your output back to the community
 * **Credit the original author(s)** – like they do in science
 
+## Feedback or ideas
 
+We are always keen to hear from the community about ways to improve these designs. Whether you're a hacker, maker, engineer, or something else - join us in the:
+- [Community Forums](https://community.mycroft.ai)
+- [Community Chat](https://chat.mycroft.ai)
+- or email us at [dev@mycroft.ai](mailto:dev@mycroft.ai)
