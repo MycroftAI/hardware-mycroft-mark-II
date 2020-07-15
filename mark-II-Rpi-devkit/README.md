@@ -13,8 +13,8 @@ The SJ201 can also be used as a USB microphone array with barge-in support. In t
 
 The part number SJ201 is derived from Mike’s “Simon Jester” alias in “The Moon is a Harsh Mistress”.
 
-<img src="../../images/pcb-render-v0.60-back.png" width="500">
-<img src="../../images/pcb-render-v0.60-front.png" width="500">
+<img src="./images/pcb-render-v0.60-back.png" width="500">
+<img src="./images/pcb-render-v0.60-front.png" width="500">
 
 ### Major Components
 * USB Soundcard (PCM2706)
@@ -33,7 +33,7 @@ The SJ201 connects to the Raspberry Pi GPIO header at a 90 degree angle. This al
 
 This interface makes a landscape form factor the most viable for this prototype. The blocking of the major components can be found within the [Mechanical CAD > MkII Blocking r2.zip](./Mechanical%20Cad/MkII%20Blocking%20r2.zip). 
 
-<img src="../../images/Mark II Mechanical Blocking.png" width="500">
+<img src="./images/Mark II Mechanical Blocking.png" width="500">
 
 ## Our open hardware principles
 * **Copy our designs** – build your own Mycroft Mark 2 - Raspberry Pi Edition or its individual parts
