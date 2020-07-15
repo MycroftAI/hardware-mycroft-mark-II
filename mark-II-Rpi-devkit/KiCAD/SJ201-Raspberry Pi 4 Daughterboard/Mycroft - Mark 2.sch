@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 6
 Title ""
-Date "2020-07-10"
-Rev "0.59"
+Date "2020-07-14"
+Rev "0.60"
 Comp "Mycroft"
 Comment1 ""
 Comment2 ""

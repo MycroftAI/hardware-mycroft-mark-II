@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 5 6
 Title "Raspberry Pi"
-Date "2020-07-10"
-Rev "0.59"
+Date "2020-07-14"
+Rev "0.60"
 Comp "Mycroft"
 Comment1 "MCU Connections"
 Comment2 ""
@@ -120,10 +120,11 @@ U 1 1 5EAA46AA
 P 2150 2675
 F 0 "J6" H 2150 4156 50  0000 C CNN
 F 1 "Raspberry_Pi_4" H 2895 4110 50  0000 C CNN
-F 2 "user:PinSocket_2x20_P2.54mm_RightAngle_SMD" H 2150 2675 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Horizontal" H 2150 2675 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2150 2675 50  0001 C CNN
-F 4 "609-5967-ND" H 2150 2675 50  0001 C CNN "Digikey"
-F 5 "71609-320LF" H 2150 2675 50  0001 C CNN "MPN"
+F 4 "FH412-2*20P 0.8U" H 2150 2675 50  0001 C CNN "MPN"
+F 5 "2X20 PIN 2.54MM DOUBLE ROW RIGHT ANGLE FEMALE PIN HEADER" H 2150 2675 50  0001 C CNN "Description"
+F 6 "https://www.taydaelectronics.com/connectors-sockets/2x20-pin-2-54mm-dounle-row-right-angle-female-pin-header.html" H 2150 2675 50  0001 C CNN "Link"
 	1    2150 2675
 	1    0    0    -1  
 $EndComp
