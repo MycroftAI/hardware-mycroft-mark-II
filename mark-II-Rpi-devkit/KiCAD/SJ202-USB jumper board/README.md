@@ -1,4 +1,4 @@
-**SJ202-USB Jumper Board**
+# SJ202 - USB Jumper Board
 
 *⛵️ Note that this repository is a work-in-progress. It will be updated and improved on over time.*
 
