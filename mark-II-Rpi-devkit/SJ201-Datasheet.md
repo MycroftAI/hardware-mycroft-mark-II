@@ -110,7 +110,7 @@ If USB-C is an option, then USB-powered amplification could be achieved. In the 
 
 ## PCB Layout Checklist
 
-Boxes marked 🗹 are for version 0.58 of the KiCAD files.
+Boxes marked 🗹 are for version 0.60 of the KiCAD files.
 
 ### Layers - PCB checklist
 
