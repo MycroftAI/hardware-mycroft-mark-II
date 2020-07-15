@@ -31,7 +31,7 @@ For technical details of this board see the [SJ201-Datasheet](./KiCAD/SJ201-Rasp
 ## New Form Factor
 The SJ201 connects to the Raspberry Pi GPIO header at a 90 degree angle. This allows the microphone array and hardware inputs to be well positioned in the enclosure, whilst maintaining the simplicity of a direct connection to the main board. 
 
-This interface makes a landscape form factor the most viable for this prototype. The blocking of the major components can be found within the [Mechanical CAD > MkII Blocking r2.zip](./Mechanical%20Cad/MkII%20Blocking%20r2.zip). 
+This interface makes a landscape form factor the most viable for this prototype. The blocking of the major components can be found within the [Mechanical CAD > MkII Blocking r2.zip](./Mechanical%20CAD/MkII%20Blocking%20r2.zip). 
 
 <img src="./images/Mark II Mechanical Blocking.png" width="500">
 
