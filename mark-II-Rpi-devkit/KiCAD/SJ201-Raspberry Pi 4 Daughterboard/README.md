@@ -10,8 +10,8 @@ The SJ201 can also be used as a USB microphone array with barge-in support. In t
 
 The part number SJ201 is derived from Mike’s “Simon Jester” alias in “The Moon is a Harsh Mistress”.
 
-<img src="../../images/pcb-render-v0.60-back.png" width="500">
-<img src="../../images/pcb-render-v0.60-front.png" width="500">
+<img src="../../images/pcb-render-v0.63-back.png" width="500">
+<img src="../../images/pcb-render-v0.63-front.png" width="500">
 
 ## About this Document
 
