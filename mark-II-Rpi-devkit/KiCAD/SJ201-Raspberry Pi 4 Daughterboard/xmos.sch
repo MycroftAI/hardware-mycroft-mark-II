@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
 Title ""
-Date "2020-07-23"
-Rev "0.64"
+Date "2020-07-24"
+Rev "0.65"
 Comp ""
 Comment1 ""
 Comment2 ""

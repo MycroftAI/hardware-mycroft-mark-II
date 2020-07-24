@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 2 6
 Title "Power"
-Date "2020-07-23"
-Rev "0.64"
+Date "2020-07-24"
+Rev "0.65"
 Comp "Mycroft"
 Comment1 "Power Converter"
 Comment2 ""
@@ -1978,11 +1978,11 @@ AR Path="/5EAAC9A5/5F55AC7B" Ref="J1"  Part="1"
 AR Path="/5EA9C461/5F55AC7B" Ref="J1"  Part="1" 
 F 0 "J1" H 2682 3050 50  0000 C CNN
 F 1 "Barrel_Jack" H 2682 2959 50  0000 C CNN
-F 2 "mycroft:CUI_PJ-090H" H 2675 2685 50  0001 C CNN
-F 3 "https://www.cuidevices.com/product/resource/pj-090h.pdf" H 2675 2685 50  0001 C CNN
-F 4 "PJ-090H" H 2625 2725 50  0001 C CNN "MPN"
-F 5 "102-5561-2-ND" H 2625 2725 50  0001 C CNN "Digikey"
-F 6 "https://www.digikey.com/product-detail/en/cui-devices/PJ-090H/102-5561-1-ND/9830192" H 2625 2725 50  0001 C CNN "Link"
+F 2 "user:BarrelJack_Vertical" H 2675 2685 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2002271745_XKB-Connectivity-DC-012-5A-2-0_C381117.pdf" H 2675 2685 50  0001 C CNN
+F 4 "DC-012-5A-2.0" H 2625 2725 50  0001 C CNN "MPN"
+F 5 "https://lcsc.com/product-detail/Power-Connectors_XKB-Connectivity-DC-012-5A-2-0_C381117.html" H 2625 2725 50  0001 C CNN "Link"
+F 6 "C381117" H 2625 2725 50  0001 C CNN "LCSC"
 	1    2625 2725
 	1    0    0    -1  
 $EndComp

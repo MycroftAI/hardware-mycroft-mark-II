@@ -27,7 +27,7 @@
 "MountingHole","H5","mycroft_logo_graphic","no_part_number"
 "MountingHole","H6","OSHW-Symbol_6.7x6mm_SilkScreen","no_part_number"
 "MountingHole","H7","mycroft_logo_words","no_part_number"
-"Barrel_Jack","J1","CUI_PJ-090H","no_part_number"
+"Barrel_Jack","J1","BarrelJack_Vertical","C381117"
 "PVDD Jumper","J2","SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm","no_part_number"
 "SPKLEFT","J3","JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical","no_part_number"
 "SPKRIGHT","J4","JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical","no_part_number"

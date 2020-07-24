@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 5 6
 Title "Raspberry Pi"
-Date "2020-07-23"
-Rev "0.64"
+Date "2020-07-24"
+Rev "0.65"
 Comp "Mycroft"
 Comment1 "MCU Connections"
 Comment2 ""

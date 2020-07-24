@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>C:\Dropbox\Crashspace\Mycroft\KiCAD\Mycroft - Mark 2\Mycroft - Mark 2.sch</source>
-    <date>7/23/2020 11:07:47 PM</date>
+    <date>7/24/2020 10:26:27 AM</date>
     <tool>Eeschema (5.1.6)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
         <company>Mycroft</company>
-        <rev>0.64</rev>
-        <date>2020-07-23</date>
+        <rev>0.65</rev>
+        <date>2020-07-24</date>
         <source>Mycroft - Mark 2.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -21,8 +21,8 @@
       <title_block>
         <title>Power</title>
         <company>Mycroft</company>
-        <rev>0.64</rev>
-        <date>2020-07-23</date>
+        <rev>0.65</rev>
+        <date>2020-07-24</date>
         <source>Power.sch</source>
         <comment number="1" value="Power Converter"/>
         <comment number="2" value=""/>
@@ -34,8 +34,8 @@
       <title_block>
         <title/>
         <company>Mycroft</company>
-        <rev>0.64</rev>
-        <date>2020-07-23</date>
+        <rev>0.65</rev>
+        <date>2020-07-24</date>
         <source>AudioAmp.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -47,8 +47,8 @@
       <title_block>
         <title/>
         <company/>
-        <rev>0.64</rev>
-        <date>2020-07-23</date>
+        <rev>0.65</rev>
+        <date>2020-07-24</date>
         <source>monitor.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -60,8 +60,8 @@
       <title_block>
         <title>Raspberry Pi</title>
         <company>Mycroft</company>
-        <rev>0.64</rev>
-        <date>2020-07-23</date>
+        <rev>0.65</rev>
+        <date>2020-07-24</date>
         <source>RaspberryPi.sch</source>
         <comment number="1" value="MCU Connections"/>
         <comment number="2" value=""/>
@@ -73,8 +73,8 @@
       <title_block>
         <title/>
         <company/>
-        <rev>0.64</rev>
-        <date>2020-07-23</date>
+        <rev>0.65</rev>
+        <date>2020-07-24</date>
         <source>xmos.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -298,12 +298,12 @@
     </comp>
     <comp ref="J1">
       <value>Barrel_Jack</value>
-      <footprint>mycroft:CUI_PJ-090H</footprint>
-      <datasheet>https://www.cuidevices.com/product/resource/pj-090h.pdf</datasheet>
+      <footprint>user:BarrelJack_Vertical</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/2002271745_XKB-Connectivity-DC-012-5A-2-0_C381117.pdf</datasheet>
       <fields>
-        <field name="Digikey">102-5561-2-ND</field>
-        <field name="Link">https://www.digikey.com/product-detail/en/cui-devices/PJ-090H/102-5561-1-ND/9830192</field>
-        <field name="MPN">PJ-090H</field>
+        <field name="LCSC">C381117</field>
+        <field name="Link">https://lcsc.com/product-detail/Power-Connectors_XKB-Connectivity-DC-012-5A-2-0_C381117.html</field>
+        <field name="MPN">DC-012-5A-2.0</field>
       </fields>
       <libsource lib="Connector" part="Barrel_Jack_Switch" description="DC Barrel Jack with an internal switch"/>
       <sheetpath names="/Power/" tstamps="/5EAAC9A5/"/>
