@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
 Title ""
-Date "2020-07-22"
-Rev "0.63"
+Date "2020-07-23"
+Rev "0.64"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -16678,20 +16678,10 @@ F 3 "" H 850 4400 50  0001 C CNN
 	1    850  4400
 	1    0    0    -1  
 $EndComp
-Text GLabel 4325 1450 2    51   Output ~ 0
+Text GLabel 4175 1450 2    51   Output ~ 0
 I2S_DOUT
 Wire Wire Line
-	4025 1450 4325 1450
-Wire Wire Line
-	4325 1550 4025 1550
-Wire Wire Line
-	4025 1650 4325 1650
-Wire Wire Line
-	4325 1750 4025 1750
-Wire Wire Line
 	4025 2050 4025 1950
-Text GLabel 4325 1950 2    51   BiDi ~ 0
-MCLK
 Wire Wire Line
 	4025 1950 4325 1950
 Connection ~ 4025 1950
@@ -17220,48 +17210,12 @@ Wire Notes Line
 	11100 1350 9025 1350
 Text Notes 10400 5725 0    63   ~ 0
 Optional Mic:\nIM69D130
-Text GLabel 4825 1950 2    51   BiDi ~ 0
+Text GLabel 4325 1950 2    51   BiDi ~ 0
 I2S_SCK
-Text GLabel 4825 1750 2    51   BiDi ~ 0
-I2S_BCK
-Text GLabel 4825 1550 2    51   Input ~ 0
+Text GLabel 4025 1550 2    51   Input ~ 0
 I2S_DATA
-Text GLabel 4825 1650 2    51   BiDi ~ 0
-I2S_LRCK
-Wire Wire Line
-	4825 1750 4825 1800
-Wire Wire Line
-	4825 1800 4325 1800
-Wire Wire Line
-	4325 1800 4325 1750
-Wire Wire Line
-	4825 1650 4825 1700
-Wire Wire Line
-	4825 1700 4325 1700
-Wire Wire Line
-	4325 1700 4325 1650
-Wire Wire Line
-	4825 1550 4825 1600
-Wire Wire Line
-	4825 1600 4325 1600
-Wire Wire Line
-	4325 1600 4325 1550
-Wire Wire Line
-	4825 1950 4825 2000
-Wire Wire Line
-	4825 2000 4325 2000
-Wire Wire Line
-	4325 2000 4325 1950
-Text Notes 4800 1475 0    63   ~ 0
+Text Notes 5050 1175 0    63   ~ 0
 I2S Data from \nUSB Soundcard
-Wire Notes Line
-	4775 1275 4775 2100
-Wire Notes Line
-	4775 2100 5775 2100
-Wire Notes Line
-	5775 2100 5775 1275
-Wire Notes Line
-	5775 1275 4775 1275
 $Comp
 L kevin:Ferrite_Bead_Small FB6
 U 1 1 5F22AB88
@@ -17926,147 +17880,6 @@ Wire Wire Line
 	4725 2850 4025 2850
 Wire Wire Line
 	4025 3050 4725 3050
-$Comp
-L user:74LVC125A U5
-U 1 1 5F0C90C8
-P 7200 3375
-F 0 "U5" H 7125 3803 51  0000 C CNN
-F 1 "SN74LVC125APWR" H 7125 3710 51  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7250 3425 51  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-SN74LVC125APWR_C7813.pdf" H 7250 3425 51  0001 C CNN
-F 4 "C7813" H 7200 3375 50  0001 C CNN "LCSC"
-F 5 "SN74LVC125APWR" H 7200 3375 50  0001 C CNN "MPN"
-	1    7200 3375
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F0CAADF
-P 7650 4225
-AR Path="/5EA9C461/5F0CAADF" Ref="#PWR?"  Part="1" 
-AR Path="/5EA9C67D/5F0CAADF" Ref="#PWR?"  Part="1" 
-AR Path="/5EA9C76D/5F0CAADF" Ref="#PWR0142"  Part="1" 
-F 0 "#PWR0142" H 7650 3975 50  0001 C CNN
-F 1 "GND" H 7655 4052 50  0000 C CNN
-F 2 "" H 7650 4225 50  0001 C CNN
-F 3 "" H 7650 4225 50  0001 C CNN
-	1    7650 4225
-	1    0    0    -1  
-$EndComp
-NoConn ~ 7650 3925
-$Comp
-L power:GND #PWR?
-U 1 1 5F0E4F04
-P 6600 4225
-AR Path="/5EA9C461/5F0E4F04" Ref="#PWR?"  Part="1" 
-AR Path="/5EA9C67D/5F0E4F04" Ref="#PWR?"  Part="1" 
-AR Path="/5EA9C76D/5F0E4F04" Ref="#PWR0143"  Part="1" 
-F 0 "#PWR0143" H 6600 3975 50  0001 C CNN
-F 1 "GND" H 6605 4052 50  0000 C CNN
-F 2 "" H 6600 4225 50  0001 C CNN
-F 3 "" H 6600 4225 50  0001 C CNN
-	1    6600 4225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 3925 6600 4025
-Connection ~ 6600 4025
-Wire Wire Line
-	6600 4025 6600 4225
-Text Label 6000 3325 0    51   ~ 0
-MIC_DATA_M
-Wire Wire Line
-	6000 3325 6425 3325
-$Comp
-L power:+3.3V #PWR0144
-U 1 1 5F10E175
-P 7650 3175
-F 0 "#PWR0144" H 7650 3025 50  0001 C CNN
-F 1 "+3.3V" H 7665 3348 50  0000 C CNN
-F 2 "" H 7650 3175 50  0001 C CNN
-F 3 "" H 7650 3175 50  0001 C CNN
-	1    7650 3175
-	1    0    0    -1  
-$EndComp
-Text GLabel 5925 3825 0    51   Input ~ 0
-MIC_OFF
-Wire Wire Line
-	5925 3825 5975 3825
-Wire Wire Line
-	6500 3825 6500 3625
-Wire Wire Line
-	6500 3625 6600 3625
-Wire Wire Line
-	6500 3825 6600 3825
-Wire Wire Line
-	6500 3625 6500 3425
-Wire Wire Line
-	6500 3425 6600 3425
-Connection ~ 6500 3625
-$Comp
-L Device:R_Small R?
-U 1 1 5F149298
-P 5975 4000
-AR Path="/5EA9C461/5F149298" Ref="R?"  Part="1" 
-AR Path="/5EA9C67D/5F149298" Ref="R?"  Part="1" 
-AR Path="/5EA9C76D/5F149298" Ref="R39"  Part="1" 
-F 0 "R39" H 6025 4075 50  0000 L CNN
-F 1 "10k" H 6025 3950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5975 4000 50  0001 C CNN
-F 3 "~" H 5975 4000 50  0001 C CNN
-F 4 "RC0402FR-0710KL" H 5975 4000 50  0001 C CNN "MPN"
-F 5 "C25744" H 5975 4000 50  0001 C CNN "LCSC"
-	1    5975 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F156CF3
-P 5975 4100
-AR Path="/5EA9C461/5F156CF3" Ref="#PWR?"  Part="1" 
-AR Path="/5EA9C67D/5F156CF3" Ref="#PWR?"  Part="1" 
-AR Path="/5EA9C76D/5F156CF3" Ref="#PWR0145"  Part="1" 
-F 0 "#PWR0145" H 5975 3850 50  0001 C CNN
-F 1 "GND" H 5980 3927 50  0000 C CNN
-F 2 "" H 5975 4100 50  0001 C CNN
-F 3 "" H 5975 4100 50  0001 C CNN
-	1    5975 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5975 3900 5975 3825
-Connection ~ 5975 3825
-Text Label 8100 3325 2    51   ~ 0
-MIC_DATA
-Wire Wire Line
-	8100 3325 7650 3325
-Text Label 8125 3525 2    51   ~ 0
-MIC_CLK_M
-Wire Wire Line
-	8125 3525 7650 3525
-Text Label 6000 3525 0    51   ~ 0
-MIC_CLK
-Wire Wire Line
-	6600 3525 6000 3525
-$Comp
-L power:+3.3V #PWR0146
-U 1 1 5F1A10A0
-P 6300 3700
-F 0 "#PWR0146" H 6300 3550 50  0001 C CNN
-F 1 "+3.3V" H 6150 3750 50  0000 C CNN
-F 2 "" H 6300 3700 50  0001 C CNN
-F 3 "" H 6300 3700 50  0001 C CNN
-	1    6300 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 3725 6300 3725
-Wire Wire Line
-	6300 3725 6300 3700
-Text Label 8125 3725 2    51   ~ 0
-3V3_MIC
-Wire Wire Line
-	7650 3725 8125 3725
 Text Label 8975 1825 0    51   ~ 0
 3V3_MIC
 Text Label 8975 2650 0    51   ~ 0
@@ -18075,54 +17888,13 @@ Wire Wire Line
 	8975 1825 9500 1825
 Wire Wire Line
 	8975 2650 9500 2650
-$Comp
-L Device:R_Small R?
-U 1 1 5F22972D
-P 6325 4000
-AR Path="/5EA9C461/5F22972D" Ref="R?"  Part="1" 
-AR Path="/5EA9C67D/5F22972D" Ref="R?"  Part="1" 
-AR Path="/5EA9C76D/5F22972D" Ref="R40"  Part="1" 
-AR Path="/5EAAC9A5/5F22972D" Ref="R?"  Part="1" 
-F 0 "R40" H 6125 3950 50  0000 L CNN
-F 1 "47K" H 6125 4050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6325 4000 50  0001 C CNN
-F 3 "~" H 6325 4000 50  0001 C CNN
-F 4 "RC0402JR-0747KL" H 6325 4000 50  0001 C CNN "MPN"
-F 5 "301010005" H 6325 4000 50  0001 C CNN "SKU"
-F 6 "C25792" H 6325 4000 50  0001 C CNN "LCSC"
-	1    6325 4000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6325 4100 5975 4100
-Connection ~ 5975 4100
-Wire Wire Line
-	5975 3825 6500 3825
-Connection ~ 6500 3825
-Wire Wire Line
-	6325 3900 6325 3875
-Wire Wire Line
-	6325 3875 6425 3875
-Wire Wire Line
-	6425 3875 6425 3325
-Connection ~ 6425 3325
-Wire Wire Line
-	6425 3325 6600 3325
 Wire Notes Line
 	5450 2875 5450 4550
-Wire Notes Line
-	5450 4550 8275 4550
-Wire Notes Line
-	8275 4550 8275 2875
-Wire Notes Line
-	8275 2875 5450 2875
 Text Notes 6125 2975 0    51   ~ 0
 Mic Off
-Text GLabel 4325 1550 2    51   Input ~ 0
-I2S_DIN
-Text GLabel 4325 1750 2    51   BiDi ~ 0
+Text GLabel 4025 1750 2    51   BiDi ~ 0
 I2S_BCLK
-Text GLabel 4325 1650 2    51   BiDi ~ 0
+Text GLabel 4025 1650 2    51   BiDi ~ 0
 I2S_LRCK
 $Bitmap
 Pos 1500 9200
@@ -19177,4 +18949,204 @@ F 4 "C25077" H 2150 5350 50  0001 C CNN "LCSC"
 $EndComp
 Text Notes 1625 5325 0    50   ~ 0
 43R2 \ncombined \n2 Resistors 
+Wire Wire Line
+	6325 3325 6500 3325
+Connection ~ 6325 3325
+Wire Wire Line
+	6325 3875 6325 3325
+Wire Wire Line
+	6225 3875 6325 3875
+Wire Wire Line
+	6225 3900 6225 3875
+Connection ~ 6400 3825
+Wire Wire Line
+	5875 3825 6400 3825
+Connection ~ 5875 4100
+Wire Wire Line
+	6225 4100 5875 4100
+$Comp
+L Device:R_Small R?
+U 1 1 5F22972D
+P 6225 4000
+AR Path="/5EA9C461/5F22972D" Ref="R?"  Part="1" 
+AR Path="/5EA9C67D/5F22972D" Ref="R?"  Part="1" 
+AR Path="/5EA9C76D/5F22972D" Ref="R40"  Part="1" 
+AR Path="/5EAAC9A5/5F22972D" Ref="R?"  Part="1" 
+F 0 "R40" H 6025 3950 50  0000 L CNN
+F 1 "47K" H 6025 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6225 4000 50  0001 C CNN
+F 3 "~" H 6225 4000 50  0001 C CNN
+F 4 "RC0402JR-0747KL" H 6225 4000 50  0001 C CNN "MPN"
+F 5 "301010005" H 6225 4000 50  0001 C CNN "SKU"
+F 6 "C25792" H 6225 4000 50  0001 C CNN "LCSC"
+	1    6225 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 3725 6200 3700
+Wire Wire Line
+	6500 3725 6200 3725
+$Comp
+L power:+3.3V #PWR0146
+U 1 1 5F1A10A0
+P 6200 3700
+F 0 "#PWR0146" H 6200 3550 50  0001 C CNN
+F 1 "+3.3V" H 6050 3750 50  0000 C CNN
+F 2 "" H 6200 3700 50  0001 C CNN
+F 3 "" H 6200 3700 50  0001 C CNN
+	1    6200 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3525 5900 3525
+Text Label 5900 3525 0    51   ~ 0
+MIC_CLK
+Connection ~ 5875 3825
+Wire Wire Line
+	5875 3900 5875 3825
+$Comp
+L power:GND #PWR?
+U 1 1 5F156CF3
+P 5875 4100
+AR Path="/5EA9C461/5F156CF3" Ref="#PWR?"  Part="1" 
+AR Path="/5EA9C67D/5F156CF3" Ref="#PWR?"  Part="1" 
+AR Path="/5EA9C76D/5F156CF3" Ref="#PWR0145"  Part="1" 
+F 0 "#PWR0145" H 5875 3850 50  0001 C CNN
+F 1 "GND" H 5880 3927 50  0000 C CNN
+F 2 "" H 5875 4100 50  0001 C CNN
+F 3 "" H 5875 4100 50  0001 C CNN
+	1    5875 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F149298
+P 5875 4000
+AR Path="/5EA9C461/5F149298" Ref="R?"  Part="1" 
+AR Path="/5EA9C67D/5F149298" Ref="R?"  Part="1" 
+AR Path="/5EA9C76D/5F149298" Ref="R39"  Part="1" 
+F 0 "R39" H 5925 4075 50  0000 L CNN
+F 1 "10k" H 5925 3950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5875 4000 50  0001 C CNN
+F 3 "~" H 5875 4000 50  0001 C CNN
+F 4 "RC0402FR-0710KL" H 5875 4000 50  0001 C CNN "MPN"
+F 5 "C25744" H 5875 4000 50  0001 C CNN "LCSC"
+	1    5875 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6400 3625
+Wire Wire Line
+	6400 3425 6500 3425
+Wire Wire Line
+	6400 3625 6400 3425
+Wire Wire Line
+	6400 3825 6500 3825
+Wire Wire Line
+	6400 3625 6500 3625
+Wire Wire Line
+	6400 3825 6400 3625
+Wire Wire Line
+	5825 3825 5875 3825
+Text GLabel 5825 3825 0    51   Input ~ 0
+MIC_OFF
+$Comp
+L power:+3.3V #PWR0144
+U 1 1 5F10E175
+P 7550 3175
+F 0 "#PWR0144" H 7550 3025 50  0001 C CNN
+F 1 "+3.3V" H 7565 3348 50  0000 C CNN
+F 2 "" H 7550 3175 50  0001 C CNN
+F 3 "" H 7550 3175 50  0001 C CNN
+	1    7550 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3325 6325 3325
+Text Label 5900 3325 0    51   ~ 0
+MIC_DATA_M
+Wire Wire Line
+	6500 4025 6500 4225
+Connection ~ 6500 4025
+Wire Wire Line
+	6500 3925 6500 4025
+$Comp
+L power:GND #PWR?
+U 1 1 5F0E4F04
+P 6500 4225
+AR Path="/5EA9C461/5F0E4F04" Ref="#PWR?"  Part="1" 
+AR Path="/5EA9C67D/5F0E4F04" Ref="#PWR?"  Part="1" 
+AR Path="/5EA9C76D/5F0E4F04" Ref="#PWR0143"  Part="1" 
+F 0 "#PWR0143" H 6500 3975 50  0001 C CNN
+F 1 "GND" H 6505 4052 50  0000 C CNN
+F 2 "" H 6500 4225 50  0001 C CNN
+F 3 "" H 6500 4225 50  0001 C CNN
+	1    6500 4225
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7550 3925
+$Comp
+L power:GND #PWR?
+U 1 1 5F0CAADF
+P 7550 4225
+AR Path="/5EA9C461/5F0CAADF" Ref="#PWR?"  Part="1" 
+AR Path="/5EA9C67D/5F0CAADF" Ref="#PWR?"  Part="1" 
+AR Path="/5EA9C76D/5F0CAADF" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 7550 3975 50  0001 C CNN
+F 1 "GND" H 7555 4052 50  0000 C CNN
+F 2 "" H 7550 4225 50  0001 C CNN
+F 3 "" H 7550 4225 50  0001 C CNN
+	1    7550 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L user:74LVC125A U5
+U 1 1 5F0C90C8
+P 7100 3375
+F 0 "U5" H 7025 3803 51  0000 C CNN
+F 1 "SN74LVC125APWR" H 7025 3710 51  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7150 3425 51  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-SN74LVC125APWR_C7813.pdf" H 7150 3425 51  0001 C CNN
+F 4 "C7813" H 7100 3375 50  0001 C CNN "LCSC"
+F 5 "SN74LVC125APWR" H 7100 3375 50  0001 C CNN "MPN"
+	1    7100 3375
+	1    0    0    -1  
+$EndComp
+Text Label 7725 3450 0    51   ~ 0
+MIC_DATA
+Text Label 7725 3650 0    51   ~ 0
+3V3_MIC
+Text Label 7725 3550 0    51   ~ 0
+MIC_CLK_M
+$Comp
+L Connector_Generic:Conn_01x03 J8
+U 1 1 5FC5A62F
+P 8375 3550
+F 0 "J8" H 8350 3750 50  0000 L CNN
+F 1 "MIC" H 8300 3325 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8375 3550 50  0001 C CNN
+F 3 "~" H 8375 3550 50  0001 C CNN
+F 4 "C191721" H 8375 3550 50  0001 C CNN "LCSC"
+	1    8375 3550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8550 2875 8550 4550
+Wire Notes Line
+	5450 2875 8550 2875
+Wire Notes Line
+	5450 4550 8550 4550
+Wire Wire Line
+	7550 3550 7550 3525
+Wire Wire Line
+	7550 3450 7550 3325
+Wire Wire Line
+	7550 3450 8175 3450
+Wire Wire Line
+	7550 3550 8175 3550
+Wire Wire Line
+	7550 3725 7550 3650
+Wire Wire Line
+	7550 3650 8175 3650
+Wire Wire Line
+	4175 1450 4025 1450
 $EndSCHEMATC

@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 2 6
 Title "Power"
-Date "2020-07-22"
-Rev "0.63"
+Date "2020-07-23"
+Rev "0.64"
 Comp "Mycroft"
 Comment1 "Power Converter"
 Comment2 ""
@@ -2129,7 +2129,7 @@ F 2 "Capacitor_SMD:CP_Elec_8x10.5" H 6225 2725 50  0001 C CNN
 F 3 "https://statics3.seeedstudio.com/images/opl/datasheet/302030006.pdf" H 6225 2725 50  0001 C CNN
 F 4 "SMD CAP Aluminum 470uF-16V;D8.0*H10.2mm" H 6255 2875 20  0001 C CNN "MPN"
 F 5 "302030006" H 6255 2875 20  0001 C CNN "SKU"
-F 6 "C176671" H 6225 2725 50  0001 C CNN "LCSC"
+F 6 "C176671-DNP" H 6225 2725 50  0001 C CNN "LCSC"
 	1    6225 2725
 	1    0    0    -1  
 $EndComp
