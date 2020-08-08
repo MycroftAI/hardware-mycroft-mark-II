@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:\Dropbox\Crashspace\Mycroft\KiCAD\Mycroft - Mark 2\Mycroft - Mark 2.sch</source>
-    <date>7/24/2020 10:26:27 AM</date>
+    <date>7/25/2020 7:52:20 AM</date>
     <tool>Eeschema (5.1.6)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1120,6 +1120,7 @@
       <datasheet>https://gct.co/files/drawings/usb3076.pdf</datasheet>
       <fields>
         <field name="Digikey">2073-USB3076-30-ATR-ND</field>
+        <field name="LCSC">C319162</field>
         <field name="MPN">U254-051T-4BH83-F1B</field>
       </fields>
       <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
@@ -1563,6 +1564,7 @@
       <datasheet>https://www.ckswitches.com/media/1424/pcm.pdf</datasheet>
       <fields>
         <field name="Digikey">401-2016-2-ND</field>
+        <field name="LCSC">C221841</field>
         <field name="MPN">PCM12SMTR</field>
       </fields>
       <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
@@ -1876,7 +1878,7 @@
     </comp>
     <comp ref="U9">
       <value>AT25SF161 16MBIT</value>
-      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <footprint>Package_SO:SOIC-8_5.23x5.23mm_P1.27mm</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8707-SEEPROM-AT25010B-020B-040B-Datasheet.pdf</datasheet>
       <fields>
         <field name="Digikey">1265-1230-1-ND</field>
