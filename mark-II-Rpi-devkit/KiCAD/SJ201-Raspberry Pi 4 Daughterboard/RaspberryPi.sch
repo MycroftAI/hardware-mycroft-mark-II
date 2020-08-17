@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 5 6
 Title "Raspberry Pi"
-Date "2020-07-24"
-Rev "0.65"
+Date "2020-08-16"
+Rev "0.66"
 Comp "Mycroft"
 Comment1 "MCU Connections"
 Comment2 ""
@@ -1411,7 +1411,7 @@ U 1 1 5F4EDC05
 P 1225 6100
 F 0 "TP18" H 1175 6150 50  0000 R CNN
 F 1 "TestPoint" H 1175 6225 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1425 6100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 1425 6100 50  0001 C CNN
 F 3 "~" H 1425 6100 50  0001 C CNN
 	1    1225 6100
 	-1   0    0    1   
@@ -1655,7 +1655,7 @@ F 3 "" H 5825 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal_GND23 Y2
+L Device:Crystal_GND24 Y2
 U 1 1 5F963155
 P 5825 3825
 AR Path="/5EA9C461/5F963155" Ref="Y2"  Part="1" 

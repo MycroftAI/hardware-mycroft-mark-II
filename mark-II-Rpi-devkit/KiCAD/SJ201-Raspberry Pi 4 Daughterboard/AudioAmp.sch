@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 3 6
 Title ""
-Date "2020-07-24"
-Rev "0.65"
+Date "2020-08-16"
+Rev "0.66"
 Comp "Mycroft"
 Comment1 ""
 Comment2 ""
@@ -3100,7 +3100,7 @@ AR Path="/5EA9C461/5F10FC10" Ref="TP?"  Part="1"
 AR Path="/5EA9C67D/5F10FC10" Ref="TP24"  Part="1" 
 F 0 "TP24" V 3200 3150 50  0000 R CNN
 F 1 "TestPoint" V 3200 3550 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3400 2800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3400 2800 50  0001 C CNN
 F 3 "~" H 3400 2800 50  0001 C CNN
 	1    3200 2800
 	0    1    1    0   
@@ -3177,7 +3177,7 @@ AR Path="/5EA9C461/5F1D73CB" Ref="TP?"  Part="1"
 AR Path="/5EA9C67D/5F1D73CB" Ref="TP23"  Part="1" 
 F 0 "TP23" H 3725 2625 50  0000 R CNN
 F 1 "TestPoint" V 3675 3150 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3875 2400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3875 2400 50  0001 C CNN
 F 3 "~" H 3875 2400 50  0001 C CNN
 	1    3675 2400
 	1    0    0    -1  
@@ -3190,7 +3190,7 @@ AR Path="/5EA9C461/5F1D7808" Ref="TP?"  Part="1"
 AR Path="/5EA9C67D/5F1D7808" Ref="TP22"  Part="1" 
 F 0 "TP22" H 3750 2200 50  0000 R CNN
 F 1 "TestPoint" V 3675 2750 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3875 2000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3875 2000 50  0001 C CNN
 F 3 "~" H 3875 2000 50  0001 C CNN
 	1    3675 2000
 	1    0    0    -1  
