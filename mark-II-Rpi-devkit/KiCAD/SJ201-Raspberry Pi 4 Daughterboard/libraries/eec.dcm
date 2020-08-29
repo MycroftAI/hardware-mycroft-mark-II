@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TAS5711PHPR
+D TAS5711PHPR
+F http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TAS5711&fileType=pdf
+$ENDCMP
+# end doc library
