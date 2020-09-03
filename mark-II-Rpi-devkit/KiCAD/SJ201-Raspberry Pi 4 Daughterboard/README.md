@@ -364,6 +364,10 @@ MM is the manufacturing run number. Each run is assigned a new number, whether i
 
 
 ## Related Parts
+Not all of these parts will be used in a given Mark II assembly. For example, only one enclosure is needed, either the SJ230 (Laser-cut enclosure), or the SJ240 (FDM enclosure), etc.
+
+** TODO: Move this to it's own document. **
+
 <table>
 <tr>
     <th align="left" width="120px">Part number</th>
@@ -422,33 +426,45 @@ MM is the manufacturing run number. Each run is assigned a new number, whether i
     </td>
 </tr>
 <tr>
-    <td valign=top>SJ204-ZZ</td>
+    <td valign=top>SJ203</td>
     <td>
-    Retail packaging parts for production of MYC200, enclosure SJ205. ZZ = 00 to ??, for things like the printed cardbox box, quick-start pamphlet, etc. Not all of these parts will be used in a particular MYC20X manufacturing run, because it contains variants for different regions.
+    LCD Assembly. Connects via MIPI on the Pi 4. TODO: this will either be a sub-assembly or an off-the-shelf module. If it is an off-the-shelf module, there may be no SJ203-XX parts.
     </td>
 </tr>
 <tr>
-    <td valign=top>SJ205</td>
+    <td valign=top>SJ203-00</td>
     <td>
-    LCD with custom FPC. Connects via MIPI on the Pi 4.
+    LCD display. If this is an off-the-shelf module, then the part number would just be SJ203.
     </td>
 </tr>
 <tr>
-    <td valign=top>SJ206</td>
+    <td valign=top>SJ203-01</td>
     <td>
-    Camera. Connects via the Pi 4 CSI connector.
+    Video adapter board for display module. Includes 24V boost for backlight.
     </td>
 </tr>
 <tr>
-    <td valign=top>SJ207</td>
+    <td valign=top>SJ203-02</td>
+    <td>
+    (Example) 3mm M4 hexdrive screws for assembling display module.
+    </td>
+</tr>
+<tr>
+    <td valign=top>SJ210</td>
+    <td>
+    Camera. Connects via the Pi 4 CSI connector. Might end up being a sub-assembly, in which case there may be SJ210-XX parts.
+    </td>
+</tr>
+<tr>
+    <td valign=top>SJ220</td>
     <td>
     120V AC to 12V 3A DC power supply, N.A. style
     </td>
 </tr>
 <tr>
-    <td valign=top>SJ208</td>
+    <td valign=top>SJ221</td>
     <td>
-    The Raspberry Pi 4. This part number is used for specifying the correct part for purchase orders and to inventory it for final assembly.
+    The Raspberry Pi 4. This part number is used for specifying the correct part for purchase orders and to inventory it for final assembly. For example, we need firmware pre-flashed to a May 2020 or later version to support booting from USB.
     </td>
 </tr>
 <tr>
@@ -470,9 +486,15 @@ MM is the manufacturing run number. Each run is assigned a new number, whether i
     </td>
 </tr>
 <tr>
-    <td valign=top>SJ430-ZZ</td>
+    <td valign=top>SJ250-ZZ</td>
     <td>
     The FDM plastic enclosure parts, for ZZ = 00 to ??.
+    </td>
+</tr>
+<tr>
+    <td valign=top>SJ290-ZZ</td>
+    <td>
+    Retail packaging parts for production of MYC200, enclosure SJ205. ZZ = 00 to ??, for things like the printed cardbox box, quick-start pamphlet, etc. Not all of these parts will be used in a particular MYC20X manufacturing run, because it contains variants for different regions.
     </td>
 </tr>
 </table>
