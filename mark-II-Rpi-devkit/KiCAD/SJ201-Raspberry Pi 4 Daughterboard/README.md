@@ -422,18 +422,6 @@ MM is the manufacturing run number. Each run is assigned a new number, whether i
     </td>
 </tr>
 <tr>
-    <td valign=top>SJ203</td>
-    <td>
-    The plastic enclosure, design A (anticipating that there might be more than one form factor someday). This does not refer to a manufactured item, because the enclosure consists of multiple parts.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ203-ZZ</td>
-    <td>
-    The plastic enclosure parts, for ZZ = 00 to ??.
-    </td>
-</tr>
-<tr>
     <td valign=top>SJ204-ZZ</td>
     <td>
     Retail packaging parts for production of MYC200, enclosure SJ205. ZZ = 00 to ??, for things like the printed cardbox box, quick-start pamphlet, etc. Not all of these parts will be used in a particular MYC20X manufacturing run, because it contains variants for different regions.
@@ -461,6 +449,30 @@ MM is the manufacturing run number. Each run is assigned a new number, whether i
     <td valign=top>SJ208</td>
     <td>
     The Raspberry Pi 4. This part number is used for specifying the correct part for purchase orders and to inventory it for final assembly.
+    </td>
+</tr>
+<tr>
+    <td valign=top>SJ230</td>
+    <td>
+    A design for the laser-cut plastic enclosure. This does not refer to a manufactured item: it's the containter for all the parts of that enclosure, which are SJ230-00 through .. SJ230-XX.
+    </td>
+</tr>
+<tr>
+    <td valign=top>SJ230-ZZ</td>
+    <td>
+    The plastic enclosure parts, for ZZ = 00 to ??. These might be labeled only in the CAD file.
+    </td>
+</tr>
+<tr>
+    <td valign=top>SJ240</td>
+    <td>
+    An FDM plastic enclosure.
+    </td>
+</tr>
+<tr>
+    <td valign=top>SJ430-ZZ</td>
+    <td>
+    The FDM plastic enclosure parts, for ZZ = 00 to ??.
     </td>
 </tr>
 </table>
