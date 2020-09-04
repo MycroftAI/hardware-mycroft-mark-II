@@ -1,0 +1,24 @@
+update=9/4/2020 12:33:48 PM
+version=1
+last_client=kicad
+[general]
+version=1
+RootSch=
+BoardNm=
+[cvpcb]
+version=1
+NetIExt=net
+[eeschema]
+version=1
+LibDir=
+[eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=schematics_pdf
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=51
+ERC_TestSimilarLabels=1

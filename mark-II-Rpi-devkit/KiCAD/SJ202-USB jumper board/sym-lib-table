@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name USB3150-30-130-A)(type Legacy)(uri ${KIPRJMOD}/libraries/USB3150-30-130-A.lib)(options "")(descr ""))
+)
