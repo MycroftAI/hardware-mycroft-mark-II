@@ -18,7 +18,7 @@ The part number SJ201 is derived from Mike’s “Simon Jester” alias in “Th
 This Datasheet will contain all the relevant information for the manufacturing of the SJ201 including information about PCB design, PCB manufacturing process.
 
 ## Major Components
-* USB Soundcard (CM109B)
+* USB Soundcard (CM108B)
 * Audio Front End (XMOS XVF-3510) - for Microphone input processing
 * 20W Amplifier (Maxim Integrated MAX9744)
 * 2 Digital MEMS Microphones (ST Micro MP34DT05)
@@ -116,9 +116,9 @@ If USB-C is an option, then USB-powered amplification could be achieved. In the 
 
 ### USB Sound card
 
-- PCM2706
+- CM108B
 
-- <https://www.digikey.com/product-detail/en/texas-instruments/PCM2706CPJTR/296-40481-1-ND/5178358> 
+- <https://datasheet.lcsc.com/szlcsc/1912111437_Cmedia-CM108B_C371347.pdf> 
 
 ### USB Hub
 
@@ -192,9 +192,9 @@ A linear regulator is used to derive 3.3V from 5V.
 
 🗹  The L/R pin must be connected to Vdd or GND (refer to Table 6. L/R channel selection).
 
-### LED (WS2813-Mini)- PCB checklist
+### LED (WS2812B-Mini)- PCB checklist
 
-🗹  <https://datasheet.lcsc.com/szlcsc/1810010024_Worldsemi-WS2813-Mini-WS2813-3535_C189639.pdf>
+🗹  <https://datasheet.lcsc.com/szlcsc/2005251033_Worldsemi-WS2812B-Mini_C527089.pdf>
 
 ### USB Hub (FE1.1S) - PCB checklist
 
