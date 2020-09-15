@@ -21,6 +21,7 @@ This Datasheet will contain all the relevant information for the manufacturing o
 * USB Soundcard (CM108B)
 * Audio Front End (XMOS XVF-3510) - for Microphone input processing
 * 20W Amplifier (Maxim Integrated MAX9744)
+* USB 4-port Hub Controller (FE1.1s https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf)
 * 2 Digital MEMS Microphones (ST Micro MP34DT05)
 * 12 RGB LEDs (WorldSemi WS2812B-MINI)
 * 3 momentary buttons (volume up, volume down, action)
