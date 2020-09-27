@@ -13,17 +13,18 @@ The SJ201 can also be used as a USB microphone array with barge-in support. In t
 
 The part number SJ201 is derived from Mike’s “Simon Jester” alias in “The Moon is a Harsh Mistress”.
 
-<img src="./images/pcb-render-v0.66-back.png" width="500">
-<img src="./images/pcb-render-v0.66-front.png" width="500">
+<img src="./images/pcb-render-v0.67-back.png" width="500">
+<img src="./images/pcb-render-v0.67-front.png" width="500">
 
 ### Major Components
-* USB Soundcard (CM108B)
-* Audio Front End (XMOS XVF-3510) - for Microphone input processing
+* Audio Front End (XMOS XVF-3510) - for Microphone input processing & USB Soundcard
+* I2S to Line Out (NXP UDA1334ATS)
 * 20W Amplifier (Maxim Integrated MAX9744)
-* 2 Digital MEMS Microphones (ST Micro MP34DT05)
+* 2 Digital MEMS Microphones (Knowles SPK0641HT4H-1)
 * 12 RGB LEDs (WorldSemi WS2812B-MINI)
 * 3 momentary buttons (volume up, volume down, action)
 * 1 toggle switch (mic mute)
+* ATTiny402 - LED Control
 
 ### Technical Documentation
 For technical details of this board see the [SJ201-Datasheet](./KiCAD/SJ201-Raspberry%20Pi%204%20Daughterboard/README.md).

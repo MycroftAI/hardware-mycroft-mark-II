@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
 Title ""
-Date "2020-08-16"
-Rev "0.66"
+Date "2020-09-26"
+Rev "0.67b"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -11821,6 +11821,7 @@ F 1 "33R" H 2209 5105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 2150 5150 50  0001 C CNN
 F 3 "~" H 2150 5150 50  0001 C CNN
 F 4 "C25105" H 2150 5150 50  0001 C CNN "LCSC"
+F 5 "0402WGF330JTCE" H 2150 5150 50  0001 C CNN "MPN"
 	1    2150 5150
 	1    0    0    -1  
 $EndComp
@@ -16619,7 +16620,7 @@ F 0 "X1" H 1075 3500 50  0000 L CNN
 F 1 "SG-210STF 24M" H 1050 3000 50  0000 L CNN
 F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm" H 1425 2900 50  0001 C CNN
 F 3 "https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-210STF" H 875 3250 50  0001 C CNN
-F 4 "SG-210STF 24M" H 975 3250 50  0001 C CNN "MPN"
+F 4 "SG-210STF 24.0000ML3" H 975 3250 50  0001 C CNN "MPN"
 F 5 "https://www.digikey.com/product-detail/en/epson/SG-210STF-24.0000ML3/SER4323CT-ND/7932310" H 975 3250 50  0001 C CNN "Link"
 F 6 "C32528" H 975 3250 50  0001 C CNN "LCSC"
 	1    975  3250
@@ -16694,7 +16695,7 @@ F 1 "AT25SF161 16MBIT" H 7575 1775 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 7200 2025 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8707-SEEPROM-AT25010B-020B-040B-Datasheet.pdf" H 7200 2025 50  0001 C CNN
 F 4 "1265-1230-1-ND" H 7200 2025 50  0001 C CNN "Digikey"
-F 5 "AT25SF161 16MBIT" H 7200 2025 50  0001 C CNN "MPN"
+F 5 "AT25SF161-SSHD-T" H 7200 2025 50  0001 C CNN "MPN"
 F 6 "https://www.digikey.com/product-detail/en/adesto-technologies/AT25SF161-SSHD-T/1265-1230-2-ND/6124893" H 7200 2025 50  0001 C CNN "Link"
 F 7 "C93710" H 7200 2025 50  0001 C CNN "LCSC"
 	1    7200 2025
@@ -16715,8 +16716,6 @@ Text Label 4725 2750 2    51   ~ 0
 QSPI_CS_N
 Text Label 4725 2850 2    51   ~ 0
 QSPI_CLK
-Text Label 4725 3050 2    51   ~ 0
-QSPI_D1
 Text Label 4725 3150 2    51   ~ 0
 QSPI_D2
 Text Label 4725 3250 2    51   ~ 0
@@ -16792,14 +16791,6 @@ Wire Notes Line
 	8550 1275 8550 2675
 Text GLabel 4375 3650 2    51   Input ~ 0
 SPI_MOSI
-Text GLabel 4375 4100 2    51   BiDi ~ 0
-I2C_SCL
-Text GLabel 4375 4200 2    51   BiDi ~ 0
-I2C_SDA
-Wire Wire Line
-	4375 4100 4025 4100
-Wire Wire Line
-	4375 4200 4025 4200
 Text GLabel 4375 3750 2    51   Output ~ 0
 SPI_MISO
 Wire Wire Line
@@ -16837,20 +16828,12 @@ F 3 "" H 5125 3350 50  0001 C CNN
 	1    5125 3350
 	1    0    0    -1  
 $EndComp
-Text GLabel 4375 3900 2    51   Output ~ 0
-INT_N
 Wire Wire Line
-	4025 3900 4375 3900
+	4025 4800 4225 4800
 Wire Wire Line
-	4250 4400 4025 4400
+	4225 4700 4025 4700
 Wire Wire Line
-	4225 5300 4025 5300
-Wire Wire Line
-	4025 5200 4225 5200
-Wire Wire Line
-	4225 5100 4025 5100
-Wire Wire Line
-	4025 5000 4225 5000
+	4025 4600 4225 4600
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J10
 U 1 1 5F2BF3DB
@@ -16859,6 +16842,7 @@ F 0 "J10" H 7375 5950 50  0000 C CNN
 F 1 "Debug Connector" H 7400 4850 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 7350 5450 50  0001 C CNN
 F 3 "~" H 7350 5450 50  0001 C CNN
+F 4 "DNP" H 7350 5450 50  0001 C CNN "MPN"
 	1    7350 5450
 	1    0    0    -1  
 $EndComp
@@ -17189,8 +17173,8 @@ Text Notes 9675 1525 0    63   ~ 0
 Microphone Array
 Wire Notes Line
 	11100 1350 9025 1350
-Text Notes 10400 5725 0    63   ~ 0
-Optional Mic:\nIM69D130
+Text Notes 10250 5725 0    63   ~ 0
+Optional Mic:\nSPK0838HT4H-1
 Text GLabel 4325 1950 2    51   BiDi ~ 0
 I2S_SCK
 Text GLabel 4025 1550 2    51   Input ~ 0
@@ -17235,12 +17219,12 @@ P 9450 3600
 AR Path="/5EA9C76D/5F2F5623" Ref="U10"  Part="1" 
 AR Path="/5EA9C461/5F2F5623" Ref="U10"  Part="1" 
 F 0 "U10" H 9122 3521 50  0000 R CNN
-F 1 "SPK0838HT4H-1" H 9300 2975 50  0000 R CNN
+F 1 "SPK0641HT4H-1" H 9300 2975 50  0000 R CNN
 F 2 "user:HCLGA-MP34DT05" H 8900 3800 50  0001 L BNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Knowles%20Acoustics%20PDFs/SPK0838HT4H-1.pdf" H 9400 3550 63  0001 C CNN
-F 4 "423-1432-1-ND" H 9450 3600 50  0001 C CNN "Digikey"
-F 5 "SPK0838HT4H-1" H 9450 3600 50  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/knowles/SPK0838HT4H-1/423-1432-1-ND/10130507" H 9450 3600 50  0001 C CNN "Link"
+F 3 "https://www.knowles.com/docs/default-source/model-downloads/spk0641ht4h-1-rev-a.pdf" H 9400 3550 63  0001 C CNN
+F 4 "423-1425-1-ND" H 9450 3600 50  0001 C CNN "Digikey"
+F 5 "SPK0641HT4H-1" H 9450 3600 50  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/knowles/SPK0641HT4H-1/423-1425-1-ND/8573351" H 9450 3600 50  0001 C CNN "Link"
 	1    9450 3600
 	1    0    0    -1  
 $EndComp
@@ -17257,12 +17241,12 @@ L mic:MP34DT05-A U11
 U 1 1 5F30DD80
 P 9450 4925
 F 0 "U11" H 9122 4846 50  0000 R CNN
-F 1 "SPK0838HT4H-1" H 9350 4300 50  0000 R CNN
+F 1 "SPK0641HT4H-1" H 9350 4300 50  0000 R CNN
 F 2 "user:HCLGA-MP34DT05" H 8900 5125 50  0001 L BNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Knowles%20Acoustics%20PDFs/SPK0838HT4H-1.pdf" H 9400 4875 63  0001 C CNN
-F 4 "423-1432-1-ND" H 9450 4925 50  0001 C CNN "Digikey"
-F 5 "SPK0838HT4H-1" H 9450 4925 50  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/knowles/SPK0838HT4H-1/423-1432-1-ND/10130507" H 9450 4925 50  0001 C CNN "Link"
+F 3 "https://www.knowles.com/docs/default-source/model-downloads/spk0641ht4h-1-rev-a.pdf" H 9400 4875 63  0001 C CNN
+F 4 "423-1425-1-ND" H 9450 4925 50  0001 C CNN "Digikey"
+F 5 "SPK0641HT4H-1" H 9450 4925 50  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/knowles/SPK0641HT4H-1/423-1425-1-ND/8573351" H 9450 4925 50  0001 C CNN "Link"
 	1    9450 4925
 	1    0    0    -1  
 $EndComp
@@ -17555,7 +17539,7 @@ F 0 "U8" H 2700 1400 55  0000 L CNN
 F 1 "XMOS-XVF3510" H 2700 -2750 55  0000 L CNN
 F 2 "user:QFN-60-1EP_7x7mm_P0.4mm_EP5.6x5.6mm-HandSolder" H 3275 1350 55  0001 C CNN
 F 3 "" H 3275 1350 55  0001 C CNN
-F 4 "XVF3510" H 3275 1350 50  0001 C CNN "MPN"
+F 4 "XVF3510-QF60-C" H 3275 1350 50  0001 C CNN "MPN"
 F 5 "https://www.digikey.com/products/en/integrated-circuits-ics/audio-special-purpose/741?k=XVF3510" H 3275 1350 50  0001 C CNN "Link"
 	1    3275 1350
 	1    0    0    -1  
@@ -17633,9 +17617,8 @@ F 0 "C55" H 10000 2050 45  0000 L CNN
 F 1 "1uF" H 10000 1900 45  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 9950 1975 50  0001 C CNN
 F 3 "" H 9950 1975 50  0001 C CNN
-F 4 "CC0402KRX5R6BB105" H 9980 2125 20  0001 C CNN "MPN"
-F 5 "302010040" H 9980 2125 20  0001 C CNN "SKU"
-F 6 "C52923" H 9950 1975 50  0001 C CNN "LCSC"
+F 4 "CL05A105KA5NQNC" H 9980 2125 20  0001 C CNN "MPN"
+F 5 "C52923" H 9950 1975 50  0001 C CNN "LCSC"
 	1    9950 1975
 	1    0    0    -1  
 $EndComp
@@ -17647,9 +17630,8 @@ F 0 "C56" H 10000 2875 45  0000 L CNN
 F 1 "1uF" H 10000 2725 45  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 9950 2800 50  0001 C CNN
 F 3 "" H 9950 2800 50  0001 C CNN
-F 4 "CC0402KRX5R6BB105" H 9980 2950 20  0001 C CNN "MPN"
-F 5 "302010040" H 9980 2950 20  0001 C CNN "SKU"
-F 6 "C52923" H 9950 2800 50  0001 C CNN "LCSC"
+F 4 "CL05A105KA5NQNC" H 9980 2950 20  0001 C CNN "MPN"
+F 5 "C52923" H 9950 2800 50  0001 C CNN "LCSC"
 	1    9950 2800
 	1    0    0    -1  
 $EndComp
@@ -17727,16 +17709,14 @@ F 6 "C25792" H 6025 1900 50  0001 C CNN "LCSC"
 	1    6025 1900
 	-1   0    0    1   
 $EndComp
-Text GLabel 4250 4400 2    51   Input ~ 0
-TP1
 Text GLabel 4225 5000 2    51   Input ~ 0
-TP2
+TP1
 Text GLabel 4225 5100 2    51   Input ~ 0
-TP3
+TP2
 Text GLabel 4225 5200 2    51   Input ~ 0
-TP4
+TP3
 Text GLabel 4225 5300 2    51   Input ~ 0
-TP5
+TP4
 Text Label 10700 2650 2    51   ~ 0
 3V3_MIC1
 Text Label 10675 1825 2    51   ~ 0
@@ -18642,19 +18622,19 @@ L dk_Transistors-FETs-MOSFETs-Single:FDV301N Q4
 U 1 1 5F0D0F0A
 P 3475 7475
 F 0 "Q4" H 3583 7528 60  0000 L CNN
-F 1 "FDV301N" H 3583 7422 60  0000 L CNN
+F 1 "2N7002" H 3583 7422 60  0000 L CNN
 F 2 "digikey-footprints:SOT-23-3" H 3675 7675 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV301N.pdf" H 3675 7775 60  0001 L CNN
-F 4 "FDV301NCT-ND" H 3675 7875 60  0001 L CNN "Digi-Key_PN"
-F 5 "FDV301N" H 3675 7975 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 3675 8075 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 3675 8175 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV301N.pdf" H 3675 8275 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/FDV301N/FDV301NCT-ND/458954" H 3675 8375 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 25V 220MA SOT-23" H 3675 8475 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 3675 8575 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3675 8675 60  0001 L CNN "Status"
-F 13 "C15310" H 3475 7475 50  0001 C CNN "LCSC"
+F 3 "" H 3675 7775 60  0001 L CNN
+F 4 "" H 3675 7875 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7002" H 3675 7975 60  0001 L CNN "MPN"
+F 6 "" H 3675 8075 60  0001 L CNN "Category"
+F 7 "" H 3675 8175 60  0001 L CNN "Family"
+F 8 "" H 3675 8275 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "" H 3675 8375 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N TRENCH 60V 115MA 2.5V @ 250UA 7.5 ? @ 500MA,10V SOT-23(SOT-23-3) ROHS" H 3675 8475 60  0001 L CNN "Description"
+F 11 "" H 3675 8575 60  0001 L CNN "Manufacturer"
+F 12 "" H 3675 8675 60  0001 L CNN "Status"
+F 13 "C8545" H 3475 7475 50  0001 C CNN "LCSC"
 	1    3475 7475
 	1    0    0    -1  
 $EndComp
@@ -18683,7 +18663,7 @@ P 3325 7075
 AR Path="/5EAAC9A5/5F0FD565" Ref="PWR?"  Part="1" 
 AR Path="/5EA9C76D/5F0FD565" Ref="PWR2"  Part="1" 
 F 0 "PWR2" V 3364 6957 50  0000 R CNN
-F 1 "LED" V 3273 6957 50  0000 R CNN
+F 1 "LED_RED" V 3273 6957 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 3325 7075 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf" H 3325 7075 50  0001 C CNN
 F 4 "19-217-R6C-AL1M2VY-3T" H 3325 7075 50  0001 C CNN "MPN"
@@ -18745,6 +18725,7 @@ F 1 "10R" H 2209 5305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 2150 5350 50  0001 C CNN
 F 3 "~" H 2150 5350 50  0001 C CNN
 F 4 "C25077" H 2150 5350 50  0001 C CNN "LCSC"
+F 5 "0402WGF100JTCE" H 2150 5350 50  0001 C CNN "MPN"
 	1    2150 5350
 	1    0    0    -1  
 $EndComp
@@ -18926,7 +18907,7 @@ F 0 "J8" H 8350 3750 50  0000 L CNN
 F 1 "MIC" H 8300 3325 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8375 3550 50  0001 C CNN
 F 3 "~" H 8375 3550 50  0001 C CNN
-F 4 "C191721" H 8375 3550 50  0001 C CNN "LCSC"
+F 4 "DNP" H 8375 3550 50  0001 C CNN "MPN"
 	1    8375 3550
 	1    0    0    -1  
 $EndComp
@@ -18989,37 +18970,8 @@ Wire Wire Line
 	675  3250 600  3250
 Wire Wire Line
 	1275 3250 1450 3250
-$Comp
-L Device:R_Small R?
-U 1 1 5F417201
-P 4950 2950
-AR Path="/5EA9C461/5F417201" Ref="R?"  Part="1" 
-AR Path="/5EA9C67D/5F417201" Ref="R?"  Part="1" 
-AR Path="/5EA9C76D/5F417201" Ref="R9"  Part="1" 
-F 0 "R9" V 5025 2875 50  0000 L CNN
-F 1 "4.7k" V 4875 2850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4950 2950 50  0001 C CNN
-F 3 "~" H 4950 2950 50  0001 C CNN
-F 4 "0402WGF4701TCE" H 4950 2950 50  0001 C CNN "MPN"
-F 5 "C25900" H 4950 2950 50  0001 C CNN "LCSC"
-	1    4950 2950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP28
-U 1 1 5F417FE4
-P 4950 2850
-F 0 "TP28" H 5008 2968 50  0000 L CNN
-F 1 "TestPoint" H 5008 2877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5150 2850 50  0001 C CNN
-F 3 "~" H 5150 2850 50  0001 C CNN
-	1    4950 2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4725 3150 4025 3150
-Wire Wire Line
-	4025 3050 4950 3050
 Wire Wire Line
 	1050 7400 1050 7350
 Wire Wire Line
@@ -19231,10 +19183,11 @@ AR Path="/5EA9C76D/5F0B0062" Ref="C65"  Part="1"
 F 0 "C65" H 1100 7575 45  0000 L CNN
 F 1 "2.2NF" H 1100 7425 45  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1050 7500 50  0001 C CNN
-F 3 "https://statics3.seeedstudio.com/images/opl/datasheet/302010022.pdf" H 1050 7500 50  0001 C CNN
-F 4 "CC0402KRX7R9BB222" H 1080 7650 20  0001 C CNN "MPN"
-F 5 "302010022" V 1134 7568 20  0001 L CNN "SKU"
-F 6 "C1531" H 1050 7500 50  0001 C CNN "LCSC"
+F 3 "" H 1050 7500 50  0001 C CNN
+F 4 "0402B222K500NT" H 1080 7650 20  0001 C CNN "MPN"
+F 5 "C1531" H 1050 7500 50  0001 C CNN "LCSC"
+F 6 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_2-2nF-222-10-50V_C1531.html/?href=jlc-SMT" H 1050 7500 50  0001 C CNN "Link"
+F 7 "LCSC" H 1050 7500 50  0001 C CNN "Vendor"
 	1    1050 7500
 	1    0    0    -1  
 $EndComp
@@ -19252,4 +19205,34 @@ F 6 "C1525" H 3375 6075 50  0001 C CNN "LCSC"
 	1    3375 6075
 	1    0    0    -1  
 $EndComp
+Text GLabel 4300 4000 2    51   Input ~ 0
+SDA_XMOS
+Text GLabel 4300 3900 2    51   Input ~ 0
+SCL_XMOS
+Wire Wire Line
+	4025 4500 4225 4500
+Text GLabel 4225 4500 2    51   Input ~ 0
+GPIO22
+Text GLabel 4225 4700 2    51   Input ~ 0
+GPIO24
+Text GLabel 4225 4800 2    51   Input ~ 0
+GPIO25
+Text GLabel 4225 4600 2    51   Input ~ 0
+GPIO23
+Wire Wire Line
+	4025 5000 4225 5000
+Wire Wire Line
+	4225 5100 4025 5100
+Wire Wire Line
+	4025 5200 4225 5200
+Wire Wire Line
+	4225 5300 4025 5300
+Wire Wire Line
+	4025 3900 4300 3900
+Wire Wire Line
+	4025 4000 4300 4000
+Text Label 4725 3050 2    51   ~ 0
+QSPI_D1
+Wire Wire Line
+	4025 3050 4725 3050
 $EndSCHEMATC

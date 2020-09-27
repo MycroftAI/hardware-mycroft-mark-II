@@ -5,29 +5,14 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "SJ-202-USB-Jumper"
-Date "2020-09-04"
-Rev "01"
+Date "2020-09-27"
+Rev "02"
 Comp "Mycroft AI"
 Comment1 "SJ-202-01"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L USB3150-30-130-A:USB3150-30-130-A J2
-U 1 1 5F5281B3
-P 5600 4175
-F 0 "J2" H 5830 4221 50  0000 L CNN
-F 1 "USB3150-30-130-A" H 5830 4130 50  0000 L CNN
-F 2 "GCT_USB3150-30-130-A" H 5600 4175 50  0001 L BNN
-F 3 "https://gct.co/files/drawings/usb3150.pdf" H 5600 4175 50  0001 L BNN
-F 4 "7.23mm" H 5600 4175 50  0001 L BNN "Field4"
-F 5 "A2" H 5600 4175 50  0001 L BNN "Field5"
-F 6 "GCT" H 5600 4175 50  0001 L BNN "Field6"
-F 7 "2073-USB3150-30-130-ACT-ND" H 5600 4175 50  0001 C CNN "Digikey"
-	1    5600 4175
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:USB_A J1
 U 1 1 5F528EEA
@@ -37,17 +22,11 @@ F 1 "USB_A" H 4207 4451 50  0000 C CNN
 F 2 "libraries:USB_A_Female_UE27AC54100" H 4300 4025 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/0480372200/WM3983CT-ND/2421836" H 4300 4025 50  0001 C CNN
 F 4 "WM3983CT-ND" H 4150 4075 50  0001 C CNN "Digikey"
+F 5 "0480372200" H 4150 4075 50  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/0480372200/WM3983CT-ND/2421836" H 4150 4075 50  0001 C CNN "Link"
 	1    4150 4075
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5200 3875 4825 3875
-Wire Wire Line
-	4450 4075 5200 4075
-Wire Wire Line
-	5200 3975 4825 3975
-Wire Wire Line
-	4825 3975 4825 4175
 Wire Wire Line
 	4825 4175 4450 4175
 Wire Wire Line
@@ -56,8 +35,6 @@ Wire Wire Line
 	4475 4275 4475 4475
 Wire Wire Line
 	4050 4475 4050 4550
-Wire Wire Line
-	5200 4550 5200 4475
 $Comp
 L power:GND #PWR0101
 U 1 1 5F52A6FF
@@ -83,24 +60,12 @@ F 3 "" H 4825 3875 50  0001 C CNN
 	1    4825 3875
 	1    0    0    -1  
 $EndComp
-Connection ~ 4825 3875
 Wire Wire Line
 	4825 3875 4450 3875
 Text Notes 3925 925  0    197  ~ 39
 USB Jumper
 Text Notes 4000 5200 0    59   ~ 0
 Connects USB-A on Rasbperry Pi\nto USB Micro on Mycroft backpack SJ-201
-$Comp
-L Connector_Generic:Conn_01x05 J3
-U 1 1 5F52F406
-P 7175 4175
-F 0 "J3" H 7255 4217 50  0000 L CNN
-F 1 "Conn_01x05" H 7255 4126 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7175 4175 50  0001 C CNN
-F 3 "~" H 7175 4175 50  0001 C CNN
-	1    7175 4175
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4475 4475 4150 4475
 Wire Wire Line
@@ -119,46 +84,62 @@ $EndComp
 Connection ~ 4900 4275
 Wire Wire Line
 	4900 4275 4475 4275
-$Comp
-L power:GND #PWR0104
-U 1 1 5F5305F9
-P 6975 4375
-F 0 "#PWR0104" H 6975 4125 50  0001 C CNN
-F 1 "GND" H 6980 4202 50  0000 C CNN
-F 2 "" H 6975 4375 50  0001 C CNN
-F 3 "" H 6975 4375 50  0001 C CNN
-	1    6975 4375
-	1    0    0    -1  
-$EndComp
 Text Label 4525 4175 0    59   ~ 0
 D-
 Text Label 4525 4075 0    59   ~ 0
 D+
-Text Label 6850 4075 0    59   ~ 0
-D+
-Text Label 6850 4175 0    59   ~ 0
-D-
 $Comp
-L power:+5V #PWR0105
-U 1 1 5F530B0F
-P 6975 3975
-F 0 "#PWR0105" H 6975 3825 50  0001 C CNN
-F 1 "+5V" H 6990 4148 50  0000 C CNN
-F 2 "" H 6975 3975 50  0001 C CNN
-F 3 "" H 6975 3975 50  0001 C CNN
-	1    6975 3975
+L Connector_Generic:Conn_01x04 J4
+U 1 1 5F58F2C6
+P 5625 3975
+F 0 "J4" H 5705 4017 50  0000 L CNN
+F 1 "Conn_01x04" H 5705 3926 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5625 3975 50  0001 C CNN
+F 3 "~" H 5625 3975 50  0001 C CNN
+F 4 "C124378" H 5625 3975 50  0001 C CNN "MPN"
+F 5 "C124378" H 5625 3975 50  0001 C CNN "LCSC"
+F 6 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Ckmtw-Shenzhen-Cankemeng-C124378_C124378.html" H 5625 3975 50  0001 C CNN "Link"
+	1    5625 3975
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5F596E74
+P 5025 3475
+F 0 "J2" V 4989 3287 50  0000 R CNN
+F 1 "5vJumper" V 5125 3575 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5025 3475 50  0001 C CNN
+F 3 "~" H 5025 3475 50  0001 C CNN
+F 4 "DNP" H 5025 3475 50  0001 C CNN "MPN"
+	1    5025 3475
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	6975 4075 6850 4075
+	5025 3675 5025 3875
 Wire Wire Line
-	6975 4175 6850 4175
+	5025 3875 4825 3875
+Connection ~ 4825 3875
 Wire Wire Line
-	5075 4175 5200 4175
-Text Label 5075 4175 0    51   ~ 0
-ID
-Text Label 6850 4275 0    51   ~ 0
-ID
+	5125 3675 5125 3875
+Connection ~ 5200 4275
 Wire Wire Line
-	6975 4275 6850 4275
+	5200 4275 5200 4550
+Wire Wire Line
+	5200 4175 5200 4275
+Wire Wire Line
+	4825 4075 4825 4175
+Wire Wire Line
+	4725 3975 4725 4075
+Wire Wire Line
+	4725 4075 4450 4075
+Text Label 5150 3875 0    51   ~ 0
+5vJump
+Wire Wire Line
+	5125 3875 5425 3875
+Wire Wire Line
+	4725 3975 5425 3975
+Wire Wire Line
+	4825 4075 5425 4075
+Wire Wire Line
+	5200 4175 5425 4175
 $EndSCHEMATC

@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 6
 Title ""
-Date "2020-07-14"
-Rev "0.60"
+Date "2020-09-26"
+Rev "0.67b"
 Comp "Mycroft"
 Comment1 ""
 Comment2 ""
@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 4475 3775 0    197  ~ 0
 Raspberry Pi\n& USB Hub
 Text Notes 7575 3900 0    197  ~ 0
-Audio Amplifier\n& \nUSB Sound Card
+I2S to Line Out\n&\nAudio Amplifier\n
 Text Notes 4375 1975 0    197  ~ 0
 XMOS\nMicrophone \nArray
 $Sheet
@@ -67,18 +67,19 @@ F1 "xmos.sch" 47
 $EndSheet
 Wire Notes Line
 	5690 2835 5690 2335
-Text Notes 7075 3525 2    63   ~ 0
-USB
+Text Notes 7800 2050 2    63   ~ 0
+I2S
 Wire Notes Line
-	6625 3600 7450 3600
+	6550 1500 9100 2825
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5F08AB51
 P 8000 6100
 F 0 "H1" H 8100 6146 50  0000 L CNN
 F 1 "MountingHole" H 8100 6055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 8000 6100 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3mm_Pad" H 8000 6100 50  0001 C CNN
 F 3 "~" H 8000 6100 50  0001 C CNN
+F 4 "DNP" H 8000 6100 50  0001 C CNN "MPN"
 	1    8000 6100
 	1    0    0    -1  
 $EndComp
@@ -88,8 +89,9 @@ U 1 1 5F08B35B
 P 8000 6275
 F 0 "H2" H 8100 6321 50  0000 L CNN
 F 1 "MountingHole" H 8100 6230 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 8000 6275 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3mm_Pad" H 8000 6275 50  0001 C CNN
 F 3 "~" H 8000 6275 50  0001 C CNN
+F 4 "DNP" H 8000 6275 50  0001 C CNN "MPN"
 	1    8000 6275
 	1    0    0    -1  
 $EndComp
@@ -99,8 +101,9 @@ U 1 1 5F08B63A
 P 8000 6475
 F 0 "H3" H 8100 6521 50  0000 L CNN
 F 1 "MountingHole" H 8100 6430 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 8000 6475 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3mm_Pad" H 8000 6475 50  0001 C CNN
 F 3 "~" H 8000 6475 50  0001 C CNN
+F 4 "DNP" H 8000 6475 50  0001 C CNN "MPN"
 	1    8000 6475
 	1    0    0    -1  
 $EndComp
@@ -110,8 +113,9 @@ U 1 1 5F08B83C
 P 8000 6675
 F 0 "H4" H 8100 6721 50  0000 L CNN
 F 1 "MountingHole" H 8100 6630 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 8000 6675 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3mm_Pad" H 8000 6675 50  0001 C CNN
 F 3 "~" H 8000 6675 50  0001 C CNN
+F 4 "DNP" H 8000 6675 50  0001 C CNN "MPN"
 	1    8000 6675
 	1    0    0    -1  
 $EndComp
@@ -134,6 +138,7 @@ F 0 "H5" H 8900 6696 50  0001 L CNN
 F 1 "MountingHole" H 8900 6605 50  0001 L CNN
 F 2 "mycroft:mycroft_logo_graphic" H 8800 6650 50  0001 C CNN
 F 3 "~" H 8800 6650 50  0001 C CNN
+F 4 "DNP" H 8800 6650 50  0001 C CNN "MPN"
 	1    8800 6650
 	1    0    0    -1  
 $EndComp
@@ -145,6 +150,7 @@ F 0 "H6" H 8900 6521 50  0001 L CNN
 F 1 "MountingHole" H 8900 6430 50  0001 L CNN
 F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 8800 6475 50  0001 C CNN
 F 3 "~" H 8800 6475 50  0001 C CNN
+F 4 "DNP" H 8800 6475 50  0001 C CNN "MPN"
 	1    8800 6475
 	1    0    0    -1  
 $EndComp
@@ -156,6 +162,7 @@ F 0 "H7" H 9075 6696 50  0001 L CNN
 F 1 "MountingHole" H 9075 6605 50  0001 L CNN
 F 2 "mycroft:mycroft_logo_words" H 8975 6650 50  0001 C CNN
 F 3 "~" H 8975 6650 50  0001 C CNN
+F 4 "DNP" H 8975 6650 50  0001 C CNN "MPN"
 	1    8975 6650
 	1    0    0    -1  
 $EndComp
