@@ -25,8 +25,11 @@ The part number SJ201 is derived from Mike’s “Simon Jester” alias in “Th
 * 3 momentary buttons (volume up, volume down, action)
 * 1 toggle switch (mic mute)
 
+### SJ-202 - USB Jumper
+<img src="./images/SJ-202-USB-installed.png" width="500">
+
 ### Technical Documentation
-For technical details of this board see the 
+For technical details of these board see the 
 * [SJ201-Datasheet](./KiCAD/SJ201-Raspberry%20Pi%204%20Daughterboard/README.md).
 * [SJ202-Datasheet](./KiCAD/SJ202-USB%20jumper%20board/README.md).
 
