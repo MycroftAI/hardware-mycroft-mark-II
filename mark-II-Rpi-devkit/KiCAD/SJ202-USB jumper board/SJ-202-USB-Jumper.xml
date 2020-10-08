@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>C:\Dropbox\Crashspace\Mycroft\KiCAD\SJ-202-USB-Jumper\SJ-202-USB-Jumper.sch</source>
-    <date>9/4/2020 12:42:47 PM</date>
+    <date>10/3/2020 11:46:38 AM</date>
     <tool>Eeschema (5.1.6)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>SJ-202-USB-Jumper</title>
         <company>Mycroft AI</company>
-        <rev>01</rev>
-        <date>2020-09-04</date>
+        <rev>03</rev>
+        <date>2020-10-03</date>
         <source>SJ-202-USB-Jumper.sch</source>
         <comment number="1" value="SJ-202-01"/>
         <comment number="2" value=""/>
@@ -19,38 +19,43 @@
     </sheet>
   </design>
   <components>
-    <comp ref="J2">
-      <value>USB3150-30-130-A</value>
-      <footprint>GCT_USB3150-30-130-A</footprint>
-      <datasheet>https://gct.co/files/drawings/usb3150.pdf</datasheet>
-      <fields>
-        <field name="Digikey">2073-USB3150-30-130-ACT-ND</field>
-        <field name="Field4">7.23mm</field>
-        <field name="Field5">A2</field>
-        <field name="Field6">GCT</field>
-      </fields>
-      <libsource lib="USB3150-30-130-A" part="USB3150-30-130-A" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5F5281B3</tstamp>
-    </comp>
     <comp ref="J1">
       <value>USB_A</value>
       <footprint>libraries:USB_A_Female_UE27AC54100</footprint>
       <datasheet>https://www.digikey.com/product-detail/en/0480372200/WM3983CT-ND/2421836</datasheet>
       <fields>
         <field name="Digikey">WM3983CT-ND</field>
+        <field name="Link">https://lcsc.com/product-detail/Others_Korean-Hroparts-Elec-U-G-04WS-W-03_C283548.html</field>
+        <field name="MPN">U-G-04WS-W-03</field>
+        <field name="Tempo">0480372200</field>
       </fields>
       <libsource lib="Connector" part="USB_A" description="USB Type A connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F528EEA</tstamp>
     </comp>
-    <comp ref="J3">
-      <value>Conn_01x05</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+    <comp ref="J4">
+      <value>Conn_01x04</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <fields>
+        <field name="LCSC">C390680</field>
+        <field name="Link">https://lcsc.com/product-detail/Pin-Header-Female-Header_PINREX-210-91-04GB01_C390680.html</field>
+        <field name="MPN">210-91-04GB01</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5F52F406</tstamp>
+      <tstamp>5F58F2C6</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>5vJumper</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">DNP</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F596E74</tstamp>
     </comp>
   </components>
   <libparts>
@@ -72,46 +77,36 @@
         <pin num="5" name="Shield" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x05">
-      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
       <footprints>
         <fp>Connector*:*_1x??_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_01x05</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
         <pin num="2" name="Pin_2" type="passive"/>
         <pin num="3" name="Pin_3" type="passive"/>
         <pin num="4" name="Pin_4" type="passive"/>
-        <pin num="5" name="Pin_5" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="USB3150-30-130-A" part="USB3150-30-130-A">
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">USB3150-30-130-A</field>
-        <field name="Footprint">GCT_USB3150-30-130-A</field>
-        <field name="Datasheet">Manufacturer recommendations</field>
-        <field name="Field4">7.23mm</field>
-        <field name="Field5">A2</field>
-        <field name="Field6">GCT</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VBUS" type="passive"/>
-        <pin num="2" name="D-" type="passive"/>
-        <pin num="3" name="D+" type="passive"/>
-        <pin num="4" name="ID" type="passive"/>
-        <pin num="5" name="GND" type="passive"/>
-        <pin num="S1" name="SHIELD" type="passive"/>
-        <pin num="S2" name="SHIELD" type="passive"/>
-        <pin num="S3" name="SHIELD" type="passive"/>
-        <pin num="S4" name="SHIELD" type="passive"/>
-        <pin num="S5" name="SHIELD" type="passive"/>
-        <pin num="S6" name="SHIELD" type="passive"/>
       </pins>
     </libpart>
   </libparts>
@@ -122,41 +117,28 @@
     <library logical="Connector_Generic">
       <uri>C:\ProgramData\kicad\symbols/Connector_Generic.lib</uri>
     </library>
-    <library logical="USB3150-30-130-A">
-      <uri>C:\Dropbox\Crashspace\Mycroft\KiCAD\SJ-202-USB-Jumper/libraries/USB3150-30-130-A.lib</uri>
-    </library>
   </libraries>
   <nets>
-    <net code="1" name="/ID">
-      <node ref="J2" pin="4"/>
-      <node ref="J3" pin="4"/>
+    <net code="1" name="/D+">
+      <node ref="J4" pin="2"/>
+      <node ref="J1" pin="3"/>
     </net>
-    <net code="2" name="/D-">
-      <node ref="J1" pin="2"/>
-      <node ref="J3" pin="3"/>
+    <net code="2" name="/5vJump">
+      <node ref="J4" pin="1"/>
       <node ref="J2" pin="2"/>
     </net>
-    <net code="3" name="GND">
-      <node ref="J2" pin="S6"/>
-      <node ref="J2" pin="S1"/>
-      <node ref="J2" pin="S2"/>
-      <node ref="J2" pin="5"/>
-      <node ref="J2" pin="S3"/>
-      <node ref="J2" pin="S4"/>
-      <node ref="J2" pin="S5"/>
+    <net code="3" name="/D-">
+      <node ref="J1" pin="2"/>
+      <node ref="J4" pin="3"/>
+    </net>
+    <net code="4" name="GND">
       <node ref="J1" pin="5"/>
       <node ref="J1" pin="4"/>
-      <node ref="J3" pin="5"/>
-    </net>
-    <net code="4" name="/D+">
-      <node ref="J1" pin="3"/>
-      <node ref="J3" pin="2"/>
-      <node ref="J2" pin="3"/>
+      <node ref="J4" pin="4"/>
     </net>
     <net code="5" name="+5V">
-      <node ref="J3" pin="1"/>
-      <node ref="J2" pin="1"/>
       <node ref="J1" pin="1"/>
+      <node ref="J2" pin="1"/>
     </net>
   </nets>
 </export>

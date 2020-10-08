@@ -18,14 +18,15 @@ The part number SJ201 is derived from Mike’s “Simon Jester” alias in “Th
 This Datasheet will contain all the relevant information for the manufacturing of the SJ201 including information about PCB design, PCB manufacturing process.
 
 ## Major Components
-* USB Soundcard (CM108B)
 * Audio Front End (XMOS XVF-3510) - for Microphone input processing
+* I2S to Line Out (UDA1334ATS)
 * 20W Amplifier (Maxim Integrated MAX9744)
 * USB 4-port Hub Controller (FE1.1s https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf)
 * 2 Digital MEMS Microphones (ST Micro MP34DT05)
 * 12 RGB LEDs (WorldSemi WS2812B-MINI)
 * 3 momentary buttons (volume up, volume down, action)
 * 1 toggle switch (mic mute)
+* ATtiny402 - control LEDs
 
 ## Hardware Notes
 
@@ -39,8 +40,7 @@ This Datasheet will contain all the relevant information for the manufacturing o
 ## Software Notes
 
 - SHTDN (GPIO pin XYZ) must be set high to enable the audio amplifier.
-- Due to limitations of the XMOS chip's current firmware, the audio output from the Raspberry Pi 4 goes to the USB Sound card, which then outputs to the XMOS and the amplifier in parallel. Software must configure the sound card and XMOS appropriately, including programming the XMOS to expect the proper delay from the digital audio between its input and the microphone inputs to get the best barge-in performance.
-  -   In the preferred implementation, the XMOS would get the audio input from the Pi 4 directly via an I2S connection, and would then pass through that audio to the amplifier. This would reduce part count and complexity, as well as allowing the XMOS to perform DSP operations on the audio before sending it to the amplifier.
+- The XMOS chip outputs I2S audio to the I2S to Line Out IC then outputs to the amplifier. 
 
 
 ## Configuration options
@@ -115,11 +115,6 @@ With a 4ohm speaker and a 12V supply, each channel can achieve ~13W. The speaker
 **USB as power source**  
 If USB-C is an option, then USB-powered amplification could be achieved. In the current implementation, however, this is not designed for.
 
-### USB Sound card
-
-- CM108B
-
-- <https://datasheet.lcsc.com/szlcsc/1912111437_Cmedia-CM108B_C371347.pdf> 
 
 ### USB Hub
 
@@ -321,7 +316,7 @@ The following notes are related to the PCB layout wrt the MAX9744.
 
 ## Production Checklist
 
-WS2813 Mini
+WS2812 Mini
 
 - [] This has to be baked for 48 hours at the baking temperature of 70-75℃ before being used. 
 
