@@ -26,7 +26,9 @@ The part number SJ201 is derived from Mike’s “Simon Jester” alias in “Th
 * 1 toggle switch (mic mute)
 
 ### Technical Documentation
-For technical details of this board see the [SJ201-Datasheet](./KiCAD/SJ201-Raspberry%20Pi%204%20Daughterboard/README.md).
+For technical details of this board see the 
+* [SJ201-Datasheet](./KiCAD/SJ201-Raspberry%20Pi%204%20Daughterboard/README.md).
+* [SJ202-Datasheet](./KiCAD/SJ202-USB%20jumper%20board/README.md).
 
 ## New Form Factor
 The SJ201 connects to the Raspberry Pi GPIO header at a 90 degree angle. This allows the microphone array and hardware inputs to be well positioned in the enclosure, whilst maintaining the simplicity of a direct connection to the main board. 
