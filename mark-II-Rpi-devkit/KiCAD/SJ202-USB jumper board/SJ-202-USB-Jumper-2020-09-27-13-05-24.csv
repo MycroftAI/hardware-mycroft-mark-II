@@ -1,3 +1,0 @@
-"Ref","Qnty","Value","Footprint","Description","Vendor","MPN","SKU","Digikey","LCSC","Link"
-"J1, ","1","USB_A","libraries:USB_A_Female_UE27AC54100","USB Type A connector","","0480372200","","WM3983CT-ND","","https://www.digikey.com/product-detail/en/0480372200/WM3983CT-ND/2421836"
-"J4, ","1","Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)","","C124378","","","C124378","https://lcsc.com/product-detail/Pin-Header-Female-Header_Ckmtw-Shenzhen-Cankemeng-C124378_C124378.html"
