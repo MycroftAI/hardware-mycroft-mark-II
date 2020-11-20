@@ -87,11 +87,13 @@ The SJ201 is powered by an external 12V 3A DC supply (wall wart) via a barrel co
 
 - VDD 12V externally supplied power
 
-- PVDD  12V Analog Audio Power
+- PVDD 12V Analog Audio Power
 
 - 5V  5V derived from VDD (or USB Powered if Jumper USB_Power1 soldered)
 
 - 3V  3.3V derived from 5V
+
+- 1V  1.0V derived from 5V for the XMOS core
 
 Additionally, there are two ground domains:
 
