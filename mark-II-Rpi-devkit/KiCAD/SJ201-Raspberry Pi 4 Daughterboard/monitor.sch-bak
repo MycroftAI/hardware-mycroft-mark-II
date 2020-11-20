@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title ""
-Date "2020-10-02"
-Rev "0.67c"
-Comp ""
-Comment1 ""
+Date "2020-11-18"
+Rev "rev4 - 0.01"
+Comp "Mycroft"
+Comment1 "SJ201 r4.01"
 Comment2 ""
 Comment3 ""
 Comment4 ""

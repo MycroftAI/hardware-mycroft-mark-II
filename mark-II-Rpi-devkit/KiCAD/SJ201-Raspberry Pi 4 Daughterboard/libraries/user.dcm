@@ -60,6 +60,36 @@ D ACCELEROMETER 3AXIS MEMS 16-LGA
 F http://www.st.com/web/en/resource/technical/document/datasheet/CD00274221.pdf
 $ENDCMP
 #
+$CMP LP3966-1.8
+D 3A Fast Ultra Low Dropout Linear Regulator, 1.8V output voltage, TO-220-5/TO-263-5
+K LDO Linear Regulator
+F http://www.ti.com/lit/ds/symlink/lp3966.pdf
+$ENDCMP
+#
+$CMP LP3966-2.5
+D 3A Fast Ultra Low Dropout Linear Regulator, 2.5V output voltage, TO-220-5/TO-263-5
+K LDO Linear Regulator
+F http://www.ti.com/lit/ds/symlink/lp3966.pdf
+$ENDCMP
+#
+$CMP LP3966-2.5_copy
+D 3A Fast Ultra Low Dropout Linear Regulator, 2.5V output voltage, TO-220-5/TO-263-5
+K LDO Linear Regulator
+F http://www.ti.com/lit/ds/symlink/lp3966.pdf
+$ENDCMP
+#
+$CMP LP3966-3.3
+D 3A Fast Ultra Low Dropout Linear Regulator, 3.3V output voltage, TO-220-5/TO-263-5
+K LDO Linear Regulator
+F http://www.ti.com/lit/ds/symlink/lp3966.pdf
+$ENDCMP
+#
+$CMP LP3966-3.3_copy
+D 3A Fast Ultra Low Dropout Linear Regulator, 3.3V output voltage, TO-220-5/TO-263-5
+K LDO Linear Regulator
+F http://www.ti.com/lit/ds/symlink/lp3966.pdf
+$ENDCMP
+#
 $CMP LTC4412
 D P-Channel MOSFET Ideal Diode Controller
 $ENDCMP
@@ -151,6 +181,12 @@ $ENDCMP
 #
 $CMP TEST_POINT
 D Test Point
+$ENDCMP
+#
+$CMP TPS759xxx
+D 3A Fast Ultra Low Dropout Linear Regulator, 1.8V output voltage, TO-220-5/TO-263-5
+K LDO Linear Regulator
+F http://www.ti.com/lit/ds/symlink/lp3966.pdf
 $ENDCMP
 #
 $CMP TPS782
