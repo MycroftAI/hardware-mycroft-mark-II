@@ -13,17 +13,18 @@ The SJ201 can also be used as a USB microphone array with barge-in support. In t
 
 The part number SJ201 is derived from Mike’s “Simon Jester” alias in “The Moon is a Harsh Mistress”.
 
-<img src="./images/pcb-render-v0.67c-back.png" width="500">
-<img src="./images/pcb-render-v0.67c-front.png" width="500">
+<img src="../images/pcb-render-SJ-201-R4-back.png" width="500">
+<img src="../images/pcb-render-SJ-201-R4-front.png" width="500">
 
 ### Major Components
-* Audio Front End (XMOS XVF-3510) - for Microphone input processing
-* I2S to Line Out (UDA1334ATS)
-* 20W Amplifier (Maxim Integrated MAX9744)
-* 2 Digital MEMS Microphones (ST Micro MP34DT05)
+* 23W I2S Digital Amplifier (Texas Instruments TAS5806MD)
+* USB 4-port Hub Controller (FE1.1s https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf)
+* 2 Digital MEMS Microphones (Knowles SPK0641HT4H-1 https://www.digikey.com/en/products/detail/knowles/SPK0641HT4H-1/8573345)
 * 12 RGB LEDs (WorldSemi WS2812B-MINI)
 * 3 momentary buttons (volume up, volume down, action)
 * 1 toggle switch (mic mute)
+* ATtiny1614 - control LEDs, other I/O
+* Google Coral TPU
 
 ### SJ-202 - USB Jumper
 <img src="./images/SJ-202-USB-installed.png" width="500">

@@ -5,10 +5,10 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 7
 Title "SJ-201+"
-Date "2020-11-18"
-Rev "rev4 - 0.01"
+Date "2020-11-22"
+Rev "Rev4 - 0.03"
 Comp "Mycroft"
-Comment1 "SJ201 r4.01"
+Comment1 "SJ-201-R4"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -27,8 +27,8 @@ F1 "Power.sch" 47
 $EndSheet
 Text Notes 1400 3625 0    197  ~ 0
 Power
-Text Notes 3300 5775 0    197  ~ 0
-Monitor\n& Touch
+Text Notes 3325 5800 0    197  ~ 0
+Monitor, \nTouch\n& Fan 
 Wire Notes Line
 	3380 3540 4060 3540
 Wire Notes Line
@@ -180,4 +180,16 @@ Wire Notes Line
 	6575 1500 6675 1500
 Text Notes 5625 2625 2    63   ~ 0
 I2S
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 60926A26
+P 9125 6450
+F 0 "H6" H 9225 6496 50  0001 L CNN
+F 1 "MountingHole" H 9225 6405 50  0001 L CNN
+F 2 "libraries:simon-jestor-logo" H 9125 6450 50  0001 C CNN
+F 3 "~" H 9125 6450 50  0001 C CNN
+F 4 "DNP" H 9125 6450 50  0001 C CNN "MPN"
+	1    9125 6450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

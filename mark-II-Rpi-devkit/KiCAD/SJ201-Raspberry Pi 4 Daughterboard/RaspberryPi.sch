@@ -5,10 +5,10 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 5 7
 Title "Raspberry Pi"
-Date "2020-11-18"
-Rev "rev4 - 0.01"
+Date "2020-11-22"
+Rev "Rev4 - 0.03"
 Comp "Mycroft"
-Comment1 "SJ201 r4.01"
+Comment1 "SJ-201-R4"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -1029,33 +1029,6 @@ Wire Wire Line
 	5275 6725 5500 6725
 Wire Wire Line
 	5225 6725 5275 6725
-Wire Wire Line
-	6150 2625 6150 2650
-$Comp
-L power:GND #PWR0188
-U 1 1 5F9D850C
-P 4375 3550
-F 0 "#PWR0188" H 4375 3300 50  0001 C CNN
-F 1 "GND" H 4380 3377 50  0000 C CNN
-F 2 "" H 4375 3550 50  0001 C CNN
-F 3 "" H 4375 3550 50  0001 C CNN
-	1    4375 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J2
-U 1 1 5F915039
-P 4675 2650
-F 0 "J2" H 4782 3517 50  0000 C CNN
-F 1 "USB_C" H 4782 3426 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 4825 2650 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4825 2650 50  0001 C CNN
-F 4 "2073-USB4105-GF-ATR-ND" H 4675 2650 50  0001 C CNN "Digikey"
-F 5 "USB4105-GF-A" H 4675 2650 50  0001 C CNN "Tempo"
-F 6 "C165948" H 4675 2650 50  0001 C CNN "LCSC"
-	1    4675 2650
-	1    0    0    -1  
-$EndComp
 Text Label 6200 2625 0    50   ~ 0
 D-
 Text Label 6100 2525 0    50   ~ 0
@@ -1063,35 +1036,27 @@ D+
 $Comp
 L power:GND #PWR0166
 U 1 1 5F5AC01B
-P 5625 4275
-F 0 "#PWR0166" H 5625 4025 50  0001 C CNN
-F 1 "GND" H 5630 4102 50  0000 C CNN
-F 2 "" H 5625 4275 50  0001 C CNN
-F 3 "" H 5625 4275 50  0001 C CNN
-	1    5625 4275
+P 5750 2725
+F 0 "#PWR0166" H 5750 2475 50  0001 C CNN
+F 1 "GND" H 5755 2552 50  0000 C CNN
+F 2 "" H 5750 2725 50  0001 C CNN
+F 3 "" H 5750 2725 50  0001 C CNN
+	1    5750 2725
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6150 2625 7600 2625
-Wire Wire Line
-	6150 4175 5625 4175
-Wire Wire Line
-	6050 2525 7600 2525
-Wire Wire Line
-	6050 4075 5625 4075
 $Comp
 L Connector_Generic:Conn_01x04 J13
 U 1 1 5F596EAB
-P 5425 4075
-F 0 "J13" H 5343 4392 50  0000 C CNN
-F 1 "USB-PinHeader" H 5343 4301 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 5425 4075 50  0001 C CNN
-F 3 "~" H 5425 4075 50  0001 C CNN
-F 4 "A2541HWR-4P" H 5425 4075 50  0001 C CNN "MPN"
-F 5 "C225512" H 5425 4075 50  0001 C CNN "LCSC"
-F 6 "https://lcsc.com/product-detail/Pin-Header-Female-Header_CJT-Changjiang-Connectors-A2541HWR-4P_C225512.html" H 5425 4075 50  0001 C CNN "Link"
-F 7 "PPTC041LGBN-RC" H 5425 4075 50  0001 C CNN "Tempo"
-	1    5425 4075
+P 5550 2525
+F 0 "J13" H 5468 2842 50  0000 C CNN
+F 1 "USB-PinHeader" H 5468 2751 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 5550 2525 50  0001 C CNN
+F 3 "~" H 5550 2525 50  0001 C CNN
+F 4 "A2541HWR-4P" H 5550 2525 50  0001 C CNN "MPN"
+F 5 "C225512" H 5550 2525 50  0001 C CNN "LCSC"
+F 6 "https://lcsc.com/product-detail/Pin-Header-Female-Header_CJT-Changjiang-Connectors-A2541HWR-4P_C225512.html" H 5550 2525 50  0001 C CNN "Link"
+F 7 "PPTC041LGBN-RC" H 5550 2525 50  0001 C CNN "Tempo"
+	1    5550 2525
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1545,17 +1510,6 @@ F 5 "FE1.1S" H 8300 3225 50  0001 C CNN "MPN"
 	1    8300 3225
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR051
-U 1 1 5EE68752
-P 4675 3550
-F 0 "#PWR051" H 4675 3300 50  0001 C CNN
-F 1 "GND" H 4680 3377 50  0000 C CNN
-F 2 "" H 4675 3550 50  0001 C CNN
-F 3 "" H 4675 3550 50  0001 C CNN
-	1    4675 3550
-	1    0    0    -1  
-$EndComp
 Text Notes 7750 1275 0    63   ~ 0
 USB Hub
 Wire Wire Line
@@ -1586,10 +1540,6 @@ F 3 "" H 8300 4325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 3975 5625 3975
-Wire Wire Line
-	5950 2025 5950 3975
-Wire Wire Line
 	6350 1775 6350 2125
 Wire Wire Line
 	6350 1775 6150 1775
@@ -1617,90 +1567,7 @@ Connection ~ 6775 2325
 Wire Wire Line
 	5950 1775 5725 1775
 Wire Wire Line
-	5950 2025 5725 2025
-$Comp
-L Device:R_Small R18
-U 1 1 5FB35430
-P 5525 2250
-AR Path="/5EA9C461/5FB35430" Ref="R18"  Part="1" 
-AR Path="/5EA9C67D/5FB35430" Ref="R?"  Part="1" 
-AR Path="/5EA9C76D/5FB35430" Ref="R?"  Part="1" 
-F 0 "R18" V 5475 2025 50  0000 L CNN
-F 1 "5.1k" V 5575 2325 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5525 2250 50  0001 C CNN
-F 3 "~" H 5525 2250 50  0001 C CNN
-F 4 "0402WGF5101TCE" H 5525 2250 50  0001 C CNN "MPN"
-F 5 "C25905" H 5525 2250 50  0001 C CNN "LCSC"
-	1    5525 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0189
-U 1 1 5FB36342
-P 5850 2375
-F 0 "#PWR0189" H 5850 2125 50  0001 C CNN
-F 1 "GND" H 5855 2202 50  0000 C CNN
-F 2 "" H 5850 2375 50  0001 C CNN
-F 3 "" H 5850 2375 50  0001 C CNN
-	1    5850 2375
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R20
-U 1 1 5FB36784
-P 5525 2350
-AR Path="/5EA9C461/5FB36784" Ref="R20"  Part="1" 
-AR Path="/5EA9C67D/5FB36784" Ref="R?"  Part="1" 
-AR Path="/5EA9C76D/5FB36784" Ref="R?"  Part="1" 
-F 0 "R20" V 5475 2125 50  0000 L CNN
-F 1 "5.1k" V 5575 2425 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5525 2350 50  0001 C CNN
-F 3 "~" H 5525 2350 50  0001 C CNN
-F 4 "0402WGF5101TCE" H 5525 2350 50  0001 C CNN "MPN"
-F 5 "C25905" H 5525 2350 50  0001 C CNN "LCSC"
-	1    5525 2350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5625 2250 5850 2250
-Wire Wire Line
-	5850 2250 5850 2350
-Wire Wire Line
-	5625 2350 5850 2350
-Connection ~ 5850 2350
-Wire Wire Line
-	5850 2350 5850 2375
-Wire Wire Line
-	5425 2250 5275 2250
-Wire Wire Line
-	5275 2350 5425 2350
-Wire Wire Line
-	5275 2050 5725 2050
-Wire Wire Line
 	5725 1775 5725 2025
-Connection ~ 5725 2025
-Wire Wire Line
-	5725 2025 5725 2050
-Wire Wire Line
-	6150 2650 5275 2650
-Connection ~ 6150 2650
-Wire Wire Line
-	6150 2650 6150 4175
-Wire Wire Line
-	6050 2525 6050 2850
-Wire Wire Line
-	5275 2850 6050 2850
-Connection ~ 6050 2850
-Wire Wire Line
-	6050 2850 6050 4075
-Wire Wire Line
-	5275 2750 5275 2850
-Connection ~ 5275 2850
-Wire Wire Line
-	5275 2550 5275 2650
-Connection ~ 5275 2650
-NoConn ~ 5275 3150
-NoConn ~ 5275 3250
 Text GLabel 3125 3075 2    51   Input ~ 0
 SPI_MOSI
 Text GLabel 3125 2975 2    51   Input ~ 0
@@ -1723,26 +1590,6 @@ Wire Notes Line
 	500  4350 4000 4350
 Wire Notes Line
 	500  700  4000 700 
-Text GLabel -450 1825 0    51   Input ~ 0
-Neopixel
-$Comp
-L Device:R_Small R9
-U 1 1 5F76E0FE
-P -225 1825
-AR Path="/5EA9C461/5F76E0FE" Ref="R9"  Part="1" 
-AR Path="/5EA9C67D/5F76E0FE" Ref="R?"  Part="1" 
-AR Path="/5EA9C76D/5F76E0FE" Ref="R?"  Part="1" 
-F 0 "R9" V -275 1625 50  0000 L CNN
-F 1 "0R" V -175 1900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H -225 1825 50  0001 C CNN
-F 3 "~" H -225 1825 50  0001 C CNN
-F 4 "0603WAF0000T5E" H -225 1825 50  0001 C CNN "MPN"
-F 5 "C21189" H -225 1825 50  0001 C CNN "LCSC"
-F 6 "RC0603JR-070RL" H -225 1825 50  0001 C CNN "Tempo"
-	1    -225 1825
-	0    1    1    0   
-$EndComp
-NoConn ~ 3125 2775
 NoConn ~ 3125 3375
 Text GLabel 1125 2175 0    50   Input ~ 0
 TPU_RST_L
@@ -1774,32 +1621,19 @@ F 3 "" H 1950 6300 50  0001 C CNN
 	1    1950 6300
 	1    0    0    -1  
 $EndComp
-$Comp
-L MCU_Microchip_ATtiny:ATtiny1614-SS U13
-U 1 1 5FB8EEFC
-P 1950 7000
-F 0 "U13" H 1500 7650 50  0000 C CNN
-F 1 "ATtiny1614-SS" H 1550 6350 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1950 7000 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf" H 1950 7000 50  0001 C CNN
-	1    1950 7000
-	1    0    0    -1  
-$EndComp
 Text GLabel 2550 7100 2    51   Input ~ 0
 Neopixel
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5FB9226E
-P 3000 6600
-F 0 "TP2" H 3058 6718 50  0000 L CNN
-F 1 "ATTinyProg" H 3058 6627 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3200 6600 50  0001 C CNN
-F 3 "~" H 3200 6600 50  0001 C CNN
-	1    3000 6600
+P 2625 6600
+F 0 "TP2" H 2550 6800 50  0000 L CNN
+F 1 "ATTinyProg" H 2475 6875 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2825 6600 50  0001 C CNN
+F 3 "~" H 2825 6600 50  0001 C CNN
+	1    2625 6600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3000 6600 2550 6600
 Text GLabel 1350 6700 0    51   Input ~ 0
 SDA
 Text GLabel 1350 6600 0    51   Input ~ 0
@@ -1828,61 +1662,18 @@ Text GLabel 3025 6700 2    50   Input ~ 0
 TPU_RST_L
 Text GLabel 3025 6800 2    50   Output ~ 0
 TPU_PGOOD
-Text GLabel 3025 6900 2    50   Input ~ 0
+Text GLabel 3000 7200 2    50   Input ~ 0
 TPU_PMIC_EN
 Text Notes 3400 7500 2    50   ~ 0
 Coral TPU
 Text GLabel 2550 7000 2    51   Input ~ 0
 FanPWM
 Wire Wire Line
-	2550 6900 3025 6900
-Wire Wire Line
 	2550 6800 3025 6800
 Wire Wire Line
 	2550 6700 3025 6700
-Text GLabel 875  7300 2    51   Input ~ 0
-FanPWM
-$Comp
-L Connector_Generic:Conn_01x04 J12
-U 1 1 5FC3F7F6
-P 675 7400
-F 0 "J12" H 593 6975 50  0000 C CNN
-F 1 "FanConnector" H 593 7066 50  0000 C CNN
-F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 675 7400 50  0001 C CNN
-F 3 "~" H 675 7400 50  0001 C CNN
-	1    675  7400
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0197
-U 1 1 5FC4B315
-P 875 7500
-F 0 "#PWR0197" H 875 7250 50  0001 C CNN
-F 1 "GND" H 880 7327 50  0000 C CNN
-F 2 "" H 875 7500 50  0001 C CNN
-F 3 "" H 875 7500 50  0001 C CNN
-	1    875  7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5FC4B6B1
-P 1325 7400
-AR Path="/5EAAC9A5/5FC4B6B1" Ref="#PWR?"  Part="1" 
-AR Path="/5EA9C461/5FC4B6B1" Ref="#PWR0198"  Part="1" 
-F 0 "#PWR0198" H 1325 7250 50  0001 C CNN
-F 1 "+5V" H 1325 7550 50  0000 C CNN
-F 2 "" H 1325 7400 50  0001 C CNN
-F 3 "" H 1325 7400 50  0001 C CNN
-	1    1325 7400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	875  7400 1325 7400
-Text GLabel 875  7200 2    51   Input ~ 0
-FanTemp
-Text GLabel 2550 7200 2    51   Input ~ 0
-FanTemp
+Text GLabel 2550 6900 2    51   Input ~ 0
+FanTach
 Wire Wire Line
 	875  5575 925  5575
 Wire Wire Line
@@ -1892,8 +1683,6 @@ Wire Wire Line
 	925  5575 1275 5575
 Text GLabel 3025 7300 2    50   Input ~ 0
 TPU_INTR
-Text Notes 1175 7925 2    50   ~ 0
-TODO: Check Fan\n Connector Wiring
 Wire Wire Line
 	1525 2475 1125 2475
 Wire Wire Line
@@ -1913,12 +1702,6 @@ Wire Wire Line
 	1525 3375 1225 3375
 Wire Notes Line
 	2975 7425 3600 7425
-Wire Notes Line
-	3600 7425 3600 6625
-Wire Notes Line
-	2975 6625 2975 7425
-Wire Notes Line
-	2975 6625 3600 6625
 Wire Wire Line
 	3025 7300 2550 7300
 $Comp
@@ -1931,6 +1714,60 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10275 3400 50  0001 C CNN
 F 3 "~" H 10275 3400 50  0001 C CNN
 F 4 "DNP" H 10075 3400 50  0001 C CNN "MPN"
 	1    10075 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 7200 2550 7200
+$Comp
+L MCU_Microchip_ATtiny:ATtiny1614-SS U13
+U 1 1 5FB8EEFC
+P 1950 7000
+F 0 "U13" H 1500 7650 50  0000 C CNN
+F 1 "ATtiny1614-SS" H 1550 6350 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1950 7000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf" H 1950 7000 50  0001 C CNN
+F 4 "C481364" H 1950 7000 50  0001 C CNN "LCSC"
+	1    1950 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2525 7600 2525
+Wire Wire Line
+	5750 2625 7600 2625
+Wire Wire Line
+	5750 2425 6000 2425
+Wire Wire Line
+	6000 2425 6000 2025
+Wire Wire Line
+	5725 2025 6000 2025
+Text GLabel 2825 6600 2    50   Input ~ 0
+ATtinyRESET
+Wire Wire Line
+	2625 6600 2550 6600
+Wire Notes Line
+	2975 7425 2975 6650
+Wire Notes Line
+	2975 6650 3600 6650
+Wire Notes Line
+	3600 6650 3600 7425
+Text GLabel 3125 2775 2    50   Input ~ 0
+ATtinyRESET
+$Comp
+L Device:R_Small R9
+U 1 1 60A91DEE
+P 2725 6600
+AR Path="/5EA9C461/60A91DEE" Ref="R9"  Part="1" 
+AR Path="/5EA9C67D/60A91DEE" Ref="R?"  Part="1" 
+AR Path="/5EA9C76D/60A91DEE" Ref="R?"  Part="1" 
+AR Path="/5EAB86B0/60A91DEE" Ref="R?"  Part="1" 
+F 0 "R9" V 2650 6550 50  0000 L CNN
+F 1 "4.7k" V 2800 6525 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2725 6600 50  0001 C CNN
+F 3 "~" H 2725 6600 50  0001 C CNN
+F 4 "0402WGF4701TCE" H 2725 6600 50  0001 C CNN "MPN"
+F 5 "C25900" H 2725 6600 50  0001 C CNN "LCSC"
+F 6 "RC0402JR-074K7L" H 2725 6600 50  0001 C CNN "Tempo"
+	1    2725 6600
 	0    1    1    0   
 $EndComp
 $EndSCHEMATC

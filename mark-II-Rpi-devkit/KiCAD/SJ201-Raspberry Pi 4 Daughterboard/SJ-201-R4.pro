@@ -1,4 +1,4 @@
-update=11/19/2020 11:52:17 AM
+update=11/22/2020 8:33:15 PM
 version=1
 last_client=kicad
 [general]
@@ -32,7 +32,7 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.2
+MinTrackWidth=0
 MinViaDiameter=0.4
 MinViaDrill=0.3
 MinMicroViaDiameter=0.3
@@ -247,6 +247,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
+Name=Audio
+Clearance=0.09
+TrackWidth=0.35
+ViaDiameter=1
+ViaDrill=0.5
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
 Name=Big
 Clearance=0.1
 TrackWidth=0.5
@@ -257,7 +268,7 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/2]
+[pcbnew/Netclasses/3]
 Name=Clock
 Clearance=0.15
 TrackWidth=0.25
@@ -268,7 +279,7 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/3]
+[pcbnew/Netclasses/4]
 Name=Small
 Clearance=0.1
 TrackWidth=0.2

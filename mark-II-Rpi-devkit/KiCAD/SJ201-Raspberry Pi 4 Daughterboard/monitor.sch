@@ -5,44 +5,245 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 4 7
 Title ""
-Date "2020-11-18"
-Rev "rev4 - 0.01"
+Date "2020-11-22"
+Rev "Rev4 - 0.03"
 Comp "Mycroft"
-Comment1 "SJ201 r4.01"
+Comment1 "SJ-201-R4"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 4725 875  0    118  ~ 0
-Monitor & Touch
-Text Notes 7050 3925 0    63   ~ 0
+Monitor & Touch\nFan controller
+Text Notes 7050 2225 0    63   ~ 0
 Raspberry Pi
-Text Notes 5075 3825 0    63   ~ 0
+Text Notes 5075 2125 0    63   ~ 0
 MIPI Connection to Display
 Wire Notes Line
-	5125 4050 5125 3850
+	5125 2350 5125 2150
 Wire Notes Line
-	6325 4050 5125 4050
+	6325 2350 5125 2350
 Wire Notes Line
-	6325 3850 6325 4050
+	6325 2150 6325 2350
 Wire Notes Line
-	5125 3850 6325 3850
+	5125 2150 6325 2150
 Wire Notes Line
-	8475 3475 6450 3475
+	8475 1775 6450 1775
 Wire Notes Line
-	8475 4375 8475 3475
+	8475 2675 8475 1775
 Wire Notes Line
-	6450 4375 8475 4375
+	6450 2675 8475 2675
 Wire Notes Line
-	6450 3475 6450 4375
-Text Notes 3000 4000 0    79   ~ 0
+	6450 1775 6450 2675
+Text Notes 3000 2300 0    79   ~ 0
 5" TFT MODULE MIPI DSI
 Wire Notes Line
-	5075 3275 2400 3275
+	5075 1575 2400 1575
 Wire Notes Line
-	5075 4575 5075 3275
+	5075 2875 5075 1575
 Wire Notes Line
-	2400 4575 5075 4575
+	2400 2875 5075 2875
 Wire Notes Line
-	2400 3275 2400 4575
+	2400 1575 2400 2875
+$Comp
+L Transistor_BJT:MMBT3904 Q1
+U 1 1 60970DB4
+P 3500 4525
+F 0 "Q1" H 3691 4571 50  0000 L CNN
+F 1 "MMBT3904" H 3691 4480 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3700 4450 50  0001 L CIN
+F 3 "" H 3500 4525 50  0001 L CNN
+F 4 "C20526" H 3500 4525 50  0001 C CNN "LCSC"
+	1    3500 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 60971565
+P 3600 4725
+F 0 "#PWR0117" H 3600 4475 50  0001 C CNN
+F 1 "GND" H 3605 4552 50  0000 C CNN
+F 2 "" H 3600 4725 50  0001 C CNN
+F 3 "" H 3600 4725 50  0001 C CNN
+	1    3600 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 609730D3
+P 3050 4525
+AR Path="/5EA9C461/609730D3" Ref="R?"  Part="1" 
+AR Path="/5EA9C67D/609730D3" Ref="R?"  Part="1" 
+AR Path="/5EA9C76D/609730D3" Ref="R?"  Part="1" 
+AR Path="/5EAB86B0/609730D3" Ref="R2"  Part="1" 
+F 0 "R2" V 2950 4525 50  0000 L CNN
+F 1 "4.7k" V 3150 4475 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3050 4525 50  0001 C CNN
+F 3 "~" H 3050 4525 50  0001 C CNN
+F 4 "0402WGF4701TCE" H 3050 4525 50  0001 C CNN "MPN"
+F 5 "C25900" H 3050 4525 50  0001 C CNN "LCSC"
+F 6 "RC0402JR-074K7L" H 3050 4525 50  0001 C CNN "Tempo"
+	1    3050 4525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 609732C2
+P 3600 3925
+AR Path="/5EA9C461/609732C2" Ref="R?"  Part="1" 
+AR Path="/5EA9C67D/609732C2" Ref="R?"  Part="1" 
+AR Path="/5EA9C76D/609732C2" Ref="R?"  Part="1" 
+AR Path="/5EAB86B0/609732C2" Ref="R18"  Part="1" 
+F 0 "R18" H 3675 3950 50  0000 L CNN
+F 1 "4.7k" H 3675 3850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3600 3925 50  0001 C CNN
+F 3 "~" H 3600 3925 50  0001 C CNN
+F 4 "0402WGF4701TCE" H 3600 3925 50  0001 C CNN "MPN"
+F 5 "C25900" H 3600 3925 50  0001 C CNN "LCSC"
+F 6 "RC0402JR-074K7L" H 3600 3925 50  0001 C CNN "Tempo"
+	1    3600 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 6098392C
+P 4600 3975
+AR Path="/5EAAC9A5/6098392C" Ref="#PWR?"  Part="1" 
+AR Path="/5EA9C461/6098392C" Ref="#PWR?"  Part="1" 
+AR Path="/5EAB86B0/6098392C" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 4600 3825 50  0001 C CNN
+F 1 "+12V" H 4615 4148 50  0000 C CNN
+F 2 "" H 4600 3975 50  0001 C CNN
+F 3 "" H 4600 3975 50  0001 C CNN
+	1    4600 3975
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 4525 2    51   Input ~ 0
+FanTach
+Wire Wire Line
+	5050 3975 4600 3975
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 60983934
+P 5250 3975
+AR Path="/5EA9C461/60983934" Ref="J?"  Part="1" 
+AR Path="/5EAB86B0/60983934" Ref="J7"  Part="1" 
+F 0 "J7" H 5168 3550 50  0000 C CNN
+F 1 "FanConnector" H 5168 3641 50  0000 C CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 5250 3975 50  0001 C CNN
+F 3 "~" H 5250 3975 50  0001 C CNN
+	1    5250 3975
+	1    0    0    -1  
+$EndComp
+Text GLabel 2950 4525 0    51   Input ~ 0
+FanPWM
+$Comp
+L power:GND #PWR0159
+U 1 1 60984A3E
+P 5225 3600
+F 0 "#PWR0159" H 5225 3350 50  0001 C CNN
+F 1 "GND" H 5230 3427 50  0000 C CNN
+F 2 "" H 5225 3600 50  0001 C CNN
+F 3 "" H 5225 3600 50  0001 C CNN
+	1    5225 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5225 3600 5050 3600
+Wire Wire Line
+	5050 3600 5050 3875
+Wire Wire Line
+	5050 4175 3600 4175
+Wire Wire Line
+	3600 4175 3600 4325
+Text Label 4475 4175 0    50   ~ 0
+FAN_PWM
+$Comp
+L power:+12V #PWR?
+U 1 1 60985749
+P 3600 3825
+AR Path="/5EAAC9A5/60985749" Ref="#PWR?"  Part="1" 
+AR Path="/5EA9C461/60985749" Ref="#PWR?"  Part="1" 
+AR Path="/5EAB86B0/60985749" Ref="#PWR0188"  Part="1" 
+F 0 "#PWR0188" H 3600 3675 50  0001 C CNN
+F 1 "+12V" H 3615 3998 50  0000 C CNN
+F 2 "" H 3600 3825 50  0001 C CNN
+F 3 "" H 3600 3825 50  0001 C CNN
+	1    3600 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4025 3600 4175
+Connection ~ 3600 4175
+Wire Wire Line
+	3300 4525 3150 4525
+Wire Wire Line
+	5050 4075 4350 4075
+Wire Wire Line
+	4350 4075 4350 4525
+Wire Wire Line
+	4350 4525 4675 4525
+$Comp
+L Device:R_Small R?
+U 1 1 6098617E
+P 4775 4525
+AR Path="/5EA9C461/6098617E" Ref="R?"  Part="1" 
+AR Path="/5EA9C67D/6098617E" Ref="R?"  Part="1" 
+AR Path="/5EA9C76D/6098617E" Ref="R?"  Part="1" 
+AR Path="/5EAB86B0/6098617E" Ref="R20"  Part="1" 
+F 0 "R20" V 4700 4475 50  0000 L CNN
+F 1 "27k" V 4850 4500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4775 4525 50  0001 C CNN
+F 3 "~" H 4775 4525 50  0001 C CNN
+F 4 "C25771" H 4775 4525 50  0001 C CNN "LCSC"
+	1    4775 4525
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0189
+U 1 1 60986B27
+P 5025 4825
+F 0 "#PWR0189" H 5025 4575 50  0001 C CNN
+F 1 "GND" H 5030 4652 50  0000 C CNN
+F 2 "" H 5025 4825 50  0001 C CNN
+F 3 "" H 5025 4825 50  0001 C CNN
+	1    5025 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60987E5F
+P 5025 4725
+AR Path="/5EA9C461/60987E5F" Ref="R?"  Part="1" 
+AR Path="/5EA9C67D/60987E5F" Ref="R?"  Part="1" 
+AR Path="/5EAAC9A5/60987E5F" Ref="R?"  Part="1" 
+AR Path="/5EAB86B0/60987E5F" Ref="R29"  Part="1" 
+F 0 "R29" H 5075 4800 50  0000 L CNN
+F 1 "10k" H 5075 4675 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5025 4725 50  0001 C CNN
+F 3 "~" H 5025 4725 50  0001 C CNN
+F 4 "RC0402FR-0710KL" H 5025 4725 50  0001 C CNN "MPN"
+F 5 "C25744" H 5025 4725 50  0001 C CNN "LCSC"
+	1    5025 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4525 5025 4525
+Text Notes 2925 5325 0    50   ~ 0
+Reference Fan Design:\nhttps://www.electroschematics.com/4-wire-pc-fan/
+Wire Wire Line
+	5025 4625 5025 4525
+Connection ~ 5025 4525
+Wire Wire Line
+	5025 4525 4875 4525
+Text Notes 3725 3425 0    50   ~ 0
+Fan Controller
+Wire Notes Line
+	5600 3325 5600 5450
+Wire Notes Line
+	5600 5450 2350 5450
+Wire Notes Line
+	2350 5450 2350 3325
+Wire Notes Line
+	2350 3325 5600 3325
 $EndSCHEMATC

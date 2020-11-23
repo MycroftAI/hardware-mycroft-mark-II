@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 7
 Title "XMOS"
-Date "2020-11-18"
-Rev "4.01"
+Date "2020-11-22"
+Rev "Rev4 - 0.03"
 Comp "Mycroft"
-Comment1 "SJ201 r4.01"
+Comment1 "SJ-201-R4"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -16697,7 +16697,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8707-SEEPROM-AT25010B
 F 4 "1265-1278-2-ND" H 7200 2025 50  0001 C CNN "Digikey"
 F 5 "AT25SF161-SHD-T" H 7200 2025 50  0001 C CNN "MPN"
 F 6 "https://www.digikey.com/en/products/detail/adesto-technologies/AT25SF161-SHD-T/6827526" H 7200 2025 50  0001 C CNN "Link"
-F 7 "C93710" H 7200 2025 50  0001 C CNN "LCSC"
+F 7 "C93711" H 7200 2025 50  0001 C CNN "LCSC"
 	1    7200 2025
 	1    0    0    -1  
 $EndComp
@@ -16912,7 +16912,7 @@ F 1 "BAT54A" V 6795 6163 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6825 6200 50  0001 L CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 6630 6075 50  0001 C CNN
 F 4 "BAT54ALT1G" H 6750 6075 50  0001 C CNN "MPN"
-F 5 "C179724-DNP" H 6750 6075 50  0001 C CNN "LCSC"
+F 5 "C179724" H 6750 6075 50  0001 C CNN "LCSC"
 	1    6750 6075
 	0    1    1    0   
 $EndComp

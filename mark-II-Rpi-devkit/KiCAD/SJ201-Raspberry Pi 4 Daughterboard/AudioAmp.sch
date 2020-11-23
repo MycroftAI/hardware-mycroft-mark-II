@@ -5,10 +5,10 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 3 7
 Title ""
-Date "2020-11-18"
-Rev "rev4 - 0.01"
+Date "2020-11-22"
+Rev "Rev4 - 0.03"
 Comp "Mycroft"
-Comment1 "SJ201 r4.01"
+Comment1 "SJ-201-R4"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -170,39 +170,6 @@ F 5 "C52923" H 1250 3675 50  0001 C CNN "LCSC"
 $EndComp
 Text GLabel 5350 1550 2    51   Input ~ 0
 PVDD
-$Comp
-L Connector:AudioJack2_Ground_Switch J9
-U 1 1 5FDDA9C6
-P 6125 4475
-F 0 "J9" H 6107 4900 50  0000 C CNN
-F 1 "AudioJack3_Ground_Switch" H 6107 4809 50  0000 C CNN
-F 2 "mycroft:STX-3790-5N" H 6125 4475 50  0001 C CNN
-F 3 "~" H 6125 4475 50  0001 C CNN
-F 4 "DNP " H 6125 4475 50  0001 C CNN "MPN"
-F 5 "2092-STX-3790-5N-ND" H 6125 4475 50  0001 C CNN "Digikey"
-F 6 "https://www.digikey.com/product-detail/en/kycon-inc/STX-3790-5N/2092-STX-3790-5N-ND/9990125" H 6125 4475 50  0001 C CNN "Link"
-	1    6125 4475
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0117
-U 1 1 5FDDB40B
-P 6125 4775
-F 0 "#PWR0117" H 6125 4525 50  0001 C CNN
-F 1 "GND" H 6130 4602 50  0000 C CNN
-F 2 "" H 6125 4775 50  0001 C CNN
-F 3 "" H 6125 4775 50  0001 C CNN
-	1    6125 4775
-	1    0    0    -1  
-$EndComp
-Text GLabel 6325 4575 2    51   Input ~ 0
-VoutL
-Text GLabel 6325 4375 2    51   Input ~ 0
-VoutR
-Wire Wire Line
-	6325 4375 6325 4275
-Wire Wire Line
-	6325 4475 6325 4575
 Text GLabel 7450 5975 3    51   Input ~ 0
 SDA
 Text GLabel 7800 5925 2    51   Input ~ 0
@@ -10111,22 +10078,6 @@ F 5 "C17168" H 1700 7025 50  0001 C CNN "LCSC"
 $EndComp
 $Comp
 L Device:R_Small R?
-U 1 1 5FF12B3D
-P 1700 7125
-AR Path="/5EA9C461/5FF12B3D" Ref="R?"  Part="1" 
-AR Path="/5EA9C67D/5FF12B3D" Ref="R56"  Part="1" 
-AR Path="/5EA9C76D/5FF12B3D" Ref="R?"  Part="1" 
-F 0 "R56" V 1650 6900 50  0000 L CNN
-F 1 "0R - DNP" V 1750 7225 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1700 7125 50  0001 C CNN
-F 3 "~" H 1700 7125 50  0001 C CNN
-F 4 "DNP-0402WGF0000TCE" H 1700 7125 50  0001 C CNN "MPN"
-F 5 "C17168-DNP" H 1700 7125 50  0001 C CNN "LCSC"
-	1    1700 7125
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
 U 1 1 5FF12EBA
 P 3275 7475
 AR Path="/5EA9C461/5FF12EBA" Ref="R?"  Part="1" 
@@ -10268,4 +10219,49 @@ F 4 "DNP" H 2250 7125 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 Connection ~ 2250 7125
+$Comp
+L Connector:AudioJack2_Ground J2
+U 1 1 60817512
+P 7075 4500
+F 0 "J2" H 7107 4825 50  0000 C CNN
+F 1 "AudioJack2_Ground" H 7107 4734 50  0000 C CNN
+F 2 "user:Jack_3.5mm_PJ-3210" H 7075 4500 50  0001 C CNN
+F 3 "~" H 7075 4500 50  0001 C CNN
+F 4 "PJ-3210-4A" H 7075 4500 50  0001 C CNN "MPN"
+F 5 "C136686" H 7075 4500 50  0001 C CNN "LCSC"
+F 6 "https://lcsc.com/product-detail/Audio-Video-Connectors_Korean-Hroparts-Elec-PJ-3210-4A_C136686.html" H 7075 4500 50  0001 C CNN "Link"
+	1    7075 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 7275 4400 2    51   Input ~ 0
+VoutR
+Text GLabel 7275 4500 2    51   Input ~ 0
+VoutL
+$Comp
+L power:GND #PWR0149
+U 1 1 60817CE6
+P 7075 4700
+F 0 "#PWR0149" H 7075 4450 50  0001 C CNN
+F 1 "GND" H 7080 4527 50  0000 C CNN
+F 2 "" H 7075 4700 50  0001 C CNN
+F 3 "" H 7075 4700 50  0001 C CNN
+	1    7075 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60AD536C
+P 1700 7125
+AR Path="/5EA9C461/60AD536C" Ref="R?"  Part="1" 
+AR Path="/5EA9C67D/60AD536C" Ref="R33"  Part="1" 
+AR Path="/5EA9C76D/60AD536C" Ref="R?"  Part="1" 
+F 0 "R33" V 1650 6900 50  0000 L CNN
+F 1 "0R" V 1750 7225 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1700 7125 50  0001 C CNN
+F 3 "~" H 1700 7125 50  0001 C CNN
+F 4 "0402WGF0000TCE" H 1700 7125 50  0001 C CNN "MPN"
+F 5 "C17168" H 1700 7125 50  0001 C CNN "LCSC"
+	1    1700 7125
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

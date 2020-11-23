@@ -5,10 +5,10 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 7 7
 Title "Coral TPU"
-Date "2020-11-18"
-Rev "rev4 - 0.01"
+Date "2020-11-22"
+Rev "Rev4 - 0.03"
 Comp "Mycroft"
-Comment1 "SJ201 r4.01"
+Comment1 "SJ-201-R4"
 Comment2 ""
 Comment3 ""
 Comment4 ""
