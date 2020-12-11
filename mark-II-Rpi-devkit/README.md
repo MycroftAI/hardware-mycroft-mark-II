@@ -1,8 +1,14 @@
 # Mycroft Mark II - DevKit Prototype
 
 *⛵️ Note that this repository is a work-in-progress. It will be updated and improved on over time.*
-
-The second iteration of the Mark II prototype. 
+## Kit Major Components
+* Raspberry Pi 4
+* SJ201 Daugherboard
+* Audio Chamber
+* Dual 7W Speaker drivers
+* 4.2" Full Color touchscreen LCD
+* Acrylic Enclosure
+* Universal 12V power supply (USA, EU,UK, AUS, CCC)
 
 ## SJ201 Daughterboard
 This prototype includes a custom daughterboard (SJ201) that integrates the components from the OTS prototype into a single PCB (SJ201).
@@ -16,17 +22,19 @@ The part number SJ201 is derived from Mike’s “Simon Jester” alias in “Th
 <img src="./images/pcb-render-v0.67c-back.png" width="500">
 <img src="./images/pcb-render-v0.67c-front.png" width="500">
 
-### Major Components
+### SJ201 Major Components
 * Audio Front End (XMOS XVF-3510) - for Microphone input processing
 * I2S to Line Out (UDA1334ATS)
-* 20W Amplifier (Maxim Integrated MAX9744)
+* 23W Amplifier (Texas Instruments TAS5806)
 * 2 Digital MEMS Microphones (ST Micro MP34DT05)
 * 12 RGB LEDs (WorldSemi WS2812B-MINI)
 * 3 momentary buttons (volume up, volume down, action)
 * 1 toggle switch (mic mute)
 
 ### SJ-202 - USB Jumper
+This connects the Raspberry Pi 4 to the 
 <img src="./images/SJ-202-USB-installed.png" width="500">
+
 
 ### Technical Documentation
 For technical details of these board see the 
