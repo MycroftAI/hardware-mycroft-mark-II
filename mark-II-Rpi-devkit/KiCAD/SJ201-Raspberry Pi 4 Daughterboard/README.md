@@ -21,7 +21,6 @@ This Datasheet will contain all the relevant information for the manufacturing o
 * Audio Front End (XMOS XVF-3510) - for Microphone input processing
 
 * 23W I2S Digital Amplifier (Texas Instruments TAS5806MD)
-* USB 4-port Hub Controller (FE1.1s https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf)
 * 2 Digital MEMS Microphones (Knowles SPK0641HT4H-1 https://www.digikey.com/en/products/detail/knowles/SPK0641HT4H-1/8573345)
 * 12 RGB LEDs (WorldSemi WS2812B-MINI)
 * 3 momentary buttons (volume up, volume down, action)
