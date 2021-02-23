@@ -14,7 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-#  2020-12-17 - J.M - Initial Release
+#  2020-12-17 - J.M. - Initial Release
+#  2021-02-19 - J.M. - Improved Docs
 #
 #  This script is intended to run headless and uses the LEDS for communication.
 #  To use it you need to have the WiFi setup on the Linux device.
@@ -26,6 +27,19 @@
 #  This script is updating the EEPROM and needs to be run as root.
 #
 #  To run it automagically at boot ( on Raspbian only ) 
+#  Copy this script to /etc/eeprom_update.sh
+#  Chmod the script to executable> chmod +x /etc/eeprom_update.sh
+#  Edit /etc/rc.local
+#  Add: /etc/eeprom_update.sh
+#
+#  Make sure your WiFi creds ( if using WiFi ) are up to date and the device connects to the network.
+#  You can do this by editing /etc/wpa_supplicant/wpa_supplicant.conf
+#
+#  Reboot
+#
+#  After this is done you will have a card that  connects to the network, checks the eeprom version and does the update automatically.
+#  Total time for the update should be around 90 seconds.
+#
 
 # Make sure we are running as root
 echo "eeprom_update.sh: Checking to see if running as root."
