@@ -19,8 +19,8 @@ The SJ201 can also be used as a USB microphone array with barge-in support. In t
 
 The part number SJ201 is derived from Mike’s “Simon Jester” alias in “The Moon is a Harsh Mistress”.
 
-<img src="./images/pcb-render-v0.67c-back.png" width="500">
-<img src="./images/pcb-render-v0.67c-front.png" width="500">
+<img src="images/pcb-render-SJ-201-R6-back.png" width="500">
+<img src="images/pcb-render-SJ-201-R6-front.png" width="500">
 
 ### SJ201 Major Components
 * Audio Front End (XMOS XVF-3510) - for Microphone input processing
@@ -30,10 +30,7 @@ The part number SJ201 is derived from Mike’s “Simon Jester” alias in “Th
 * 12 RGB LEDs (WorldSemi WS2812B-MINI)
 * 3 momentary buttons (volume up, volume down, action)
 * 1 toggle switch (mic mute)
-
-### SJ-202 - USB Jumper
-This connects the Raspberry Pi 4 to the 
-<img src="./images/SJ-202-USB-installed.png" width="500">
+* ATtiny1614 - control LEDs, other I/O
 
 
 ### Technical Documentation

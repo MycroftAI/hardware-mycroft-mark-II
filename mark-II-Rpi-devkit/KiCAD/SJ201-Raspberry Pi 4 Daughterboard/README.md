@@ -10,23 +10,22 @@ The SJ201 can also be used as a USB microphone array with barge-in support. In t
 
 The part number SJ201 is derived from Mike’s “Simon Jester” alias in “The Moon is a Harsh Mistress”.
 
-<img src="../../images/pcb-render-v0.66-back.png" width="500">
-<img src="../../images/pcb-render-v0.66-front.png" width="500">
+<img src="../../images/pcb-render-SJ-201-R6-back.png" width="500">
+<img src="../../images/pcb-render-SJ-201-R6-front.png" width="500">
 
 ## About this Document
 
 This Datasheet will contain all the relevant information for the manufacturing of the SJ201 including information about PCB design, PCB manufacturing process.
 
 ## Major Components
-* Audio Front End (XMOS XVF-3510) - for Microphone input processing
-* I2S to Line Out (UDA1334ATS)
-* 23W Amplifier (Texas Instruments TAS5806)
-* USB 4-port Hub Controller (FE1.1s https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf)
-* 2 Digital MEMS Microphones (ST Micro MP34DT05)
+* Audio Front End (XMOS XVF3510) - for Microphone input processing
+* 23W I2S Digital Amplifier (Texas Instruments TAS5806MD)
+* 2 Digital MEMS Microphones (Knowles SPK0641HT4H-1 https://www.digikey.com/en/products/detail/knowles/SPK0641HT4H-1/8573345)
 * 12 RGB LEDs (WorldSemi WS2812B-MINI)
 * 3 momentary buttons (volume up, volume down, action)
 * 1 toggle switch (mic mute)
-* ATtiny1608 - control LEDs, misc power on and I/O
+* ATtiny1614 - control LEDs, other I/O
+* I2S to Line Out (UDA1334ATS)
 
 ## Hardware Notes
 
@@ -34,6 +33,10 @@ This Datasheet will contain all the relevant information for the manufacturing o
 - The pins required for the operation of the Raspberry Pi 4 MIPI and CSI are not used on the SJ201 GPIO header. The display and camera do not connect to the SJ201.
 - The USB port on the SJ201 is aligned to connect to the USB port on the Raspberry Pi board. This utilizes a non-standard USB-A to header-pin PCB jumper board.
 - The barrel jack on the SJ201 requires a 12V, 3A regulated DC input.
+
+## Software Notes
+- SHTDN (GPIO pin GPIO5) must be set high to enable the audio amplifier.
+- The TAS5806 outputs I2S to the XMOS chip. 
 
 ## Configuration options
 
@@ -67,17 +70,15 @@ The SJ201 is powered by an external 12V 3A DC supply (wall wart) via a barrel co
 
 - VDD 12V externally supplied power
 
-- PVDD  12V Analog Audio Power
+- PVDD 12V Analog Audio Power
 
 - 5V  5V derived from VDD (or USB Powered if Jumper USB_Power1 soldered)
 
 - 3V  3.3V derived from 5V
 
-- 1.8V TPU Supply
+- 1V  1.0V derived from 5V for the XMOS core
 
-- 1.0V XMOS Supply
-
-Additionally, there are two ground domains:
+All power domains share a common ground.
 
 - GND  Ground
 
@@ -91,11 +92,6 @@ We are using the TAS5806, in a "filterless amplifier" design. This is lower cost
 **Speaker power**  
 With a 4ohm speaker and a 12V supply, each channel can achieve ~13W. The speaker we're using is 4.4ohm, 5W max. The volume must be limited in software to avoid damaging the speaker.
 
-### USB Hub
-
-- FE1.1S
-
-- <https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf>
 
 
 ## PCB Layout Checklist
@@ -471,6 +467,3 @@ Not all of these parts will be used in a given Mark II assembly. For example, on
 </table>
 
 
-## Serial Numbers
-
-TODO. Concept: Use large random numbers to make it difficult to make knock-off products that take advantage of Mycroft warranty or support. Serial numbers are to be pseudo-random numbers generated using a secure algorithm. Serial numbers are sent securely to the manufacturer. At a TBD Serial Number verification website, a number can be entered, and it will report if it is a genuine Mycroft serial number, and what product it is for, and if we know of any unlicensed copies. This website will have a rate limiter for queries, so serially searching for valid numbers will be unlikely to find valid numbers.

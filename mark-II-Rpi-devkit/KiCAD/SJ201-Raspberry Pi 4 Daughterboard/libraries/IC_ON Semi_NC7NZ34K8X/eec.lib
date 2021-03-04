@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ON Semi NC7NZ34K8X
+#
+DEF NC7NZ34K8X U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN 
+F1 "NC7NZ34K8X" 0 300 50 H V L CNN 
+F2 "ON_Semi-NZ34-0-0-*" 0 400 50 H I L CNN 
+F3 "http://datasheet.octopart.com/NC7NZ34K8X-Fairchild-Semiconductor-datasheet-129294.pdf" 0 500 50 H I L CNN 
+F4 "IC" 0 600 50 H I L CNN "category"
+F5 "IC BUFFER TRPL SCHM TRIG US8" 0 700 50 H I L CNN "digikey description"
+F6 "NC7NZ34K8XCT-ND" 0 800 50 H I L CNN "digikey part number"
+F7 "yes" 0 900 50 H I L CNN "lead free"
+F8 "39c2ae10d8061d1a" 0 1000 50 H I L CNN "library id"
+F9 "ON Semi" 0 1100 50 H I L CNN "manufacturer"
+F10 "512-NC7NZ34K8X" 0 1200 50 H I L CNN "mouser part number"
+F11 "SOP8" 0 1300 50 H I L CNN "package"
+F12 "yes" 0 1400 50 H I L CNN "rohs"
+F13 "+85°C" 0 1500 50 H I L CNN "temperature range high"
+F14 "-40°C" 0 1600 50 H I L CNN "temperature range low"
+DRAW
+X VCC 8 100 0 100 R 40 40 1 1 U 
+X 1A 1 100 -200 100 R 40 40 1 1 U 
+X 1Y 7 1000 0 100 L 40 40 1 1 U 
+X 2A 3 100 -300 100 R 40 40 1 1 U 
+X 2Y 5 1000 -100 100 L 40 40 1 1 U 
+X 3A 6 100 -400 100 R 40 40 1 1 U 
+X 3Y 2 1000 -200 100 L 40 40 1 1 U 
+X GND 4 1000 -400 100 L 40 40 1 1 U 
+S 200 100 900 -500 1 1 0 f
+ENDDRAW
+ENDDEF
+#
+# End Library
