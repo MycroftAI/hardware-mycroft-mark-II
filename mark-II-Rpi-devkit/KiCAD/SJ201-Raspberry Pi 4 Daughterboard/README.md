@@ -1,12 +1,6 @@
-# SJ201 Datasheet - Rev 4
-
-*⛵️ Note that this repository is a work-in-progress. It will be updated and improved on over time.*
-
-This is the first prototype design for the Mark II daughterboard PCB (SJ201).
+# SJ201 Datasheet - Rev 6
 
 This board interfaces directly to the Raspberry Pi 4 via the 40-pin GPIO adding a high-quality speaker and microphone array, as well as LEDs and hardware inputs for non-voice interaction and feedback.
-
-The SJ201 can also be used as a USB microphone array with barge-in support. In this configuration the amplifiers do not work as the USB port cannot supply the required power.
 
 The part number SJ201 is derived from Mike’s “Simon Jester” alias in “The Moon is a Harsh Mistress”.
 
@@ -31,7 +25,6 @@ This Datasheet will contain all the relevant information for the manufacturing o
 
 - The SJ201 is plugged into the GPIO header of the Raspberry Pi 4 board.
 - The pins required for the operation of the Raspberry Pi 4 MIPI and CSI are not used on the SJ201 GPIO header. The display and camera do not connect to the SJ201.
-- The USB port on the SJ201 is aligned to connect to the USB port on the Raspberry Pi board. This utilizes a non-standard USB-A to header-pin PCB jumper board.
 - The barrel jack on the SJ201 requires a 12V, 3A regulated DC input.
 
 ## Software Notes
@@ -96,19 +89,17 @@ With a 4ohm speaker and a 12V supply, each channel can achieve ~13W. The speaker
 
 ## PCB Layout Checklist
 
-Boxes marked 🗹 are for version 0.60 of the KiCAD files.
+Boxes marked 🗹 are for version 6.02 (also labeled R6 v2) of the KiCAD files.
 
 ### Layers - PCB checklist
 
 Layer 1:  Main ICs, connectors and signal routing - Power (1.0v, PVDD 12v)
 
-Layer 2:  GND and PGND
+Layer 2:  GND
 
 Layer 3:  Power (12V, 5V)
 
 Layer 4:  Buttons, LEDs, signal routing (this layer faces upwards on device) 
-
-Power (3.3V) & PGND
 
 ### Power - PCB checklist
 
@@ -163,10 +154,6 @@ A linear regulator is used to derive 3.3V from 5V.
 
 🗹  <https://datasheet.lcsc.com/szlcsc/2005251033_Worldsemi-WS2812B-Mini_C527089.pdf>
 
-### USB Hub (FE1.1S) - PCB checklist
-
-🗹  <https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf>
-
 ### Power on Reset - PCB checklist
 
 -   <https://www.onsemi.com/pub/Collateral/NCP302-D.PDF> 
@@ -193,7 +180,7 @@ From page 26-27 of the XMOS VocalFusion XVF3510 datasheet (dated 2019-10-22).
 
 🗹 The VDD (core) supply ramps monotonically (rises constantly) from 0V to its final value (0.95V - 1.05V) within 10ms (Section 6.1).
 
-☐ The VDD (core) supply is capable of supplying 1400mA (Section 6.1).
+🗹 The VDD (core) supply is capable of supplying 1400mA (Section 6.1).
 
 🗹 PLL_AVDD is filtered with a low pass filter, for example an RC filter, (Section 6.1)
 
@@ -255,12 +242,12 @@ From page 26-27 of the XMOS VocalFusion XVF3510 datasheet (dated 2019-10-22).
 
 ### Audio Amplifier - PCB checklist
 
-The following notes are related to the PCB layout wrt the MAX9744.
+The following notes are related to the PCB layout wrt the TAS5806. We also used the MAX9744 design notes, as that was the amplifier for the first iteration and the notes are generally applicable.
 
 1. 🗹 Ferrite bead close to 12V barrel connector
    - "It is sometimes helpful to insert RF chokes in series with the power supplies for the amplifier. Properly placed, they can confine high-frequency transient currents to local loops near the amplifier, instead of being conducted for long distances down the power supply wires." [Ref 1]
 
-2. 🗹 Compact LC circuit from output of MAX9744 to JST speaker connectors
+2. 🗹 Compact LC circuit from output of amplifier to JST speaker connectors
    - "the entire LC filter (including the speaker wiring) should be laid out as compactly as possible, and kept close to the amplifier." [Ref 1]
 
 3. 🗹 Make speaker connections parallel and close to minimize area and therefore the "antenna" created
@@ -279,7 +266,7 @@ The following notes are related to the PCB layout wrt the MAX9744.
 
 9. 🗹 Use large traces for the power-supply to PVDD and PGND. [Ref 3, p23]
 
-10. 🗹 Thermal pad (area fill exposed copper) under MAX9744 on layer 1. [Ref 3, p23]
+10. 🗹 Thermal pad (area fill exposed copper) under amplifier on layer 1. [Ref 3, p23]
    - There should be no solder-mask in this area. [TODO: verify]
 
 11. 🗹 Connect thermal pad on layer 1 to PGND on layer 2 using multiple vias. PGND area as large as practical for better heat dissipation. [Ref 3, p23]
@@ -311,159 +298,3 @@ WS2812 Mini
   - Speaker impedance choice
 
 3\. MAX9744 data sheet
-
-
-## Part Numbering Schema
-
-**SJXYY[-ZZ] [rRR][.MM]**
-
-The SJ prefix is used for component and assembly part numbers. The MYC prefix is used for packaged and ready-to-ship products.
-
-If any part of the numbering is omitted, the reference is to the part in general or the grouping. This is permitted in documentation, but when it comes to inventory or bug reports the entire part number must be used.
-
-SJXYY is the product family. SJ2YY refers to the Mark II family of parts. E.g. SJ200 is the Mark II Development Kit, assembled. SJ201 is the daughterboard described by this document. SJ201-01 is this datasheet.
-
-ZZ is an optional sub-component number. E.g. SJ201-01 is this Datasheet. If SJ203 is the plastic enclosure in its entirety, SJ203-01 might be the left half, SJ203-02 might be the right half, etc.
-
-RR is the revision number. The revision number is updated if any material changes have been made after the previous manufacturing run. This number is not changed during the iterative development process. Those revisions are tracked via the revision control system in use for development (e.g. GitHub).
-
-MM is the manufacturing run number. Each run is assigned a new number, whether it is the same or a different facility. A large run may get multiple numbers if the manufacturer makes material changes during production. For components purchased in bulk (rather than manufactured), this number refers to the purchase number. This number may not appear on the product itself, or may simply be a sticker, but must be used for purchase orders and for labeling inventory.
-
-
-## Related Parts
-Not all of these parts will be used in a given Mark II assembly. For example, only one enclosure is needed, either the SJ230 (Laser-cut enclosure), or the SJ240 (FDM enclosure), etc.
-
-** TODO: Move this to it's own document. **
-
-<table>
-<tr>
-    <th align="left" width="120px">Part number</th>
-    <th align="left">Description</th>
-</tr>
-<tr>
-    <td valign=top>MYC200 r01.01</td>
-    <td>
-    Packaged, ready-to-ship, Mark II for N.A. 
-    r01 refers to the specific manifest of subcomponents used, which includes packaging, power supply, instructions, etc, which may be different from region to region. r01.01 refers to the first "print run" (i.e. purchase order).
-    </td>
-</tr>
-<tr>
-    <td valign=top>MYC201 r01.01</td>
-    <td>
-    Packaged, ready-to-ship, Mark II for the EU.
-    The same manifest as the MYC200, with the exception of a different wall-wart.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ200</td>
-    <td>
-    The assembled Mark II, sans external power supply. SJ200 (without the revision and manufacture designation) is a class of products, not a specific thing we can inventory.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ200 r01.01</td>
-    <td>
-    The assembled Mark II, sans external power supply, rev 1, run 1
-    r01 refers to the specific manifest of subcomponents used. 
-    .01 is required for the purchase order. The same manifest (r01) may be used over and over if, for example, we order test assembly runs from a large inventory. Each of these gets a unique r01.##.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ201</td>
-    <td>
-    The Raspberry Pi 4 Daughterboard (the part described by this document)
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ201-01</td>
-    <td>
-    This document.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ201-01 r01</td>
-    <td>
-    This document, matched to the SJ201 r01 version.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ202</td>
-    <td>
-    USB jumper board to connect the Pi4 to the SJ201
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ203</td>
-    <td>
-    LCD Assembly. Connects via MIPI on the Pi 4. TODO: this will either be a sub-assembly or an off-the-shelf module. If it is an off-the-shelf module, there may be no SJ203-XX parts.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ203-00</td>
-    <td>
-    LCD display. If this is an off-the-shelf module, then the part number would just be SJ203.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ203-01</td>
-    <td>
-    Video adapter board for display module. Includes 24V boost for backlight.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ203-02</td>
-    <td>
-    (Example) 3mm M4 hexdrive screws for assembling display module.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ210</td>
-    <td>
-    Camera. Connects via the Pi 4 CSI connector. Might end up being a sub-assembly, in which case there may be SJ210-XX parts.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ220</td>
-    <td>
-    120V AC to 12V 3A DC power supply, N.A. style
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ221</td>
-    <td>
-    The Raspberry Pi 4. This part number is used for specifying the correct part for purchase orders and to inventory it for final assembly. For example, we need firmware pre-flashed to a May 2020 or later version to support booting from USB.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ230</td>
-    <td>
-    A design for the laser-cut plastic enclosure. This does not refer to a manufactured item: it's the containter for all the parts of that enclosure, which are SJ230-00 through .. SJ230-XX.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ230-ZZ</td>
-    <td>
-    The plastic enclosure parts, for ZZ = 00 to ??. These might be labeled only in the CAD file.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ240</td>
-    <td>
-    An FDM plastic enclosure.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ250-ZZ</td>
-    <td>
-    The FDM plastic enclosure parts, for ZZ = 00 to ??.
-    </td>
-</tr>
-<tr>
-    <td valign=top>SJ290-ZZ</td>
-    <td>
-    Retail packaging parts for production of MYC200, enclosure SJ205. ZZ = 00 to ??, for things like the printed cardbox box, quick-start pamphlet, etc. Not all of these parts will be used in a particular MYC20X manufacturing run, because it contains variants for different regions.
-    </td>
-</tr>
-</table>
-
-
