@@ -5,7 +5,7 @@
 This repository contains all of the designs and technical details of the Mycroft Mark II Prototypes.
 
 Each sub-directory represents a prototype device. Currently this consists of:
-- [Mark II RPi OTS](./mark-II-rpi-ots) - the first Mark II prototype released in February 2020 made from off-the-shelf components.
+- [Mark II RPi OTS](./mark-II-rpi-ots) - the first Mark II prototype released in February 2020 made from off-the-shelf components. [Deprecated]
 - [Mark II RPi DevKit](./mark-II-Rpi-devkit) - the second iteration of the Mark II prototype. This includes a custom daughterboard (SJ201) that integrates the components from the OTS prototype into a single PCB.
 
 ## Our open hardware principles
