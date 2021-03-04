@@ -1,0 +1,39 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          pcba-testing-startup
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start daemon at boot time
+# Description:       Enable service provided by daemon.
+### END INIT INF
+# /etc/init.d/pcba-testing-startup
+#
+#  sudo update-rc.d pcba-testing-startup defaults
+#
+
+case "$1" in
+  start)
+    echo "Starting Precise Engine"
+    sudo -u mycroft screen -A -m -d -S precise_test sudo python3 /home/mycroft/PCBtests/precise_test.py
+    echo "Precise Engine        - Started"
+    echo "Starting Pygame - PCBA Testing"
+    sudo -u mycroft screen -A -m -d -S pygame sudo python3 /home/mycroft/PCBtests/mycroftPCBAprogramAndTest.py
+    echo "Pygame - PCBA Testing - Started"
+    ;;
+  stop)
+    echo "Stopping Precise Engine"
+    screen -S precise_test -X quit
+    echo "Precise Engine        - Stopped"
+    echo "Stopping Pygame - PCBA Testing"
+    screen -S pygame -X quit
+    echo "Pygame - PCBA Testing - Stopped"
+    ;;
+  *)
+    echo "Usage: /etc/init.d/pcba-testing-startup {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
