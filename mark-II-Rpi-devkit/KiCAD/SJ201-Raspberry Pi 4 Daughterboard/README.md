@@ -38,8 +38,8 @@ This Datasheet will contain all the relevant information for the manufacturing o
 
 ## Software Notes
 
-- SHTDN (GPIO pin XYZ) must be set high to enable the audio amplifier.
-- The XMOS chip outputs I2S audio to the I2S to Line Out IC then outputs to the amplifier. 
+- SHTDN (GPIO pin GPIO5) must be set high to enable the audio amplifier.
+- The TAS5806 outputs I2S to the XMOS chip. 
 
 
 ## Configuration options
@@ -117,11 +117,6 @@ With a 4ohm speaker and a 12V supply, each channel can achieve ~13W. The speaker
 If USB-C is an option, then USB-powered amplification could be achieved. In the current implementation, however, this is not designed for.
 
 
-### USB Hub
-
-- FE1.1S
-
-- <https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf>
 
 
 ## PCB Layout Checklist
