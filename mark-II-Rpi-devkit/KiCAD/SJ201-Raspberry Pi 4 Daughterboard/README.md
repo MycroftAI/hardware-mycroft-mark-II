@@ -1,4 +1,4 @@
-# SJ201 Datasheet
+# SJ201 Datasheet - Rev 4
 
 *⛵️ Note that this repository is a work-in-progress. It will be updated and improved on over time.*
 
@@ -18,29 +18,25 @@ The part number SJ201 is derived from Mike’s “Simon Jester” alias in “Th
 This Datasheet will contain all the relevant information for the manufacturing of the SJ201 including information about PCB design, PCB manufacturing process.
 
 ## Major Components
-* Audio Front End (XMOS XVF-3510) - for Microphone input processing
-
+* Audio Front End (XMOS XVF3510) - for Microphone input processing
 * 23W I2S Digital Amplifier (Texas Instruments TAS5806MD)
 * 2 Digital MEMS Microphones (Knowles SPK0641HT4H-1 https://www.digikey.com/en/products/detail/knowles/SPK0641HT4H-1/8573345)
 * 12 RGB LEDs (WorldSemi WS2812B-MINI)
 * 3 momentary buttons (volume up, volume down, action)
 * 1 toggle switch (mic mute)
 * ATtiny1614 - control LEDs, other I/O
+* I2S to Line Out (UDA1334ATS)
 
 ## Hardware Notes
 
 - The SJ201 is plugged into the GPIO header of the Raspberry Pi 4 board.
 - The pins required for the operation of the Raspberry Pi 4 MIPI and CSI are not used on the SJ201 GPIO header. The display and camera do not connect to the SJ201.
-- The USB port on the SJ201 is aligned to connect to the USB port on the Raspberry Pi board. This utilizes a non-standard USB-A to USB-A PCB jumper board.
+- The USB port on the SJ201 is aligned to connect to the USB port on the Raspberry Pi board. This utilizes a non-standard USB-A to header-pin PCB jumper board.
 - The barrel jack on the SJ201 requires a 12V, 3A regulated DC input.
-- We intend to experiment with lower voltage supplies, as 12V provides too much power for the speaker drivers we are likely to use in the Mark II Development Kit.
-
 
 ## Software Notes
-
 - SHTDN (GPIO pin GPIO5) must be set high to enable the audio amplifier.
 - The TAS5806 outputs I2S to the XMOS chip. 
-
 
 ## Configuration options
 
@@ -64,19 +60,7 @@ The J5 header can also be used to bypass the on-board buck converter and/or line
 
 The buck converter does not need to be turned off - it can tolerate an external supply. To completely disable it, lift the appropriate pin.
 
-By cutting J2 trace, the J5 PVDD pin can be used to supply alternate voltages to the audio amplifiers PVDD domain, to allow for optimization of the amplifier subsystem.
-
 The 1.0V supply can be tested using Test Point TP1_0V1 near the XMOS IC.
-
-#### USB-Mode
-
-To use this mode, solder USB_Power1 jumper closed.
-
-The SJ201 can be used as a stand-alone USB device, without the Pi. In this use case, the board derives power from the USB port and does not utilize the 12V barrel supply. The audio amplifier is put into low-power shutdown mode and speaker connectors are inactive [The MAX9744 SHDN pin is pulled low by a 10K resistor].
-
-In USB mode, it can be connected to a PC and used as a multi-mic processor with barge-in capability. The PC should be configured to output simultaneously to the SJ201 and the PC's speakers. The SJ201 is then used as a mic input to the PC, with the PC's output cancelled and the user voice isolated from the ambient room audio. 
-
-
 
 ## Design Notes
 
@@ -94,28 +78,19 @@ The SJ201 is powered by an external 12V 3A DC supply (wall wart) via a barrel co
 
 - 1V  1.0V derived from 5V for the XMOS core
 
-Additionally, there are two ground domains:
+All power domains share a common ground.
 
 - GND  Ground
-
-- PGND Analog Audio Ground
 
 ### Microphone DSP
 
 ### Audio Amplifier
 
 **Filterless modulation**  
-We are using the MAX9744, in a "filterless amplifier" design. This is lower cost than using a true LC filter for each output, but can be susceptible to large EMI output if not done properly. This can lead to failure to meet FCC and other standards required for consumer electronics. The following design rules are intended to minimize EMI in the system.
-
-**Spread Spectrum Mode**  
-The SYNC pin of the MAX9744 is pulled high to enable the spread spectrum, internally generated clock. 
+We are using the TAS5806, in a "filterless amplifier" design. This is lower cost than using a true LC filter for each output, but can be susceptible to large EMI output if not done properly. This can lead to failure to meet FCC and other standards required for consumer electronics. The following design rules are intended to minimize EMI in the system.
 
 **Speaker power**  
-With a 4ohm speaker and a 12V supply, each channel can achieve ~13W. The speaker we're using is 4.4ohm, 5W max. The volume must be limited in software to avoid damaging the speaker. During evaluation, we may decide to supply a lower-voltage supply, such as a 7.5V wall-wart supply, to limit the output power to 5W. This would require redesign of the buck converter that derives the 5V domain for the Pi, as the current design requires a minimum of 9V.
-
-**USB as power source**  
-If USB-C is an option, then USB-powered amplification could be achieved. In the current implementation, however, this is not designed for.
-
+With a 4ohm speaker and a 12V supply, each channel can achieve ~13W. The speaker we're using is 4.4ohm, 5W max. The volume must be limited in software to avoid damaging the speaker.
 
 
 
@@ -492,6 +467,3 @@ Not all of these parts will be used in a given Mark II assembly. For example, on
 </table>
 
 
-## Serial Numbers
-
-TODO. Concept: Use large random numbers to make it difficult to make knock-off products that take advantage of Mycroft warranty or support. Serial numbers are to be pseudo-random numbers generated using a secure algorithm. Serial numbers are sent securely to the manufacturer. At a TBD Serial Number verification website, a number can be entered, and it will report if it is a genuine Mycroft serial number, and what product it is for, and if we know of any unlicensed copies. This website will have a rate limiter for queries, so serially searching for valid numbers will be unlikely to find valid numbers.
