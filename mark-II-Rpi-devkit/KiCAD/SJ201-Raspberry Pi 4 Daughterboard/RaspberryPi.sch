@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 5 8
 Title "Raspberry Pi"
-Date "2020-12-30"
-Rev "Rev5 - v1"
+Date "2021-01-27"
+Rev "Rev6 - v2"
 Comp "Mycroft AI"
 Comment1 "SJ-201-R6"
 Comment2 ""

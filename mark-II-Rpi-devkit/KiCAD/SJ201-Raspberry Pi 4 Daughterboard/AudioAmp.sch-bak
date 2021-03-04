@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 3 8
 Title "Audio Amplifier"
-Date "2020-12-28"
-Rev "Rev5 - v1"
+Date "2021-01-27"
+Rev "Rev6 - v2"
 Comp "Mycroft AI"
 Comment1 "SJ-201-R6"
 Comment2 ""
@@ -206,6 +206,7 @@ F 1 "TAS5806MD" H 3650 1800 60  0000 C CNN
 F 2 "TAS5806MD:TAS5806MDDCPR" H 4075 3415 60  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tas5806md.pdf" H 4075 3475 60  0001 C CNN
 F 4 "TAS5806MDDCPR" H 4075 3475 50  0001 C CNN "MPN"
+F 5 "https://www.mouser.com/ProductDetail/Texas-Instruments/TAS5806MDDCPR/?qs=%2Fha2pyFaduigxsDhAowbK%252B5b3Ou7K%252B70UfK8iXsUtzqr1E9I6v81Xw%3D%3D" H 4075 3475 50  0001 C CNN "Link"
 	1    4075 3475
 	1    0    0    -1  
 $EndComp

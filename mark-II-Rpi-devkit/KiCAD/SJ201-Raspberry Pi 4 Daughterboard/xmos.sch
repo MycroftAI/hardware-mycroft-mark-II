@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 6 8
 Title "XMOS"
-Date "2020-12-30"
-Rev "Rev5 - v1"
+Date "2021-01-27"
+Rev "Rev6 - v2"
 Comp "Mycroft AI"
 Comment1 "SJ-201-R6"
 Comment2 ""
@@ -17433,7 +17433,7 @@ U 1 1 5F1E8ACB
 P 3275 1350
 F 0 "U8" H 2700 1400 55  0000 L CNN
 F 1 "XMOS-XVF3510" H 2700 -2750 55  0000 L CNN
-F 2 "user:QFN-60-1EP_7x7mm_P0.4mm_EP5.6x5.6mm-HandSolder" H 3275 1350 55  0001 C CNN
+F 2 "user:QFN-60-1EP_7x7mm_P0.4mm_EP5.6x5.6mm" H 3275 1350 55  0001 C CNN
 F 3 "" H 3275 1350 55  0001 C CNN
 F 4 "XVF3510-QF60-C" H 3275 1350 50  0001 C CNN "MPN"
 F 5 "https://www.digikey.com/products/en/integrated-circuits-ics/audio-special-purpose/741?k=XVF3510" H 3275 1350 50  0001 C CNN "Link"
