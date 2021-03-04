@@ -4,6 +4,8 @@
 #include <tinyNeoPixel_Static.h>
 #include <EEPROM.h>
 
+#define CODE_REVISON  1
+
 #define NEOXPIXELPIN 1
 #define MAXSTATES    10
 #define BRIGHTNESS   100
@@ -52,12 +54,25 @@ tinyNeoPixel strip = tinyNeoPixel(NUMPIXELS, NEOXPIXELPIN, NEO_GRB, pixels);
 /**
  * EEPROM addresses
  */
-#define NUM_BOOTS  0
+#define NUM_BOOTS_ADDR  0
+
+#define SERIAL_NUM_ADDR  10
+
 
 volatile byte state   = 0;
 long lastButtonPress = 0;
 volatile bool nextState       = false;
 volatile bool readBuffer      = false;
+
+byte serialNumBufAddr = 0xE1;
+
+volatile int revs = 0;
+unsigned long rpm = 0;
+unsigned long lastmillis = 0;
+
+// refreshrate of data logging/printing in ms (only full seconds!)
+int refreshRate = 2000;
+
 void setup() {
   pinMode(TPU_PMIC_EN, OUTPUT);
   pinMode(TPU_RST_L,   OUTPUT);
@@ -71,6 +86,8 @@ void setup() {
   pinMode(FAN_PWM  ,   OUTPUT);
   pinMode(FAN_TACH ,   INPUT); 
   pinMode(TPU_PGOOD,   INPUT);
+  attachInterrupt(digitalPinToInterrupt(FAN_TACH), rpm_engine, FALLING);
+
 
   //pinMode(TPU_INTR,    INPUT);
 
@@ -89,7 +106,7 @@ void setup() {
   strip.setBrightness(BRIGHTNESS);
   strip.show(); // Initialize all pixels to 'off'
   
-  setFan(0); // Start Fan as off
+  setFan(200); // Start Fan as on until Raspberry Pi overrides
   Serial.begin(57600); 
   
   Serial.println("Mycroft Starting");
@@ -175,35 +192,79 @@ void loop() {
   nextState = false;
   
   setI2CreadOnly();
-  
+  // RPM reading & logging/printing of data
+  /*
+  if (millis() - lastmillis == refreshRate) { // update every one second, this will be equal to reading frequency(Hz)
+    detachInterrupt(digitalPinToInterrupt(rpmPin)); // disable interrupt when calculating
+     
+    // RPM logging/printing
+    rpm = revs * 60 / (refreshRate / 1000); // convert frequency to RPM, this works for one interruption per full rotation.
+    Serial.print("RPM: ");
+    Serial.println(rpm);
+   
+    // Finish line 
+    Serial.println(" ");
+    Serial.flush();     
+     
+    revs = 0; // restart the RPM counter
+    lastmillis = millis(); // update lastmillis
+  }
+  //attachInterrupt(digitalPinToInterrupt(rpmPin), rpm_engine, FALLING); // Enable interrupt
+  */
 }
-
+void rpm_engine() {
+  revs++;
+}
+  
 void resetBootCounts(){
   bufferI2C[0xF5] = 0;   
   bufferI2C[0xF6] = 0;
   bufferI2C[0xF7] = 0;
   bufferI2C[0xF8] = 0;
-  EEPROM.write(NUM_BOOTS    ,bufferI2C[0xF5] );
-  EEPROM.write(NUM_BOOTS + 1,bufferI2C[0xF6] );
-  EEPROM.write(NUM_BOOTS + 2,bufferI2C[0xF7] );
-  EEPROM.write(NUM_BOOTS + 3,bufferI2C[0xF8] );  
+  EEPROM.write(NUM_BOOTS_ADDR    ,bufferI2C[0xF5] );
+  EEPROM.write(NUM_BOOTS_ADDR + 1,bufferI2C[0xF6] );
+  EEPROM.write(NUM_BOOTS_ADDR + 2,bufferI2C[0xF7] );
+  EEPROM.write(NUM_BOOTS_ADDR + 3,bufferI2C[0xF8] );  
 
 }
 unsigned int numBootsVal = 0;
 void readNumBoots(){
-  EEPROM.get(NUM_BOOTS, numBootsVal);
+  EEPROM.get(NUM_BOOTS_ADDR, numBootsVal);
  
-  numBootsVal += 6;
+  numBootsVal += 1;
   
-  EEPROM.put(NUM_BOOTS, numBootsVal );
+  EEPROM.put(NUM_BOOTS_ADDR, numBootsVal );
   
   Serial.print("BootNumber: ");
   Serial.println(numBootsVal);
   bufferI2C[0xF5] = numBootsVal >> 8 ;
   bufferI2C[0xF6] = numBootsVal      ;
 }
+
+void readSerialNum(){
+  byte serial1,serial2, serial3, serial4;
+  
+  EEPROM.get(SERIAL_NUM_ADDR + 0, serial1);
+  EEPROM.get(SERIAL_NUM_ADDR + 1, serial2);
+  EEPROM.get(SERIAL_NUM_ADDR + 2, serial3);
+  EEPROM.get(SERIAL_NUM_ADDR + 3, serial4);
+  bufferI2C[serialNumBufAddr + 0] = serial1;
+  bufferI2C[serialNumBufAddr + 1] = serial2;
+  bufferI2C[serialNumBufAddr + 2] = serial3;
+  bufferI2C[serialNumBufAddr + 3] = serial4;      
+}
+
+void writeSerialNum(){
+  EEPROM.put(SERIAL_NUM_ADDR + 0, bufferI2C[serialNumBufAddr + 0]);
+  EEPROM.put(SERIAL_NUM_ADDR + 1, bufferI2C[serialNumBufAddr + 1]);
+  EEPROM.put(SERIAL_NUM_ADDR + 2, bufferI2C[serialNumBufAddr + 2]);
+  EEPROM.put(SERIAL_NUM_ADDR + 3, bufferI2C[serialNumBufAddr + 3]);
+}
 long lastReadTime   = 0;
 #define READ_INTERVAL 100
+volatile bool readEEPROM = true;
+volatile bool writeEEPROM = false;
+
 /**
  * Read in statuses from inputs and load them into I2CBuffer
  */
@@ -215,7 +276,7 @@ void setI2CreadOnly(){
       //bufferI2C[0x53] = digitalRead(TPU_INTR);
       bufferI2C[0x54] = digitalRead(TPU_RST_L);
       bufferI2C[0x60] = 0xFF;    
-      
+      bufferI2C[0x61] = CODE_REVISON;
       long timestampNow = millis();  
       bufferI2C[0xF0] = timestampNow & 0xFF;
       bufferI2C[0xF1] = (timestampNow >> 8) & 0xFF;
@@ -224,8 +285,18 @@ void setI2CreadOnly(){
       bufferI2C[0xF4] = 0xF4; 
 
       
+      if(readEEPROM == true){
+        readSerialNum() ; 
+        readEEPROM = false;
+      }
+      if(writeEEPROM == true){
+        writeSerialNum();
+        writeEEPROM = false;
+        readEEPROM = true;        
+      }      
       
       lastReadTime = millis();
+      
    }
    
 }
@@ -486,7 +557,6 @@ void receiveEvent(int howMany) {
         byte c = Wire.read(); // receive byte as a character
         bufferI2C[addrStart ] = c; 
       }     
-      //setState(addrStart - NUMPIXELS);
     }
     
     if (addrStart == 101){ //0x65
@@ -512,7 +582,14 @@ void receiveEvent(int howMany) {
       else{
         digitalWrite(TPU_RST_L, LOW);
       }
+    } 
+    if(addrStart == serialNumBufAddr + 3){
+      
+      writeEEPROM = true;
+      //readEEPROM = true;
+      
     }    
+      
     nextState = true;
   }
 }
@@ -521,6 +598,7 @@ void receiveEvent(int howMany) {
 //byte startingNum = 0;
 void requestEvent() {
    //byte count = 0;
+
    if(reg < 256 && reg >= 0 ){
      Wire.write(bufferI2C[reg]);
      //Wire.write(reg);
