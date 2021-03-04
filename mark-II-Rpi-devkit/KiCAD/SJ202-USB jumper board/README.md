@@ -1,6 +1,6 @@
 # SJ202 - USB Jumper Board
 
-*⛵️ Note that this repository is a work-in-progress. It will be updated and improved on over time.*
+*⛵️ This jumper board is not used in the current Dev Kit design (Version 6.02) *
 
 This board connects the Raspberry Pi 4 to the SJ201-Raspberry Pi 4 Daughterboard. This jumper board connects to the USB 2.0 port on the Raspberry Pi 4, leaving both of the USB 3.0 ports open.
 
