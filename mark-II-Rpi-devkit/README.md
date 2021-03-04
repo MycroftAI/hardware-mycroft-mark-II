@@ -1,6 +1,5 @@
 # Mycroft Mark II - DevKit Prototype
 
-*⛵️ Note that this repository is a work-in-progress. It will be updated and improved on over time.*
 ## Kit Major Components
 * Raspberry Pi 4
 * SJ201 Daugherboard
