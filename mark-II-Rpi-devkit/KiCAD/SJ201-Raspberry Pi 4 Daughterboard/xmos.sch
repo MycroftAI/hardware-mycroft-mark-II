@@ -16893,7 +16893,7 @@ F 3 "" H 875 6775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kevin:Ferrite_Bead_Small FB5
+L Mycroft:Ferrite_Bead_Small FB5
 U 1 1 5F43B8E2
 P 8850 1825
 F 0 "FB5" V 8725 1825 50  0000 C CNN
@@ -17080,7 +17080,7 @@ Wire Notes Line
 Text Notes 9300 5725 0    63   ~ 0
 Alternate Mic part #:\nSPK0838HT4H-1
 $Comp
-L kevin:Ferrite_Bead_Small FB6
+L Mycroft:Ferrite_Bead_Small FB6
 U 1 1 5F22AB88
 P 8850 2650
 F 0 "FB6" V 8725 2650 50  0000 C CNN
@@ -17118,7 +17118,7 @@ AR Path="/5EA9C76D/5F2F5623" Ref="U10"  Part="1"
 AR Path="/5EA9C461/5F2F5623" Ref="U10"  Part="1" 
 F 0 "U10" H 8372 3521 50  0000 R CNN
 F 1 "SPK0641HT4H-1" H 8550 2975 50  0000 R CNN
-F 2 "user:HCLGA-MP34DT05" H 8150 3800 50  0001 L BNN
+F 2 "Mycroft:HCLGA-MP34DT05" H 8150 3800 50  0001 L BNN
 F 3 "https://www.knowles.com/docs/default-source/model-downloads/spk0641ht4h-1-rev-a.pdf" H 8650 3550 63  0001 C CNN
 F 4 "423-1425-1-ND" H 8700 3600 50  0001 C CNN "Digikey"
 F 5 "SPK0641HT4H-1" H 8700 3600 50  0001 C CNN "MPN"
@@ -17140,7 +17140,7 @@ U 1 1 5F30DD80
 P 8700 4925
 F 0 "U11" H 8372 4846 50  0000 R CNN
 F 1 "SPK0641HT4H-1" H 8600 4300 50  0000 R CNN
-F 2 "user:HCLGA-MP34DT05" H 8150 5125 50  0001 L BNN
+F 2 "Mycroft:HCLGA-MP34DT05" H 8150 5125 50  0001 L BNN
 F 3 "https://www.knowles.com/docs/default-source/model-downloads/spk0641ht4h-1-rev-a.pdf" H 8650 4875 63  0001 C CNN
 F 4 "423-1425-1-ND" H 8700 4925 50  0001 C CNN "Digikey"
 F 5 "SPK0641HT4H-1" H 8700 4925 50  0001 C CNN "MPN"
@@ -17428,12 +17428,12 @@ Wire Wire Line
 Wire Wire Line
 	2475 4350 2325 4350
 $Comp
-L user:XMOS-XVF3510 U8
+L Mycroft:XMOS-XVF3510 U8
 U 1 1 5F1E8ACB
 P 3275 1350
 F 0 "U8" H 2700 1400 55  0000 L CNN
 F 1 "XMOS-XVF3510" H 2700 -2750 55  0000 L CNN
-F 2 "user:QFN-60-1EP_7x7mm_P0.4mm_EP5.6x5.6mm" H 3275 1350 55  0001 C CNN
+F 2 "XMOS:QFN-60-1EP_7x7mm_P0.4mm_EP5.6x5.6mm" H 3275 1350 55  0001 C CNN
 F 3 "" H 3275 1350 55  0001 C CNN
 F 4 "XVF3510-QF60-C" H 3275 1350 50  0001 C CNN "MPN"
 F 5 "https://www.digikey.com/products/en/integrated-circuits-ics/audio-special-purpose/741?k=XVF3510" H 3275 1350 50  0001 C CNN "Link"
@@ -18582,7 +18582,7 @@ F 3 "" H 6775 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L user:74LVC125A U5
+L Mycroft:74LVC125A U5
 U 1 1 5F0C90C8
 P 6325 4800
 F 0 "U5" H 6250 5228 51  0000 C CNN

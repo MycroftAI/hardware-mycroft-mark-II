@@ -1,12 +1,8 @@
 (sym_lib_table
   (lib (name mic)(type Legacy)(uri ${KIPRJMOD}/libraries/MP34DT05-A.lib)(options "")(descr ""))
-  (lib (name Mycroft---Mark-2-rescue)(type Legacy)(uri "${KIPRJMOD}/Mycroft - Mark 2-rescue.lib")(options "")(descr ""))
-  (lib (name CM108AH)(type Legacy)(uri ${KIPRJMOD}/libraries/CM108AH.lib)(options "")(descr ""))
-  (lib (name eec)(type Legacy)(uri ${KIPRJMOD}/libraries/eec.lib)(options "")(descr ""))
   (lib (name dk_Pushbutton-Switches)(type Legacy)(uri ${KIPRJMOD}/libraries/dk_Pushbutton-Switches.lib)(options "")(descr ""))
   (lib (name dk_Transistors-FETs-MOSFETs-Single)(type Legacy)(uri ${KIPRJMOD}/libraries/dk_Transistors-FETs-MOSFETs-Single.lib)(options "")(descr ""))
-  (lib (name user)(type Legacy)(uri ${KIPRJMOD}/libraries/user.lib)(options "")(descr ""))
-  (lib (name kevin)(type Legacy)(uri ${KIPRJMOD}/libraries/kevin.lib)(options "")(descr ""))
   (lib (name TAS5806MD)(type Legacy)(uri ${KIPRJMOD}/libraries/TAS5806MD.lib)(options "")(descr ""))
   (lib (name nc7nz)(type Legacy)(uri "${KIPRJMOD}/libraries/IC_ON Semi_NC7NZ34K8X/eec.lib")(options "")(descr ""))
+  (lib (name Mycroft)(type Legacy)(uri ${KIPRJMOD}/libraries/Mycroft.lib)(options "")(descr ""))
 )

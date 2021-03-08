@@ -10020,23 +10020,23 @@ Connection ~ 1825 3775
 Wire Wire Line
 	1825 3775 1825 3875
 $Comp
-L user:CoralTPU U2
+L Mycroft:CoralTPU U2
 U 2 1 5F9D96B1
 P 5200 2075
 F 0 "U2" H 5250 2190 50  0000 C CNN
 F 1 "CoralTPU-DNP" H 5250 2099 50  0000 C CNN
-F 2 "user:CoralTPU" H 5200 2075 50  0001 C CNN
+F 2 "CoralTPU:CoralTPU" H 5200 2075 50  0001 C CNN
 F 3 "https://coral.ai/static/files/Coral-Accelerator-Module-datasheet.pdf" H 5200 2075 50  0001 C CNN
 	2    5200 2075
 	1    0    0    -1  
 $EndComp
 $Comp
-L user:CoralTPU U2
+L CoralTPU:CoralTPU U2
 U 1 1 5F9D6A2B
 P 2625 3125
 F 0 "U2" H 2550 3290 50  0000 C CNN
 F 1 "CoralTPU-DNP" H 2550 3199 50  0000 C CNN
-F 2 "user:CoralTPU" H 2625 3125 50  0001 C CNN
+F 2 "CoralTPU:CoralTPU" H 2625 3125 50  0001 C CNN
 F 3 "https://coral.ai/static/files/Coral-Accelerator-Module-datasheet.pdf" H 2625 3125 50  0001 C CNN
 F 4 "G313-06329-00-DNP" H 2625 3125 50  0001 C CNN "MPN"
 F 5 "https://www.mouser.com/ProductDetail/Coral/G313-06329-00/" H 2625 3125 50  0001 C CNN "Link"
