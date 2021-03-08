@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\Dropbox\Crashspace\Mycroft\KiCAD\SJ-201-R6\SJ-201-R6.sch</source>
+    <source>SJ-201-R6.sch</source>
     <date>1/30/2021 8:58:40 PM</date>
     <tool>Eeschema (5.1.9)-1</tool>
     <sheet number="1" name="/" tstamps="/">
@@ -4048,7 +4048,7 @@
       <uri>C:\ProgramData\kicad\symbols/Switch.lib</uri>
     </library>
     <library logical="TAS5806MD">
-      <uri>C:\Dropbox\Crashspace\Mycroft\KiCAD\SJ-201-R6/libraries/TAS5806MD.lib</uri>
+      <uri>libraries/TAS5806MD.lib</uri>
     </library>
     <library logical="Transistor_BJT">
       <uri>C:\ProgramData\kicad\symbols/Transistor_BJT.lib</uri>
@@ -4057,19 +4057,19 @@
       <uri>C:\ProgramData\kicad\symbols/Transistor_FET.lib</uri>
     </library>
     <library logical="dk_Pushbutton-Switches">
-      <uri>C:\Dropbox\Crashspace\Mycroft\KiCAD\SJ-201-R6/libraries/dk_Pushbutton-Switches.lib</uri>
+      <uri>libraries/dk_Pushbutton-Switches.lib</uri>
     </library>
     <library logical="dk_Transistors-FETs-MOSFETs-Single">
-      <uri>C:\Dropbox\Crashspace\Mycroft\KiCAD\SJ-201-R6/libraries/dk_Transistors-FETs-MOSFETs-Single.lib</uri>
+      <uri>libraries/dk_Transistors-FETs-MOSFETs-Single.lib</uri>
     </library>
     <library logical="kevin">
-      <uri>C:\Dropbox\Crashspace\Mycroft\KiCAD\SJ-201-R6/libraries/kevin.lib</uri>
+      <uri>libraries/kevin.lib</uri>
     </library>
     <library logical="mic">
-      <uri>C:\Dropbox\Crashspace\Mycroft\KiCAD\SJ-201-R6/libraries/MP34DT05-A.lib</uri>
+      <uri>libraries/MP34DT05-A.lib</uri>
     </library>
     <library logical="user">
-      <uri>C:\Dropbox\Crashspace\Mycroft\KiCAD\SJ-201-R6/libraries/user.lib</uri>
+      <uri>libraries/user.lib</uri>
     </library>
   </libraries>
   <nets>
