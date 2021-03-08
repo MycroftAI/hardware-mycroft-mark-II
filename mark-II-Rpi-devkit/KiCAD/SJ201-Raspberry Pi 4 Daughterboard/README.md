@@ -14,7 +14,7 @@ This Datasheet will contain all the relevant information for the manufacturing o
 ## Major Components
 * Audio Front End (XMOS XVF3510) - for Microphone input processing
 * 23W I2S Digital Amplifier (Texas Instruments TAS5806MD)
-* 2 Digital MEMS Microphones (Knowles SPK0641HT4H-1 https://www.digikey.com/en/products/detail/knowles/SPK0641HT4H-1/8573345)
+* 2 Digital MEMS Microphones ([Knowles SPK0641HT4H-1](https://www.digikey.com/en/products/detail/knowles/SPK0641HT4H-1/8573345))
 * 12 RGB LEDs (WorldSemi WS2812B-MINI)
 * 3 momentary buttons (volume up, volume down, action)
 * 1 toggle switch (mic mute)
