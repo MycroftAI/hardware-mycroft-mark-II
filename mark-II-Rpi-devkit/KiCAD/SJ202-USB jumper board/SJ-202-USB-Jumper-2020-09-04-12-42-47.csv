@@ -1,4 +1,0 @@
-"Ref","Qnty","Value","Footprint","Description","Vendor","MPN","SKU","Digikey","Link"
-"J1, ","1","USB_A","libraries:USB_A_Female_UE27AC54100","USB Type A connector","","","","WM3983CT-ND",""
-"J2, ","1","USB3150-30-130-A","GCT_USB3150-30-130-A","","","","","2073-USB3150-30-130-ACT-ND",""
-"J3, ","1","Conn_01x05","Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical","Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)","","","","",""
