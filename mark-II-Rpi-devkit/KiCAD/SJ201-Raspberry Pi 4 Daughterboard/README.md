@@ -256,7 +256,7 @@ The following notes are related to the PCB layout wrt the TAS5806. We also used 
 4. 🗹 Speaker wires from JST to speaker element are twisted pair and less than 10cm long.
    - "to minimize loop areas ... using twisted pairs for the speaker wires is helpful)" [Ref 1]
 
-5.  🗹 Connect PGND to GND at a single point on the PCB. [Ref 3, p23]
+5. 🗹 Connect PGND to GND at a single point on the PCB. [Ref 3, p23]
 
 6. 🗹 Connect all VDD power supplies together and bypass with a 1uF cap to GND. [Ref 3, p23]
 
@@ -285,16 +285,8 @@ WS2812 Mini
 
 ## References
 
-1\. Analog Class D Amps
 
-- <https://www.analog.com/en/analog-dialogue/articles/class-d-audio-amplifiers.html>
-  - Class-D audio amplifiers. 
-  - Good information about the why's of component placement and trace layout.
+1\. [Texas Instruments Class D Thermal Considerations](https://www.ti.com/lit/an/slaa880/slaa880.pdf?ts=1615242326443&ref_url=https%253A%252F%252Fwww.google.com%252F)
 
-2\. MAXIM Class D Thermal Considerations
 
-- <https://www.maximintegrated.com/en/design/technical-documents/app-notes/3/3879.html>
-  - Board layout
-  - Speaker impedance choice
-
-3\. MAX9744 data sheet
+2\. [TAS5806MD data sheet](https://www.ti.com/lit/ds/symlink/tas5806md.pdf?ts=1615242375420&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTAS5806MD)

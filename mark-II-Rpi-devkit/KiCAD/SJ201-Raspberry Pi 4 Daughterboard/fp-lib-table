@@ -1,7 +1,6 @@
 (fp_lib_table
   (lib (name NetTie)(type KiCad)(uri ${KISYSMOD}/NetTie.pretty)(options "")(descr ""))
   (lib (name TAS5806MD)(type KiCad)(uri ${KIPRJMOD}/libraries/footprints.pretty)(options "")(descr ""))
-  (lib (name NC7N)(type KiCad)(uri "${KIPRJMOD}/libraries/IC_ON Semi_NC7NZ34K8X/eec.pretty")(options "")(descr ""))
   (lib (name libraries)(type KiCad)(uri ${KIPRJMOD}/libraries)(options "")(descr ""))
   (lib (name XMOS)(type KiCad)(uri ${KIPRJMOD}/libraries/XMOS.pretty)(options "")(descr ""))
   (lib (name Mycroft)(type KiCad)(uri ${KIPRJMOD}/libraries/Mycroft.pretty)(options "")(descr ""))
