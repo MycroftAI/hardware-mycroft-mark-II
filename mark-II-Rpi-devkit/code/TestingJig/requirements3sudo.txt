@@ -17,7 +17,6 @@ feedparser==5.2.1
 future==0.18.2
 gitdb==4.0.5
 GitPython==3.1.13
-httplib2==0.14.0
 humanhash3==0.0.6
 idna==2.8
 ifaddr==0.1.7
