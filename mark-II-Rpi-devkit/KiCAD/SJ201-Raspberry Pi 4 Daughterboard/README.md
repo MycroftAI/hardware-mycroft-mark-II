@@ -65,7 +65,7 @@ The SJ201 is powered by an external 12V 3A DC supply (wall wart) via a barrel co
 
 - PVDD 12V Analog Audio Power
 
-- 5V  5V derived from VDD (or USB Powered if Jumper USB_Power1 soldered)
+- 5V  5V derived from VDD
 
 - 3V  3.3V derived from 5V
 
@@ -97,7 +97,7 @@ Layer 1:  Main ICs, connectors and signal routing - Power (1.0v, PVDD 12v)
 
 Layer 2:  GND
 
-Layer 3:  Power (12V, 5V)
+Layer 3:  Power (12V, 5V, 3V3)
 
 Layer 4:  Buttons, LEDs, signal routing (this layer faces upwards on device) 
 
@@ -105,12 +105,12 @@ Layer 4:  Buttons, LEDs, signal routing (this layer faces upwards on device) 
 
 #### External Power Supply (VDD)
 
-1. Barrel jack is centered on LED ring
+1. Barrel jack is centered on 10.6mm from the board edge.
 
 2. Ferrite bead close to barrel jack to reduce EMI transmission along power cord to wall
    - Spec'd to handle 12V 3A
 
-3. AOD4184A MOSFET to protect against reverse voltage (i.e. user plugs in a non-standard external power supply with GND on the center pin instead of on the outside of the barrel connector.)
+3. AO3401A MOSFET to protect against reverse voltage (i.e. user plugs in a non-standard external power supply with GND on the center pin instead of on the outside of the barrel connector.)
 
 4. Low resistance traces for VDD and GND connecting to power planes.
 
@@ -158,7 +158,7 @@ A linear regulator is used to derive 3.3V from 5V.
 
 -   <https://www.onsemi.com/pub/Collateral/NCP302-D.PDF> 
 
--   This circuit monitors multiple power supply rails for undervoltage conditions. If any of the three power supplies are in an undervoltage condition, the NCP302 reset output will be immediately set to an active low level. All three power supplies must be above their minimum voltage levels for the NCP302 reset output to generate a "Power Good" level (Reset Output = Power Supply 1 or VP).
+-   ~~This circuit monitors multiple power supply rails for undervoltage conditions. If any of the three power supplies are in an undervoltage condition, the NCP302 reset output will be immediately set to an active low level. All three power supplies must be above their minimum voltage levels for the NCP302 reset output to generate a "Power Good" level (Reset Output = Power Supply 1 or VP).~~ Replaced by Raspberry Pi control for startup routine.
 
 ### SG-210STF 24MHz clock - PCB checklist
 
@@ -206,7 +206,7 @@ From page 26-27 of the XMOS VocalFusion XVF3510 datasheet (dated 2019-10-22).
 
 10.1.5. BOOT
 
-🗹 To boot from QSPI flash, QSPI_CS_N, QSPI_D0 .. QSPI_D3, QSPI_D1_BOOTSEL, QSPI_CLK are connected and QSPI_D1_BOOTSEL is connected to QSPI D1 pin on flash device or pulled low/left floating (Section 6.4).
+~~🗹 To boot from QSPI flash, QSPI_CS_N, QSPI_D0 .. QSPI_D3, QSPI_D1_BOOTSEL, QSPI_CLK are connected and QSPI_D1_BOOTSEL is connected to QSPI D1 pin on flash device or pulled low/left floating (Section 6.4).~~ Boot from Raspi
 
 🗹 To boot from the local host processor through SPI, QSPI_D1_BOOTSEL must be pulled high and SPI_CS_N, SPI_MOSI and SPI_MISO must be connected.
 
