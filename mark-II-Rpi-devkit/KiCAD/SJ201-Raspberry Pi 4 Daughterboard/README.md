@@ -1,4 +1,4 @@
-# SJ201 Datasheet - Rev 6
+# SJ201 Datasheet - Rev 8
 
 This board interfaces directly to the Raspberry Pi 4 via the 40-pin GPIO adding a high-quality speaker and microphone array, as well as LEDs and hardware inputs for non-voice interaction and feedback.
 
@@ -19,7 +19,6 @@ This Datasheet will contain all the relevant information for the manufacturing o
 * 3 momentary buttons (volume up, volume down, action)
 * 1 toggle switch (mic mute)
 * ATtiny1614 - control LEDs, other I/O
-* I2S to Line Out (UDA1334ATS)
 
 ## Hardware Notes
 
