@@ -89,7 +89,7 @@ pyflakes==2.1.1
 PyGithub==1.54.1
 Pygments==2.8.0
 pyjokes==0.6.0
-PyJWT==1.7.1
+PyJWT==2.4.0
 PyMeeus==0.4.1
 pyOpenSSL==20.0.1
 pyowm==2.6.1
