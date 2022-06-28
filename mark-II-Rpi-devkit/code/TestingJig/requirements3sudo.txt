@@ -1,5 +1,5 @@
 appdirs==1.4.4
-arrow==0.12.0
+arrow==0.15.1
 astral==1.4
 beautifulsoup4==4.9.3
 blinker==1.4
