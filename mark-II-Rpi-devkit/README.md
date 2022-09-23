@@ -40,6 +40,9 @@ This interface makes a landscape form factor the most viable for this prototype.
 
 <img src="./images/Mark II Mechanical Blocking.png" width="500">
 
+## 3D Printable Case
+STL files for 3D printing are available in this directory to print your own enclosure. For final construction you will also need threaded inserts and screws. For the inserts we recommend - Thread Diameter: M2.5; Pitch: 0.45; Outer Dia: 3.5mm; Length: 4mm. [Available here](https://www.amazon.com/uxcell-Threaded-Insert-Embedment-Knurled/dp/B01N8QX6RX?pd_rd_w=dPC71&content-id=amzn1.sym.deffa092-2e99-4e9f-b814-0d71c40b24af&pf_rd_p=deffa092-2e99-4e9f-b814-0d71c40b24af&pf_rd_r=6CG7999KDE4S7JZ48PGQ&pd_rd_wg=tgvPC&pd_rd_r=2c2f179c-25d6-434a-a10d-e7da619cf53c&pd_rd_i=B01N8QX6RX&psc=1&ref_=pd_bap_d_rp_1_t).
+
 ## Our open hardware principles
 * **Copy our designs** – build your own Mycroft Mark 2 - Raspberry Pi Edition or its individual parts
 * **Modify our designs** – remixing is encouraged
