@@ -1,0 +1,43 @@
+### Module positions - created on Fri Jul 29 08:46:18 2022 ###
+### Printed by Pcbnew version (6.0.7)
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val                 Package                                PosX       PosY       Rot  Side
+C9        100NF               C_0402_1005Metric                   -6.0452   -77.2668  180.0000  bottom
+C30       100NF               C_0402_1005Metric                  -33.9852   -21.3360    0.0000  bottom
+C31       100NF               C_0402_1005Metric                  -35.5600   -13.4620    0.0000  bottom
+C34       1uF                 C_0402_1005Metric                   -6.0452   -78.6384  180.0000  bottom
+C54       100NF               C_0402_1005Metric                  -56.8000   -72.7000  180.0000  bottom
+C56       1uF                 C_0402_1005Metric                  -36.4744   -80.5180  180.0000  bottom
+C58       100NF               C_0402_1005Metric                  -36.4744   -81.5950  180.0000  bottom
+D2        WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -45.2718   -31.9185   90.0000  bottom
+D3        WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -37.7534   -32.6805   90.0000  bottom
+D4        WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -33.4354   -38.7765   90.0000  bottom
+D5        WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -30.2858   -45.6345   90.0000  bottom
+D6        WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -33.3846   -52.4925   90.0000  bottom
+D7        WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -37.8042   -58.5377   90.0000  bottom
+D8        WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -45.2718   -59.1981   90.0000  bottom
+D9        WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -52.7902   -58.5885   90.0000  bottom
+D10       WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -57.1590   -52.3909   90.0000  bottom
+D11       WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -60.2578   -45.5837   90.0000  bottom
+D12       WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -57.1082   -38.7765   90.0000  bottom
+D13       WS2812B             LED_WS2812_Mini_3.5x3.5mm_P1.1mm   -52.7394   -32.5789   90.0000  bottom
+D17       TVS                 D_SOD-323                           -9.2000   -46.3000    0.0000  bottom
+D18       TVS                 D_SOD-323                           -7.3000   -80.7000  180.0000  bottom
+F1        0.5A_Hold,_1A_Trip  Fuse_1206_3216Metric               -70.8000   -27.5000    0.0000  bottom
+FB6       1000R               R_0805_2012Metric                  -38.5064   -80.3656   90.0000  bottom
+H6        MountingHole        simon-jestor-logo                   -5.3340   -25.4000   90.0000  bottom
+H7        MountingHole        mycroft_logo_words                 -22.8600   -43.9420   90.0000  bottom
+R13       3.3K                R_0402_1005Metric                  -21.6000   -78.7000  -90.0000  bottom
+R17       470R                R_0603_1608Metric                  -24.0000   -78.7000  -90.0000  bottom
+R43       100R                R_0402_1005Metric                  -29.7180   -10.2616   90.0000  bottom
+R44       100R                R_0402_1005Metric                  -36.0680   -10.2108   90.0000  bottom
+R45       100R                R_0402_1005Metric                  -30.7848   -77.1144    0.0000  bottom
+R46       100R                R_0402_1005Metric                  -35.5600   -78.3844  180.0000  bottom
+S1        Button              SW_SPST_TL3342                     -13.9180   -45.5700   90.0000  bottom
+S2        Button              SW_SPST_TL3342                     -13.9180   -78.9720  180.0000  bottom
+S3        Button              SW_SPST_TL3342                     -45.0508   -45.5634   90.0000  bottom
+SW1       MuteMic             SW_SPDT_PCM12                      -16.5532   -12.2428   90.0000  bottom
+U10       SPK0641HT4H-1       HCLGA-MP34DT05                     -32.5540   -10.0400  -90.0000  bottom
+U11       SPK0641HT4H-1       HCLGA-MP34DT05                     -32.5540   -81.0400  -90.0000  bottom
+## End
