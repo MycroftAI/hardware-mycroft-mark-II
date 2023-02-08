@@ -17,7 +17,7 @@ convertdate==2.3.1
 cov-core==1.15.0
 coverage==4.5.4
 coveralls==1.8.2
-cryptography==3.4.6
+cryptography==39.0.1
 cucumber-tag-expressions==3.0.0
 ddg3==0.6.6
 decorator==4.4.2
