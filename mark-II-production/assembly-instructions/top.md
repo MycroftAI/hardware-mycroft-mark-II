@@ -1,39 +1,23 @@
 # AS291 Top Assembly:
 
 ## Parts: 
-
 -   SJ250-08 Top X 1
-
 -   SJ250-09 Center Button X 1
-
 -   SJ250-11 Mute Switch X 1
-
 -   SJ250-10 Volume Button X 1
-
 -   SJ250-07 RPI Mount X 1
-
 -   SJ201 Mycroft Audio Pi Hat X 1
-
 -   SJ220-01 Raspberry Pi 4 2GB X 1
-
 -   SJ220-02 Raspberry Pi 4 Heatsinks X 1
-
 -   SJ250-12 Microphone Gasket X 2
-
 -   SJ242.2 PCB Grommets X 5
-
 -   SJ245-6 m2.5x6mm Thread Screw X 5
-
 -   SJ248 Nylon Plastic Washer M3 X 4
 
-Tools:
-
+## Tools:
 -   PH1 Screwdriver
-
 -   Blunt Tweezers
-
 -   Sharp Tweezers
-
 -   RPI Jig
 
 ![](images/top01.jpeg)
